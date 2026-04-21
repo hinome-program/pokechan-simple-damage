@@ -1,0 +1,4563 @@
+[
+  {
+    "name": "メガガブリアスZ",
+    "types": [
+      "ドラゴン",
+      "フェアリー"
+    ],
+    "hp": 108,
+    "atk": 130,
+    "def": 85,
+    "spa": 141,
+    "spd": 85,
+    "spe": 151,
+    "dexId": 0,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガアブソルZ",
+    "types": [
+      "あく",
+      "ゴースト"
+    ],
+    "hp": 65,
+    "atk": 154,
+    "def": 60,
+    "spa": 75,
+    "spd": 60,
+    "spe": 151,
+    "dexId": 0,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガルカリオZ",
+    "types": [
+      "かくとう",
+      "はがね"
+    ],
+    "hp": 70,
+    "atk": 100,
+    "def": 70,
+    "spa": 164,
+    "spd": 70,
+    "spe": 151,
+    "dexId": 0,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガフーディン",
+    "types": [
+      "エスパー"
+    ],
+    "hp": 55,
+    "atk": 50,
+    "def": 45,
+    "spa": 135,
+    "spd": 95,
+    "spe": 150,
+    "dexId": 65,
+    "varietyId": 10037,
+    "isMega": true
+  },
+  {
+    "name": "メガプテラ",
+    "types": [
+      "いわ",
+      "ひこう"
+    ],
+    "hp": 80,
+    "atk": 105,
+    "def": 65,
+    "spa": 60,
+    "spd": 75,
+    "spe": 150,
+    "dexId": 142,
+    "varietyId": 10042,
+    "isMega": true
+  },
+  {
+    "name": "メガゼラオラ",
+    "types": [
+      "でんき"
+    ],
+    "hp": 88,
+    "atk": 152,
+    "def": 105,
+    "spa": 102,
+    "spd": 105,
+    "spe": 148,
+    "dexId": 807,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ドラパルト",
+    "types": [
+      "ドラゴン",
+      "ゴースト"
+    ],
+    "hp": 88,
+    "atk": 120,
+    "def": 75,
+    "spa": 100,
+    "spd": 75,
+    "spe": 142,
+    "dexId": 887,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガゲッコウガ",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "hp": 72,
+    "atk": 125,
+    "def": 77,
+    "spa": 133,
+    "spd": 81,
+    "spe": 142,
+    "dexId": 658,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガライボルト",
+    "types": [
+      "でんき"
+    ],
+    "hp": 70,
+    "atk": 75,
+    "def": 60,
+    "spa": 105,
+    "spd": 60,
+    "spe": 135,
+    "dexId": 310,
+    "varietyId": 10055,
+    "isMega": true
+  },
+  {
+    "name": "メガミミロップ",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 65,
+    "atk": 76,
+    "def": 84,
+    "spa": 54,
+    "spd": 96,
+    "spe": 135,
+    "dexId": 428,
+    "varietyId": 10088,
+    "isMega": true
+  },
+  {
+    "name": "メガマフォクシー",
+    "types": [
+      "ほのお",
+      "エスパー"
+    ],
+    "hp": 75,
+    "atk": 69,
+    "def": 72,
+    "spa": 159,
+    "spd": 125,
+    "spe": 134,
+    "dexId": 655,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "サンダース",
+    "types": [
+      "でんき"
+    ],
+    "hp": 65,
+    "atk": 65,
+    "def": 60,
+    "spa": 110,
+    "spd": 95,
+    "spe": 130,
+    "dexId": 135,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "プテラ",
+    "types": [
+      "いわ",
+      "ひこう"
+    ],
+    "hp": 80,
+    "atk": 105,
+    "def": 65,
+    "spa": 60,
+    "spd": 75,
+    "spe": 130,
+    "dexId": 142,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガゲンガー",
+    "types": [
+      "ゴースト",
+      "どく"
+    ],
+    "hp": 60,
+    "atk": 65,
+    "def": 60,
+    "spa": 130,
+    "spd": 75,
+    "spe": 130,
+    "dexId": 94,
+    "varietyId": 10038,
+    "isMega": true
+  },
+  {
+    "name": "メガライチュウY",
+    "types": [
+      "でんき",
+      "エスパー"
+    ],
+    "hp": 60,
+    "atk": 100,
+    "def": 55,
+    "spa": 160,
+    "spd": 80,
+    "spe": 130,
+    "dexId": 0,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ファイアロー",
+    "types": [
+      "ほのお",
+      "ひこう"
+    ],
+    "hp": 78,
+    "atk": 81,
+    "def": 71,
+    "spa": 74,
+    "spd": 69,
+    "spe": 126,
+    "dexId": 663,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガカエンジシ",
+    "types": [
+      "ほのお",
+      "ノーマル"
+    ],
+    "hp": 86,
+    "atk": 88,
+    "def": 92,
+    "spa": 129,
+    "spd": 86,
+    "spe": 126,
+    "dexId": 668,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "マニューラ",
+    "types": [
+      "あく",
+      "こおり"
+    ],
+    "hp": 70,
+    "atk": 120,
+    "def": 65,
+    "spa": 45,
+    "spd": 85,
+    "spe": 125,
+    "dexId": 461,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガダークライ",
+    "types": [
+      "あく"
+    ],
+    "hp": 70,
+    "atk": 90,
+    "def": 120,
+    "spa": 175,
+    "spd": 120,
+    "spe": 125,
+    "dexId": 491,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガニャオニクス",
+    "types": [
+      "エスパー"
+    ],
+    "hp": 74,
+    "atk": 48,
+    "def": 76,
+    "spa": 143,
+    "spd": 101,
+    "spe": 124,
+    "dexId": 678,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "オンバーン",
+    "types": [
+      "ひこう",
+      "ドラゴン"
+    ],
+    "hp": 85,
+    "atk": 70,
+    "def": 80,
+    "spa": 97,
+    "spd": 80,
+    "spe": 123,
+    "dexId": 715,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "マスカーニャ",
+    "types": [
+      "くさ",
+      "あく"
+    ],
+    "hp": 76,
+    "atk": 110,
+    "def": 70,
+    "spa": 81,
+    "spd": 70,
+    "spe": 123,
+    "dexId": 908,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ゲッコウガ",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "hp": 72,
+    "atk": 95,
+    "def": 67,
+    "spa": 103,
+    "spd": 71,
+    "spe": 122,
+    "dexId": 658,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガムクホーク",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "hp": 85,
+    "atk": 120,
+    "def": 70,
+    "spa": 50,
+    "spd": 60,
+    "spe": 121,
+    "dexId": 398,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "フーディン",
+    "types": [
+      "エスパー"
+    ],
+    "hp": 55,
+    "atk": 50,
+    "def": 45,
+    "spa": 135,
+    "spd": 95,
+    "spe": 120,
+    "dexId": 65,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "オオニューラ",
+    "types": [
+      "どく",
+      "かくとう"
+    ],
+    "hp": 80,
+    "atk": 130,
+    "def": 60,
+    "spa": 40,
+    "spd": 80,
+    "spe": 120,
+    "dexId": 903,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガスターミー",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "hp": 60,
+    "atk": 140,
+    "def": 105,
+    "spa": 130,
+    "spd": 105,
+    "spe": 120,
+    "dexId": 121,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガユキメノコ",
+    "types": [
+      "こおり",
+      "ゴースト"
+    ],
+    "hp": 70,
+    "atk": 80,
+    "def": 70,
+    "spa": 140,
+    "spd": 100,
+    "spe": 120,
+    "dexId": 478,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ルチャブル",
+    "types": [
+      "かくとう",
+      "ひこう"
+    ],
+    "hp": 78,
+    "atk": 92,
+    "def": 75,
+    "spa": 74,
+    "spd": 63,
+    "spe": 118,
+    "dexId": 701,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガルチャブル",
+    "types": [
+      "かくとう",
+      "ひこう"
+    ],
+    "hp": 78,
+    "atk": 137,
+    "def": 100,
+    "spa": 74,
+    "spd": 93,
+    "spe": 118,
+    "dexId": 701,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "エンニュート",
+    "types": [
+      "どく",
+      "ほのお"
+    ],
+    "hp": 68,
+    "atk": 64,
+    "def": 60,
+    "spa": 111,
+    "spd": 60,
+    "spe": 117,
+    "dexId": 758,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "エルフーン",
+    "types": [
+      "くさ",
+      "フェアリー"
+    ],
+    "hp": 60,
+    "atk": 67,
+    "def": 85,
+    "spa": 77,
+    "spd": 75,
+    "spe": 116,
+    "dexId": 547,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "スターミー",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "hp": 60,
+    "atk": 75,
+    "def": 85,
+    "spa": 100,
+    "spd": 85,
+    "spe": 115,
+    "dexId": 121,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガアブソル",
+    "types": [
+      "あく"
+    ],
+    "hp": 65,
+    "atk": 130,
+    "def": 60,
+    "spa": 75,
+    "spd": 60,
+    "spe": 115,
+    "dexId": 359,
+    "varietyId": 10057,
+    "isMega": true
+  },
+  {
+    "name": "ジャローダ",
+    "types": [
+      "くさ"
+    ],
+    "hp": 75,
+    "atk": 75,
+    "def": 95,
+    "spa": 75,
+    "spd": 95,
+    "spe": 113,
+    "dexId": 497,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガヒードラン",
+    "types": [
+      "ほのお",
+      "はがね"
+    ],
+    "hp": 91,
+    "atk": 90,
+    "def": 116,
+    "spa": 160,
+    "spd": 130,
+    "spe": 113,
+    "dexId": 485,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ルガルガン(まひる)",
+    "types": [
+      "いわ"
+    ],
+    "hp": 75,
+    "atk": 115,
+    "def": 65,
+    "spa": 55,
+    "spd": 65,
+    "spe": 112,
+    "dexId": 745,
+    "varietyId": 745,
+    "isMega": false
+  },
+  {
+    "name": "メガルカリオ",
+    "types": [
+      "かくとう",
+      "はがね"
+    ],
+    "hp": 70,
+    "atk": 110,
+    "def": 70,
+    "spa": 115,
+    "spd": 70,
+    "spe": 112,
+    "dexId": 448,
+    "varietyId": 10059,
+    "isMega": true
+  },
+  {
+    "name": "ライチュウ",
+    "types": [
+      "でんき"
+    ],
+    "hp": 60,
+    "atk": 90,
+    "def": 55,
+    "spa": 90,
+    "spd": 80,
+    "spe": 110,
+    "dexId": 26,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ライチュウ(アローラ)",
+    "types": [
+      "でんき",
+      "エスパー"
+    ],
+    "hp": 60,
+    "atk": 85,
+    "def": 50,
+    "spa": 95,
+    "spd": 85,
+    "spe": 110,
+    "dexId": 26,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ゲンガー",
+    "types": [
+      "ゴースト",
+      "どく"
+    ],
+    "hp": 60,
+    "atk": 65,
+    "def": 60,
+    "spa": 130,
+    "spd": 75,
+    "spe": 110,
+    "dexId": 94,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ケンタロス",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 75,
+    "atk": 100,
+    "def": 95,
+    "spa": 40,
+    "spd": 70,
+    "spe": 110,
+    "dexId": 128,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "エーフィ",
+    "types": [
+      "エスパー"
+    ],
+    "hp": 65,
+    "atk": 65,
+    "def": 60,
+    "spa": 130,
+    "spd": 95,
+    "spe": 110,
+    "dexId": 196,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ユキメノコ",
+    "types": [
+      "こおり",
+      "ゴースト"
+    ],
+    "hp": 70,
+    "atk": 80,
+    "def": 70,
+    "spa": 80,
+    "spd": 70,
+    "spe": 110,
+    "dexId": 478,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ゾロアーク(ヒスイ)",
+    "types": [
+      "ノーマル",
+      "ゴースト"
+    ],
+    "hp": 55,
+    "atk": 100,
+    "def": 60,
+    "spa": 125,
+    "spd": 60,
+    "spe": 110,
+    "dexId": 571,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ルガルガン(たそがれ)",
+    "types": [
+      "いわ"
+    ],
+    "hp": 75,
+    "atk": 117,
+    "def": 65,
+    "spa": 55,
+    "spd": 65,
+    "spe": 110,
+    "dexId": 745,
+    "varietyId": 10152,
+    "isMega": false
+  },
+  {
+    "name": "メガエルレイド",
+    "types": [
+      "エスパー",
+      "かくとう"
+    ],
+    "hp": 68,
+    "atk": 125,
+    "def": 65,
+    "spa": 65,
+    "spd": 115,
+    "spe": 110,
+    "dexId": 475,
+    "varietyId": 10068,
+    "isMega": true
+  },
+  {
+    "name": "メガライチュウX",
+    "types": [
+      "でんき",
+      "かくとう"
+    ],
+    "hp": 60,
+    "atk": 135,
+    "def": 95,
+    "spa": 90,
+    "spd": 95,
+    "spe": 110,
+    "dexId": 0,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガエアームド",
+    "types": [
+      "はがね",
+      "ひこう"
+    ],
+    "hp": 65,
+    "atk": 140,
+    "def": 110,
+    "spa": 40,
+    "spd": 100,
+    "spe": 110,
+    "dexId": 227,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "キュウコン(アローラ)",
+    "types": [
+      "こおり",
+      "フェアリー"
+    ],
+    "hp": 73,
+    "atk": 67,
+    "def": 75,
+    "spa": 81,
+    "spd": 100,
+    "spe": 109,
+    "dexId": 38,
+    "varietyId": 10104,
+    "isMega": false
+  },
+  {
+    "name": "ゴウカザル",
+    "types": [
+      "ほのお",
+      "かくとう"
+    ],
+    "hp": 76,
+    "atk": 104,
+    "def": 71,
+    "spa": 104,
+    "spd": 71,
+    "spe": 108,
+    "dexId": 392,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "レパルダス",
+    "types": [
+      "あく"
+    ],
+    "hp": 64,
+    "atk": 88,
+    "def": 50,
+    "spa": 88,
+    "spd": 50,
+    "spe": 106,
+    "dexId": 510,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "カエンジシ",
+    "types": [
+      "ほのお",
+      "ノーマル"
+    ],
+    "hp": 86,
+    "atk": 68,
+    "def": 72,
+    "spa": 109,
+    "spd": 66,
+    "spe": 106,
+    "dexId": 668,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ライボルト",
+    "types": [
+      "でんき"
+    ],
+    "hp": 70,
+    "atk": 75,
+    "def": 60,
+    "spa": 105,
+    "spd": 60,
+    "spe": 105,
+    "dexId": 310,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ミミロップ",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 65,
+    "atk": 76,
+    "def": 84,
+    "spa": 54,
+    "spd": 96,
+    "spe": 105,
+    "dexId": 428,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ゾロアーク",
+    "types": [
+      "あく"
+    ],
+    "hp": 60,
+    "atk": 105,
+    "def": 60,
+    "spa": 120,
+    "spd": 60,
+    "spe": 105,
+    "dexId": 571,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガカイロス",
+    "types": [
+      "むし"
+    ],
+    "hp": 65,
+    "atk": 125,
+    "def": 100,
+    "spa": 55,
+    "spd": 70,
+    "spe": 105,
+    "dexId": 127,
+    "varietyId": 10040,
+    "isMega": true
+  },
+  {
+    "name": "メガサメハダー",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "hp": 70,
+    "atk": 120,
+    "def": 40,
+    "spa": 95,
+    "spd": 40,
+    "spe": 105,
+    "dexId": 319,
+    "varietyId": 10070,
+    "isMega": true
+  },
+  {
+    "name": "マフォクシー",
+    "types": [
+      "ほのお",
+      "エスパー"
+    ],
+    "hp": 75,
+    "atk": 69,
+    "def": 72,
+    "spa": 114,
+    "spd": 100,
+    "spe": 104,
+    "dexId": 655,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ニャオニクス(オス)",
+    "types": [
+      "エスパー"
+    ],
+    "hp": 74,
+    "atk": 48,
+    "def": 76,
+    "spa": 83,
+    "spd": 81,
+    "spe": 104,
+    "dexId": 678,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ニャオニクス(メス)",
+    "types": [
+      "エスパー"
+    ],
+    "hp": 74,
+    "atk": 48,
+    "def": 76,
+    "spa": 83,
+    "spd": 81,
+    "spe": 104,
+    "dexId": 678,
+    "varietyId": 10025,
+    "isMega": false
+  },
+  {
+    "name": "エモンガ",
+    "types": [
+      "でんき",
+      "ひこう"
+    ],
+    "hp": 55,
+    "atk": 75,
+    "def": 60,
+    "spa": 75,
+    "spd": 60,
+    "spe": 103,
+    "dexId": 587,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガドリュウズ",
+    "types": [
+      "じめん",
+      "はがね"
+    ],
+    "hp": 110,
+    "atk": 165,
+    "def": 100,
+    "spa": 65,
+    "spd": 65,
+    "spe": 103,
+    "dexId": 530,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ガブリアス",
+    "types": [
+      "ドラゴン",
+      "じめん"
+    ],
+    "hp": 108,
+    "atk": 130,
+    "def": 95,
+    "spa": 80,
+    "spd": 85,
+    "spe": 102,
+    "dexId": 445,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "トリミアン",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 75,
+    "atk": 80,
+    "def": 60,
+    "spa": 65,
+    "spd": 90,
+    "spe": 102,
+    "dexId": 676,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガフラエッテ",
+    "types": [
+      "フェアリー"
+    ],
+    "hp": 74,
+    "atk": 85,
+    "def": 87,
+    "spa": 155,
+    "spd": 148,
+    "spe": 102,
+    "dexId": 670,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ピジョット",
+    "types": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "hp": 83,
+    "atk": 80,
+    "def": 75,
+    "spa": 70,
+    "spd": 70,
+    "spe": 101,
+    "dexId": 18,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "デデンネ",
+    "types": [
+      "でんき",
+      "フェアリー"
+    ],
+    "hp": 67,
+    "atk": 58,
+    "def": 57,
+    "spa": 81,
+    "spd": 67,
+    "spe": 101,
+    "dexId": 702,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガピジョット",
+    "types": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "hp": 83,
+    "atk": 80,
+    "def": 75,
+    "spa": 70,
+    "spd": 70,
+    "spe": 101,
+    "dexId": 18,
+    "varietyId": 10073,
+    "isMega": true
+  },
+  {
+    "name": "メガキラフロル",
+    "types": [
+      "いわ",
+      "どく"
+    ],
+    "hp": 83,
+    "atk": 90,
+    "def": 105,
+    "spa": 150,
+    "spd": 96,
+    "spe": 101,
+    "dexId": 970,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "リザードン",
+    "types": [
+      "ほのお",
+      "ひこう"
+    ],
+    "hp": 78,
+    "atk": 84,
+    "def": 78,
+    "spa": 109,
+    "spd": 85,
+    "spe": 100,
+    "dexId": 6,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "キュウコン",
+    "types": [
+      "ほのお"
+    ],
+    "hp": 73,
+    "atk": 76,
+    "def": 75,
+    "spa": 81,
+    "spd": 100,
+    "spe": 100,
+    "dexId": 38,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ケンタロス(パルデア単)",
+    "types": [
+      "かくとう"
+    ],
+    "hp": 75,
+    "atk": 110,
+    "def": 105,
+    "spa": 30,
+    "spd": 70,
+    "spe": 100,
+    "dexId": 128,
+    "varietyId": 10250,
+    "isMega": false
+  },
+  {
+    "name": "ケンタロス(パルデア炎)",
+    "types": [
+      "かくとう",
+      "ほのお"
+    ],
+    "hp": 75,
+    "atk": 110,
+    "def": 105,
+    "spa": 30,
+    "spd": 70,
+    "spe": 100,
+    "dexId": 128,
+    "varietyId": 10251,
+    "isMega": false
+  },
+  {
+    "name": "ケンタロス(パルデア水)",
+    "types": [
+      "かくとう",
+      "みず"
+    ],
+    "hp": 75,
+    "atk": 110,
+    "def": 105,
+    "spa": 30,
+    "spd": 70,
+    "spe": 100,
+    "dexId": 128,
+    "varietyId": 10252,
+    "isMega": false
+  },
+  {
+    "name": "バクフーン",
+    "types": [
+      "ほのお"
+    ],
+    "hp": 78,
+    "atk": 84,
+    "def": 78,
+    "spa": 109,
+    "spd": 85,
+    "spe": 100,
+    "dexId": 157,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ウルガモス",
+    "types": [
+      "むし",
+      "ほのお"
+    ],
+    "hp": 85,
+    "atk": 60,
+    "def": 65,
+    "spa": 135,
+    "spd": 105,
+    "spe": 100,
+    "dexId": 637,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "イルカマン(ナイーブ)",
+    "types": [
+      "みず"
+    ],
+    "hp": 100,
+    "atk": 70,
+    "def": 72,
+    "spa": 53,
+    "spd": 62,
+    "spe": 100,
+    "dexId": 964,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "イルカマン(マイティ)",
+    "types": [
+      "みず"
+    ],
+    "hp": 100,
+    "atk": 160,
+    "def": 107,
+    "spa": 106,
+    "spd": 87,
+    "spe": 100,
+    "dexId": 964,
+    "varietyId": 10256,
+    "isMega": false
+  },
+  {
+    "name": "メガリザードン",
+    "types": [
+      "ほのお",
+      "ひこう"
+    ],
+    "hp": 78,
+    "atk": 84,
+    "def": 78,
+    "spa": 109,
+    "spd": 85,
+    "spe": 100,
+    "dexId": 6,
+    "varietyId": 10034,
+    "isMega": true
+  },
+  {
+    "name": "メガガルーラ",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 105,
+    "atk": 95,
+    "def": 80,
+    "spa": 40,
+    "spd": 80,
+    "spe": 100,
+    "dexId": 115,
+    "varietyId": 10039,
+    "isMega": true
+  },
+  {
+    "name": "メガサーナイト",
+    "types": [
+      "エスパー",
+      "フェアリー"
+    ],
+    "hp": 68,
+    "atk": 65,
+    "def": 65,
+    "spa": 125,
+    "spd": 115,
+    "spe": 100,
+    "dexId": 282,
+    "varietyId": 10051,
+    "isMega": true
+  },
+  {
+    "name": "メガチャーレム",
+    "types": [
+      "かくとう",
+      "エスパー"
+    ],
+    "hp": 60,
+    "atk": 60,
+    "def": 75,
+    "spa": 60,
+    "spd": 75,
+    "spe": 100,
+    "dexId": 308,
+    "varietyId": 10054,
+    "isMega": true
+  },
+  {
+    "name": "メガオニゴーリ",
+    "types": [
+      "こおり"
+    ],
+    "hp": 80,
+    "atk": 80,
+    "def": 80,
+    "spa": 80,
+    "spd": 80,
+    "spe": 100,
+    "dexId": 362,
+    "varietyId": 10074,
+    "isMega": true
+  },
+  {
+    "name": "メガカイリュー",
+    "types": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "hp": 91,
+    "atk": 124,
+    "def": 115,
+    "spa": 145,
+    "spd": 125,
+    "spe": 100,
+    "dexId": 149,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガタイレーツ",
+    "types": [
+      "かくとう",
+      "はがね"
+    ],
+    "hp": 65,
+    "atk": 135,
+    "def": 135,
+    "spa": 70,
+    "spd": 65,
+    "spe": 100,
+    "dexId": 870,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガジガルデ",
+    "types": [
+      "ドラゴン",
+      "じめん"
+    ],
+    "hp": 216,
+    "atk": 70,
+    "def": 91,
+    "spa": 216,
+    "spd": 85,
+    "spe": 100,
+    "dexId": 718,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "パンプジン(小さい)",
+    "types": [
+      "くさ",
+      "ゴースト"
+    ],
+    "hp": 55,
+    "atk": 85,
+    "def": 122,
+    "spa": 58,
+    "spd": 75,
+    "spe": 99,
+    "dexId": 711,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "サザンドラ",
+    "types": [
+      "あく",
+      "ドラゴン"
+    ],
+    "hp": 92,
+    "atk": 105,
+    "def": 90,
+    "spa": 125,
+    "spd": 90,
+    "spe": 98,
+    "dexId": 635,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "モルペコ",
+    "types": [
+      "でんき",
+      "あく"
+    ],
+    "hp": 58,
+    "atk": 95,
+    "def": 58,
+    "spa": 70,
+    "spd": 58,
+    "spe": 97,
+    "dexId": 877,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ミミッキュ",
+    "types": [
+      "ゴースト",
+      "フェアリー"
+    ],
+    "hp": 55,
+    "atk": 90,
+    "def": 80,
+    "spa": 50,
+    "spd": 105,
+    "spe": 96,
+    "dexId": 778,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ウインディ",
+    "types": [
+      "ほのお"
+    ],
+    "hp": 90,
+    "atk": 110,
+    "def": 80,
+    "spa": 100,
+    "spd": 80,
+    "spe": 95,
+    "dexId": 59,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "バクフーン(ヒスイ)",
+    "types": [
+      "ほのお",
+      "ゴースト"
+    ],
+    "hp": 73,
+    "atk": 84,
+    "def": 78,
+    "spa": 119,
+    "spd": 85,
+    "spe": 95,
+    "dexId": 157,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヘルガー",
+    "types": [
+      "あく",
+      "ほのお"
+    ],
+    "hp": 75,
+    "atk": 90,
+    "def": 50,
+    "spa": 110,
+    "spd": 80,
+    "spe": 95,
+    "dexId": 229,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "サメハダー",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "hp": 70,
+    "atk": 120,
+    "def": 40,
+    "spa": 95,
+    "spd": 40,
+    "spe": 95,
+    "dexId": 319,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "リーフィア",
+    "types": [
+      "くさ"
+    ],
+    "hp": 65,
+    "atk": 110,
+    "def": 130,
+    "spa": 60,
+    "spd": 65,
+    "spe": 95,
+    "dexId": 470,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "グライオン",
+    "types": [
+      "じめん",
+      "ひこう"
+    ],
+    "hp": 75,
+    "atk": 95,
+    "def": 125,
+    "spa": 45,
+    "spd": 75,
+    "spe": 95,
+    "dexId": 472,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガヘルガー",
+    "types": [
+      "あく",
+      "ほのお"
+    ],
+    "hp": 75,
+    "atk": 90,
+    "def": 50,
+    "spa": 110,
+    "spd": 80,
+    "spe": 95,
+    "dexId": 229,
+    "varietyId": 10048,
+    "isMega": true
+  },
+  {
+    "name": "デカヌチャン",
+    "types": [
+      "フェアリー",
+      "はがね"
+    ],
+    "hp": 85,
+    "atk": 75,
+    "def": 77,
+    "spa": 70,
+    "spd": 105,
+    "spe": 94,
+    "dexId": 959,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ワルビアル",
+    "types": [
+      "じめん",
+      "あく"
+    ],
+    "hp": 95,
+    "atk": 117,
+    "def": 80,
+    "spa": 65,
+    "spd": 70,
+    "spe": 92,
+    "dexId": 553,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガガブリアス",
+    "types": [
+      "ドラゴン",
+      "じめん"
+    ],
+    "hp": 108,
+    "atk": 130,
+    "def": 95,
+    "spa": 80,
+    "spd": 85,
+    "spe": 92,
+    "dexId": 445,
+    "varietyId": 10058,
+    "isMega": true
+  },
+  {
+    "name": "メガシャリタツ",
+    "types": [
+      "ドラゴン",
+      "みず"
+    ],
+    "hp": 68,
+    "atk": 65,
+    "def": 90,
+    "spa": 135,
+    "spd": 125,
+    "spe": 92,
+    "dexId": 978,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ロトム",
+    "types": [
+      "でんき",
+      "ゴースト"
+    ],
+    "hp": 50,
+    "atk": 50,
+    "def": 77,
+    "spa": 95,
+    "spd": 77,
+    "spe": 91,
+    "dexId": 479,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ピカチュウ",
+    "types": [
+      "でんき"
+    ],
+    "hp": 35,
+    "atk": 55,
+    "def": 40,
+    "spa": 50,
+    "spd": 50,
+    "spe": 90,
+    "dexId": 25,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ウインディ(ヒスイ)",
+    "types": [
+      "ほのお",
+      "いわ"
+    ],
+    "hp": 95,
+    "atk": 115,
+    "def": 80,
+    "spa": 95,
+    "spd": 80,
+    "spe": 90,
+    "dexId": 59,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ガルーラ",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 105,
+    "atk": 95,
+    "def": 80,
+    "spa": 40,
+    "spd": 80,
+    "spe": 90,
+    "dexId": 115,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ロズレイド",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "hp": 60,
+    "atk": 70,
+    "def": 65,
+    "spa": 125,
+    "spd": 105,
+    "spe": 90,
+    "dexId": 407,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ルカリオ",
+    "types": [
+      "かくとう",
+      "はがね"
+    ],
+    "hp": 70,
+    "atk": 110,
+    "def": 70,
+    "spa": 115,
+    "spd": 70,
+    "spe": 90,
+    "dexId": 448,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガシャンデラ",
+    "types": [
+      "ゴースト",
+      "ほのお"
+    ],
+    "hp": 60,
+    "atk": 75,
+    "def": 110,
+    "spa": 175,
+    "spd": 110,
+    "spe": 90,
+    "dexId": 609,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ビビヨン",
+    "types": [
+      "むし",
+      "ひこう"
+    ],
+    "hp": 80,
+    "atk": 52,
+    "def": 50,
+    "spa": 90,
+    "spd": 50,
+    "spe": 89,
+    "dexId": 666,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガガメノデス",
+    "types": [
+      "いわ",
+      "かくとう"
+    ],
+    "hp": 72,
+    "atk": 140,
+    "def": 130,
+    "spa": 64,
+    "spd": 106,
+    "spe": 88,
+    "dexId": 689,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガカラマネロ",
+    "types": [
+      "あく",
+      "エスパー"
+    ],
+    "hp": 86,
+    "atk": 102,
+    "def": 88,
+    "spa": 98,
+    "spd": 120,
+    "spe": 88,
+    "dexId": 687,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガセグレイブ",
+    "types": [
+      "ドラゴン",
+      "こおり"
+    ],
+    "hp": 115,
+    "atk": 175,
+    "def": 117,
+    "spa": 105,
+    "spd": 101,
+    "spe": 87,
+    "dexId": 998,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ロトム(ヒート)",
+    "types": [
+      "でんき",
+      "ほのお"
+    ],
+    "hp": 50,
+    "atk": 65,
+    "def": 107,
+    "spa": 105,
+    "spd": 107,
+    "spe": 86,
+    "dexId": 479,
+    "varietyId": 10008,
+    "isMega": false
+  },
+  {
+    "name": "ロトム(ウォッシュ)",
+    "types": [
+      "でんき",
+      "みず"
+    ],
+    "hp": 50,
+    "atk": 65,
+    "def": 107,
+    "spa": 105,
+    "spd": 107,
+    "spe": 86,
+    "dexId": 479,
+    "varietyId": 10009,
+    "isMega": false
+  },
+  {
+    "name": "ロトム(カット)",
+    "types": [
+      "でんき",
+      "くさ"
+    ],
+    "hp": 50,
+    "atk": 65,
+    "def": 107,
+    "spa": 105,
+    "spd": 107,
+    "spe": 86,
+    "dexId": 479,
+    "varietyId": 10012,
+    "isMega": false
+  },
+  {
+    "name": "ロトム(スピン)",
+    "types": [
+      "でんき",
+      "ひこう"
+    ],
+    "hp": 50,
+    "atk": 65,
+    "def": 107,
+    "spa": 105,
+    "spd": 107,
+    "spe": 86,
+    "dexId": 479,
+    "varietyId": 10011,
+    "isMega": false
+  },
+  {
+    "name": "ロトム(フロスト)",
+    "types": [
+      "でんき",
+      "こおり"
+    ],
+    "hp": 50,
+    "atk": 65,
+    "def": 107,
+    "spa": 105,
+    "spd": 107,
+    "spe": 86,
+    "dexId": 479,
+    "varietyId": 10010,
+    "isMega": false
+  },
+  {
+    "name": "カイロス",
+    "types": [
+      "むし"
+    ],
+    "hp": 65,
+    "atk": 125,
+    "def": 100,
+    "spa": 55,
+    "spd": 70,
+    "spe": 85,
+    "dexId": 127,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヘラクロス",
+    "types": [
+      "むし",
+      "かくとう"
+    ],
+    "hp": 80,
+    "atk": 125,
+    "def": 75,
+    "spa": 40,
+    "spd": 95,
+    "spe": 85,
+    "dexId": 214,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ダイケンキ(ヒスイ)",
+    "types": [
+      "みず",
+      "あく"
+    ],
+    "hp": 90,
+    "atk": 108,
+    "def": 80,
+    "spa": 100,
+    "spd": 65,
+    "spe": 85,
+    "dexId": 503,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ダゲキ",
+    "types": [
+      "かくとう"
+    ],
+    "hp": 75,
+    "atk": 125,
+    "def": 75,
+    "spa": 30,
+    "spd": 75,
+    "spe": 85,
+    "dexId": 539,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ジャラランガ",
+    "types": [
+      "ドラゴン",
+      "かくとう"
+    ],
+    "hp": 75,
+    "atk": 110,
+    "def": 125,
+    "spa": 100,
+    "spd": 105,
+    "spe": 85,
+    "dexId": 784,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "バサギリ",
+    "types": [
+      "むし",
+      "いわ"
+    ],
+    "hp": 70,
+    "atk": 135,
+    "def": 95,
+    "spa": 45,
+    "spd": 70,
+    "spe": 85,
+    "dexId": 900,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ウェーニバル",
+    "types": [
+      "みず",
+      "かくとう"
+    ],
+    "hp": 85,
+    "atk": 120,
+    "def": 80,
+    "spa": 85,
+    "spd": 75,
+    "spe": 85,
+    "dexId": 914,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ソウブレイズ",
+    "types": [
+      "ほのお",
+      "あく"
+    ],
+    "hp": 75,
+    "atk": 125,
+    "def": 80,
+    "spa": 60,
+    "spd": 100,
+    "spe": 85,
+    "dexId": 937,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ブリジュラス",
+    "types": [
+      "はがね",
+      "ドラゴン"
+    ],
+    "hp": 90,
+    "atk": 105,
+    "def": 130,
+    "spa": 125,
+    "spd": 65,
+    "spe": 85,
+    "dexId": 1018,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガヘラクロス",
+    "types": [
+      "むし",
+      "かくとう"
+    ],
+    "hp": 80,
+    "atk": 125,
+    "def": 75,
+    "spa": 40,
+    "spd": 95,
+    "spe": 85,
+    "dexId": 214,
+    "varietyId": 10047,
+    "isMega": true
+  },
+  {
+    "name": "パンプジン(普通)",
+    "types": [
+      "くさ",
+      "ゴースト"
+    ],
+    "hp": 65,
+    "atk": 90,
+    "def": 122,
+    "spa": 58,
+    "spd": 75,
+    "spe": 84,
+    "dexId": 711,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ルガルガン(まよなか)",
+    "types": [
+      "いわ"
+    ],
+    "hp": 85,
+    "atk": 115,
+    "def": 75,
+    "spa": 55,
+    "spd": 75,
+    "spe": 82,
+    "dexId": 745,
+    "varietyId": 10126,
+    "isMega": false
+  },
+  {
+    "name": "オトシドリ",
+    "types": [
+      "ひこう",
+      "あく"
+    ],
+    "hp": 70,
+    "atk": 103,
+    "def": 85,
+    "spa": 60,
+    "spd": 85,
+    "spe": 82,
+    "dexId": 962,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ギャラドス",
+    "types": [
+      "みず",
+      "ひこう"
+    ],
+    "hp": 95,
+    "atk": 125,
+    "def": 79,
+    "spa": 60,
+    "spd": 100,
+    "spe": 81,
+    "dexId": 130,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ミロカロス",
+    "types": [
+      "みず"
+    ],
+    "hp": 95,
+    "atk": 60,
+    "def": 79,
+    "spa": 100,
+    "spd": 125,
+    "spe": 81,
+    "dexId": 350,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガギャラドス",
+    "types": [
+      "みず",
+      "ひこう"
+    ],
+    "hp": 95,
+    "atk": 125,
+    "def": 79,
+    "spa": 60,
+    "spd": 100,
+    "spe": 81,
+    "dexId": 130,
+    "varietyId": 10041,
+    "isMega": true
+  },
+  {
+    "name": "フシギバナ",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "hp": 80,
+    "atk": 82,
+    "def": 83,
+    "spa": 100,
+    "spd": 100,
+    "spe": 80,
+    "dexId": 3,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "アーボック",
+    "types": [
+      "どく"
+    ],
+    "hp": 60,
+    "atk": 95,
+    "def": 69,
+    "spa": 65,
+    "spd": 79,
+    "spe": 80,
+    "dexId": 24,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "カイリュー",
+    "types": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "hp": 91,
+    "atk": 134,
+    "def": 95,
+    "spa": 100,
+    "spd": 100,
+    "spe": 80,
+    "dexId": 149,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガニウム",
+    "types": [
+      "くさ"
+    ],
+    "hp": 80,
+    "atk": 82,
+    "def": 100,
+    "spa": 83,
+    "spd": 100,
+    "spe": 80,
+    "dexId": 154,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "サーナイト",
+    "types": [
+      "エスパー",
+      "フェアリー"
+    ],
+    "hp": 68,
+    "atk": 65,
+    "def": 65,
+    "spa": 125,
+    "spd": 115,
+    "spe": 80,
+    "dexId": 282,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "チャーレム",
+    "types": [
+      "かくとう",
+      "エスパー"
+    ],
+    "hp": 60,
+    "atk": 60,
+    "def": 75,
+    "spa": 60,
+    "spd": 75,
+    "spe": 80,
+    "dexId": 308,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "チルタリス",
+    "types": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "hp": 75,
+    "atk": 70,
+    "def": 90,
+    "spa": 70,
+    "spd": 105,
+    "spe": 80,
+    "dexId": 334,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "オニゴーリ",
+    "types": [
+      "こおり"
+    ],
+    "hp": 80,
+    "atk": 80,
+    "def": 80,
+    "spa": 80,
+    "spd": 80,
+    "spe": 80,
+    "dexId": 362,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "マンムー",
+    "types": [
+      "こおり",
+      "じめん"
+    ],
+    "hp": 110,
+    "atk": 130,
+    "def": 80,
+    "spa": 70,
+    "spd": 60,
+    "spe": 80,
+    "dexId": 473,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "エルレイド",
+    "types": [
+      "エスパー",
+      "かくとう"
+    ],
+    "hp": 68,
+    "atk": 125,
+    "def": 65,
+    "spa": 65,
+    "spd": 115,
+    "spe": 80,
+    "dexId": 475,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "シャンデラ",
+    "types": [
+      "ゴースト",
+      "ほのお"
+    ],
+    "hp": 60,
+    "atk": 55,
+    "def": 90,
+    "spa": 145,
+    "spd": 90,
+    "spe": 80,
+    "dexId": 609,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヌメルゴン",
+    "types": [
+      "ドラゴン"
+    ],
+    "hp": 90,
+    "atk": 100,
+    "def": 70,
+    "spa": 110,
+    "spd": 150,
+    "spe": 80,
+    "dexId": 706,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ナゲツケサル",
+    "types": [
+      "かくとう"
+    ],
+    "hp": 100,
+    "atk": 120,
+    "def": 90,
+    "spa": 40,
+    "spd": 60,
+    "spe": 80,
+    "dexId": 766,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガフシギバナ",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "hp": 80,
+    "atk": 82,
+    "def": 83,
+    "spa": 100,
+    "spd": 100,
+    "spe": 80,
+    "dexId": 3,
+    "varietyId": 10033,
+    "isMega": true
+  },
+  {
+    "name": "メガチルタリス",
+    "types": [
+      "ドラゴン",
+      "ひこう"
+    ],
+    "hp": 75,
+    "atk": 70,
+    "def": 90,
+    "spa": 70,
+    "spd": 105,
+    "spe": 80,
+    "dexId": 334,
+    "varietyId": 10067,
+    "isMega": true
+  },
+  {
+    "name": "メガメガニウム",
+    "types": [
+      "くさ",
+      "フェアリー"
+    ],
+    "hp": 80,
+    "atk": 92,
+    "def": 115,
+    "spa": 143,
+    "spd": 115,
+    "spe": 80,
+    "dexId": 154,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガシビルドン",
+    "types": [
+      "でんき",
+      "みず"
+    ],
+    "hp": 85,
+    "atk": 145,
+    "def": 80,
+    "spa": 135,
+    "spd": 90,
+    "spe": 80,
+    "dexId": 604,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "バイバニラ",
+    "types": [
+      "こおり"
+    ],
+    "hp": 71,
+    "atk": 95,
+    "def": 85,
+    "spa": 110,
+    "spd": 95,
+    "spe": 79,
+    "dexId": 584,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "カメックス",
+    "types": [
+      "みず"
+    ],
+    "hp": 79,
+    "atk": 83,
+    "def": 100,
+    "spa": 85,
+    "spd": 105,
+    "spe": 78,
+    "dexId": 9,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "オーダイル",
+    "types": [
+      "みず"
+    ],
+    "hp": 85,
+    "atk": 105,
+    "def": 100,
+    "spa": 79,
+    "spd": 83,
+    "spe": 78,
+    "dexId": 160,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ホルード",
+    "types": [
+      "ノーマル",
+      "じめん"
+    ],
+    "hp": 85,
+    "atk": 56,
+    "def": 77,
+    "spa": 50,
+    "spd": 77,
+    "spe": 78,
+    "dexId": 660,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "イダイトウ(オス)",
+    "types": [
+      "みず",
+      "ゴースト"
+    ],
+    "hp": 120,
+    "atk": 112,
+    "def": 65,
+    "spa": 80,
+    "spd": 75,
+    "spe": 78,
+    "dexId": 902,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "イダイトウ(メス)",
+    "types": [
+      "みず",
+      "ゴースト"
+    ],
+    "hp": 120,
+    "atk": 92,
+    "def": 65,
+    "spa": 100,
+    "spd": 75,
+    "spe": 78,
+    "dexId": 902,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガカメックス",
+    "types": [
+      "みず"
+    ],
+    "hp": 79,
+    "atk": 83,
+    "def": 100,
+    "spa": 85,
+    "spd": 105,
+    "spe": 78,
+    "dexId": 9,
+    "varietyId": 10036,
+    "isMega": true
+  },
+  {
+    "name": "メガオーダイル",
+    "types": [
+      "みず",
+      "ドラゴン"
+    ],
+    "hp": 85,
+    "atk": 160,
+    "def": 125,
+    "spa": 89,
+    "spd": 93,
+    "spe": 78,
+    "dexId": 160,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ミルホッグ",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 60,
+    "atk": 85,
+    "def": 69,
+    "spa": 60,
+    "spd": 69,
+    "spe": 77,
+    "dexId": 505,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "スピアー",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "hp": 65,
+    "atk": 90,
+    "def": 40,
+    "spa": 45,
+    "spd": 80,
+    "spe": 75,
+    "dexId": 15,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "アブソル",
+    "types": [
+      "あく"
+    ],
+    "hp": 65,
+    "atk": 130,
+    "def": 60,
+    "spa": 75,
+    "spd": 60,
+    "spe": 75,
+    "dexId": 359,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ダストダス",
+    "types": [
+      "どく"
+    ],
+    "hp": 80,
+    "atk": 95,
+    "def": 82,
+    "spa": 60,
+    "spd": 82,
+    "spe": 75,
+    "dexId": 569,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "フラージェス",
+    "types": [
+      "フェアリー"
+    ],
+    "hp": 78,
+    "atk": 65,
+    "def": 68,
+    "spa": 112,
+    "spd": 154,
+    "spe": 75,
+    "dexId": 671,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "クレッフィ",
+    "types": [
+      "はがね",
+      "フェアリー"
+    ],
+    "hp": 57,
+    "atk": 80,
+    "def": 91,
+    "spa": 80,
+    "spd": 87,
+    "spe": 75,
+    "dexId": 707,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ワッカネズミ",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 50,
+    "atk": 50,
+    "def": 45,
+    "spa": 40,
+    "spd": 45,
+    "spe": 75,
+    "dexId": 924,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "グレンアルマ",
+    "types": [
+      "ほのお",
+      "エスパー"
+    ],
+    "hp": 85,
+    "atk": 60,
+    "def": 100,
+    "spa": 125,
+    "spd": 80,
+    "spe": 75,
+    "dexId": 936,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "スコヴィラン",
+    "types": [
+      "くさ",
+      "ほのお"
+    ],
+    "hp": 65,
+    "atk": 108,
+    "def": 65,
+    "spa": 108,
+    "spd": 65,
+    "spe": 75,
+    "dexId": 952,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガスピアー",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "hp": 65,
+    "atk": 90,
+    "def": 40,
+    "spa": 45,
+    "spd": 80,
+    "spe": 75,
+    "dexId": 15,
+    "varietyId": 10090,
+    "isMega": true
+  },
+  {
+    "name": "メガハッサム",
+    "types": [
+      "むし",
+      "はがね"
+    ],
+    "hp": 70,
+    "atk": 130,
+    "def": 100,
+    "spa": 55,
+    "spd": 80,
+    "spe": 75,
+    "dexId": 212,
+    "varietyId": 10046,
+    "isMega": true
+  },
+  {
+    "name": "メガジュペッタ",
+    "types": [
+      "ゴースト"
+    ],
+    "hp": 64,
+    "atk": 115,
+    "def": 65,
+    "spa": 83,
+    "spd": 63,
+    "spe": 75,
+    "dexId": 354,
+    "varietyId": 10056,
+    "isMega": true
+  },
+  {
+    "name": "メガエンブオー",
+    "types": [
+      "ほのお",
+      "かくとう"
+    ],
+    "hp": 110,
+    "atk": 148,
+    "def": 75,
+    "spa": 110,
+    "spd": 110,
+    "spe": 75,
+    "dexId": 500,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガスコヴィラン",
+    "types": [
+      "くさ",
+      "ほのお"
+    ],
+    "hp": 65,
+    "atk": 138,
+    "def": 85,
+    "spa": 138,
+    "spd": 85,
+    "spe": 75,
+    "dexId": 952,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ペロリーム",
+    "types": [
+      "フェアリー"
+    ],
+    "hp": 82,
+    "atk": 80,
+    "def": 86,
+    "spa": 85,
+    "spd": 75,
+    "spe": 72,
+    "dexId": 685,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "アマージョ",
+    "types": [
+      "くさ"
+    ],
+    "hp": 72,
+    "atk": 120,
+    "def": 98,
+    "spa": 50,
+    "spd": 98,
+    "spe": 72,
+    "dexId": 763,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ガチゴラス",
+    "types": [
+      "いわ",
+      "ドラゴン"
+    ],
+    "hp": 82,
+    "atk": 121,
+    "def": 119,
+    "spa": 69,
+    "spd": 59,
+    "spe": 71,
+    "dexId": 697,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "サダイジャ",
+    "types": [
+      "じめん"
+    ],
+    "hp": 72,
+    "atk": 107,
+    "def": 125,
+    "spa": 65,
+    "spd": 70,
+    "spe": 71,
+    "dexId": 844,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガバンギラス",
+    "types": [
+      "いわ",
+      "あく"
+    ],
+    "hp": 100,
+    "atk": 134,
+    "def": 110,
+    "spa": 95,
+    "spd": 100,
+    "spe": 71,
+    "dexId": 248,
+    "varietyId": 10049,
+    "isMega": true
+  },
+  {
+    "name": "ウツボット",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "hp": 80,
+    "atk": 105,
+    "def": 65,
+    "spa": 100,
+    "spd": 70,
+    "spe": 70,
+    "dexId": 71,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ニョロトノ",
+    "types": [
+      "みず"
+    ],
+    "hp": 90,
+    "atk": 75,
+    "def": 75,
+    "spa": 90,
+    "spd": 100,
+    "spe": 70,
+    "dexId": 186,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "エアームド",
+    "types": [
+      "はがね",
+      "ひこう"
+    ],
+    "hp": 65,
+    "atk": 80,
+    "def": 140,
+    "spa": 40,
+    "spd": 70,
+    "spe": 70,
+    "dexId": 227,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ポワルン",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 70,
+    "atk": 70,
+    "def": 70,
+    "spa": 70,
+    "spd": 70,
+    "spe": 70,
+    "dexId": 351,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "レントラー",
+    "types": [
+      "でんき"
+    ],
+    "hp": 80,
+    "atk": 120,
+    "def": 79,
+    "spa": 95,
+    "spd": 79,
+    "spe": 70,
+    "dexId": 405,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ダイケンキ",
+    "types": [
+      "みず"
+    ],
+    "hp": 95,
+    "atk": 100,
+    "def": 85,
+    "spa": 108,
+    "spd": 70,
+    "spe": 70,
+    "dexId": 503,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "エリキテル",
+    "types": [
+      "でんき",
+      "ノーマル"
+    ],
+    "hp": 44,
+    "atk": 38,
+    "def": 33,
+    "spa": 61,
+    "spd": 43,
+    "spe": 70,
+    "dexId": 694,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ジュナイパー",
+    "types": [
+      "くさ",
+      "ゴースト"
+    ],
+    "hp": 78,
+    "atk": 107,
+    "def": 75,
+    "spa": 100,
+    "spd": 100,
+    "spe": 70,
+    "dexId": 724,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "アップリュ",
+    "types": [
+      "くさ",
+      "ほのお"
+    ],
+    "hp": 70,
+    "atk": 110,
+    "def": 80,
+    "spa": 95,
+    "spd": 60,
+    "spe": 70,
+    "dexId": 0,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ポットデス",
+    "types": [
+      "ゴースト"
+    ],
+    "hp": 60,
+    "atk": 65,
+    "def": 65,
+    "spa": 134,
+    "spd": 114,
+    "spe": 70,
+    "dexId": 855,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "バリコオル",
+    "types": [
+      "こおり",
+      "エスパー"
+    ],
+    "hp": 80,
+    "atk": 85,
+    "def": 75,
+    "spa": 110,
+    "spd": 100,
+    "spe": 70,
+    "dexId": 866,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガピクシー",
+    "types": [
+      "フェアリー",
+      "ひこう"
+    ],
+    "hp": 95,
+    "atk": 80,
+    "def": 93,
+    "spa": 135,
+    "spd": 110,
+    "spe": 70,
+    "dexId": 36,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガウツボット",
+    "types": [
+      "くさ",
+      "どく"
+    ],
+    "hp": 80,
+    "atk": 125,
+    "def": 85,
+    "spa": 135,
+    "spd": 95,
+    "spe": 70,
+    "dexId": 71,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "パンプジン(大きい)",
+    "types": [
+      "くさ",
+      "ゴースト"
+    ],
+    "hp": 75,
+    "atk": 95,
+    "def": 122,
+    "spa": 58,
+    "spd": 75,
+    "spe": 69,
+    "dexId": 711,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ガメノデス",
+    "types": [
+      "いわ",
+      "みず"
+    ],
+    "hp": 72,
+    "atk": 105,
+    "def": 115,
+    "spa": 54,
+    "spd": 86,
+    "spe": 68,
+    "dexId": 689,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガズルズキン",
+    "types": [
+      "あく",
+      "かくとう"
+    ],
+    "hp": 65,
+    "atk": 130,
+    "def": 135,
+    "spa": 55,
+    "spd": 135,
+    "spe": 68,
+    "dexId": 560,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "アーマーガア",
+    "types": [
+      "ひこう",
+      "はがね"
+    ],
+    "hp": 98,
+    "atk": 87,
+    "def": 105,
+    "spa": 53,
+    "spd": 85,
+    "spe": 67,
+    "dexId": 823,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ラウドボーン",
+    "types": [
+      "ほのお",
+      "ゴースト"
+    ],
+    "hp": 104,
+    "atk": 75,
+    "def": 100,
+    "spa": 110,
+    "spd": 75,
+    "spe": 66,
+    "dexId": 911,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "シャワーズ",
+    "types": [
+      "みず"
+    ],
+    "hp": 130,
+    "atk": 65,
+    "def": 60,
+    "spa": 110,
+    "spd": 95,
+    "spe": 65,
+    "dexId": 134,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ブースター",
+    "types": [
+      "ほのお"
+    ],
+    "hp": 65,
+    "atk": 130,
+    "def": 60,
+    "spa": 95,
+    "spd": 110,
+    "spe": 65,
+    "dexId": 136,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ブラッキー",
+    "types": [
+      "あく"
+    ],
+    "hp": 95,
+    "atk": 65,
+    "def": 110,
+    "spa": 60,
+    "spd": 130,
+    "spe": 65,
+    "dexId": 197,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ハッサム",
+    "types": [
+      "むし",
+      "はがね"
+    ],
+    "hp": 70,
+    "atk": 130,
+    "def": 100,
+    "spa": 55,
+    "spd": 80,
+    "spe": 65,
+    "dexId": 212,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ペリッパー",
+    "types": [
+      "みず",
+      "ひこう"
+    ],
+    "hp": 60,
+    "atk": 50,
+    "def": 100,
+    "spa": 95,
+    "spd": 70,
+    "spe": 65,
+    "dexId": 279,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ジュペッタ",
+    "types": [
+      "ゴースト"
+    ],
+    "hp": 64,
+    "atk": 115,
+    "def": 65,
+    "spa": 83,
+    "spd": 63,
+    "spe": 65,
+    "dexId": 354,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "チリーン",
+    "types": [
+      "エスパー"
+    ],
+    "hp": 75,
+    "atk": 50,
+    "def": 80,
+    "spa": 95,
+    "spd": 90,
+    "spe": 65,
+    "dexId": 358,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "グレイシア",
+    "types": [
+      "こおり"
+    ],
+    "hp": 65,
+    "atk": 60,
+    "def": 110,
+    "spa": 130,
+    "spd": 95,
+    "spe": 65,
+    "dexId": 471,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "エンブオー",
+    "types": [
+      "ほのお",
+      "かくとう"
+    ],
+    "hp": 110,
+    "atk": 123,
+    "def": 65,
+    "spa": 100,
+    "spd": 65,
+    "spe": 65,
+    "dexId": 500,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "アヤシシ",
+    "types": [
+      "ノーマル",
+      "エスパー"
+    ],
+    "hp": 103,
+    "atk": 105,
+    "def": 72,
+    "spa": 105,
+    "spd": 75,
+    "spe": 65,
+    "dexId": 899,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ミミズズ",
+    "types": [
+      "はがね"
+    ],
+    "hp": 70,
+    "atk": 85,
+    "def": 145,
+    "spa": 60,
+    "spd": 55,
+    "spe": 65,
+    "dexId": 968,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガチリーン",
+    "types": [
+      "エスパー",
+      "はがね"
+    ],
+    "hp": 75,
+    "atk": 50,
+    "def": 110,
+    "spa": 135,
+    "spd": 120,
+    "spe": 65,
+    "dexId": 358,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ヤナップ",
+    "types": [
+      "くさ"
+    ],
+    "hp": 50,
+    "atk": 53,
+    "def": 48,
+    "spa": 53,
+    "spd": 48,
+    "spe": 64,
+    "dexId": 511,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "バオップ",
+    "types": [
+      "ほのお"
+    ],
+    "hp": 50,
+    "atk": 53,
+    "def": 48,
+    "spa": 53,
+    "spd": 48,
+    "spe": 64,
+    "dexId": 513,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヒヤップ",
+    "types": [
+      "みず"
+    ],
+    "hp": 50,
+    "atk": 53,
+    "def": 48,
+    "spa": 53,
+    "spd": 48,
+    "spe": 64,
+    "dexId": 515,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ブリガロン",
+    "types": [
+      "くさ",
+      "かくとう"
+    ],
+    "hp": 88,
+    "atk": 107,
+    "def": 122,
+    "spa": 74,
+    "spd": 75,
+    "spe": 64,
+    "dexId": 652,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "マホイップ",
+    "types": [
+      "フェアリー"
+    ],
+    "hp": 65,
+    "atk": 60,
+    "def": 75,
+    "spa": 110,
+    "spd": 121,
+    "spe": 64,
+    "dexId": 869,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガペンドラー",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "hp": 60,
+    "atk": 140,
+    "def": 149,
+    "spa": 75,
+    "spd": 99,
+    "spe": 62,
+    "dexId": 545,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "バンギラス",
+    "types": [
+      "いわ",
+      "あく"
+    ],
+    "hp": 100,
+    "atk": 134,
+    "def": 110,
+    "spa": 95,
+    "spd": 100,
+    "spe": 61,
+    "dexId": 248,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "エンペルト",
+    "types": [
+      "みず",
+      "はがね"
+    ],
+    "hp": 84,
+    "atk": 86,
+    "def": 88,
+    "spa": 111,
+    "spd": 101,
+    "spe": 60,
+    "dexId": 395,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ユキノオー",
+    "types": [
+      "くさ",
+      "こおり"
+    ],
+    "hp": 90,
+    "atk": 92,
+    "def": 75,
+    "spa": 92,
+    "spd": 85,
+    "spe": 60,
+    "dexId": 460,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ギルガルド(シールド)",
+    "types": [
+      "はがね",
+      "ゴースト"
+    ],
+    "hp": 60,
+    "atk": 50,
+    "def": 140,
+    "spa": 50,
+    "spd": 140,
+    "spe": 60,
+    "dexId": 681,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ギルガルド(ブレード)",
+    "types": [
+      "はがね",
+      "ゴースト"
+    ],
+    "hp": 60,
+    "atk": 140,
+    "def": 50,
+    "spa": 140,
+    "spd": 50,
+    "spe": 60,
+    "dexId": 681,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ニンフィア",
+    "types": [
+      "フェアリー"
+    ],
+    "hp": 95,
+    "atk": 65,
+    "def": 65,
+    "spa": 110,
+    "spd": 130,
+    "spe": 60,
+    "dexId": 700,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヌメルゴン(ヒスイ)",
+    "types": [
+      "はがね",
+      "ドラゴン"
+    ],
+    "hp": 80,
+    "atk": 100,
+    "def": 100,
+    "spa": 110,
+    "spd": 150,
+    "spe": 60,
+    "dexId": 706,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ジュナイパー(ヒスイ)",
+    "types": [
+      "くさ",
+      "かくとう"
+    ],
+    "hp": 88,
+    "atk": 112,
+    "def": 80,
+    "spa": 95,
+    "spd": 95,
+    "spe": 60,
+    "dexId": 724,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ガオガエン",
+    "types": [
+      "ほのお",
+      "あく"
+    ],
+    "hp": 95,
+    "atk": 115,
+    "def": 90,
+    "spa": 80,
+    "spd": 90,
+    "spe": 60,
+    "dexId": 727,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "アシレーヌ",
+    "types": [
+      "みず",
+      "フェアリー"
+    ],
+    "hp": 80,
+    "atk": 74,
+    "def": 74,
+    "spa": 126,
+    "spd": 116,
+    "spe": 60,
+    "dexId": 730,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ドデカバシ",
+    "types": [
+      "ノーマル",
+      "ひこう"
+    ],
+    "hp": 80,
+    "atk": 120,
+    "def": 75,
+    "spa": 75,
+    "spd": 75,
+    "spe": 60,
+    "dexId": 733,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヤレユータン",
+    "types": [
+      "ノーマル",
+      "エスパー"
+    ],
+    "hp": 90,
+    "atk": 60,
+    "def": 80,
+    "spa": 90,
+    "spd": 110,
+    "spe": 60,
+    "dexId": 765,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "リキキリン",
+    "types": [
+      "ノーマル",
+      "エスパー"
+    ],
+    "hp": 120,
+    "atk": 90,
+    "def": 70,
+    "spa": 110,
+    "spd": 70,
+    "spe": 60,
+    "dexId": 981,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ラムパルド",
+    "types": [
+      "いわ"
+    ],
+    "hp": 97,
+    "atk": 165,
+    "def": 60,
+    "spa": 65,
+    "spd": 50,
+    "spe": 58,
+    "dexId": 409,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ゴロンダ",
+    "types": [
+      "かくとう",
+      "あく"
+    ],
+    "hp": 95,
+    "atk": 124,
+    "def": 78,
+    "spa": 69,
+    "spd": 71,
+    "spe": 58,
+    "dexId": 675,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "アマルルガ",
+    "types": [
+      "いわ",
+      "こおり"
+    ],
+    "hp": 123,
+    "atk": 77,
+    "def": 72,
+    "spa": 99,
+    "spd": 92,
+    "spe": 58,
+    "dexId": 699,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ドダイトス",
+    "types": [
+      "くさ",
+      "じめん"
+    ],
+    "hp": 95,
+    "atk": 109,
+    "def": 105,
+    "spa": 75,
+    "spd": 85,
+    "spe": 56,
+    "dexId": 389,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "オーロット",
+    "types": [
+      "くさ",
+      "ゴースト"
+    ],
+    "hp": 85,
+    "atk": 110,
+    "def": 76,
+    "spa": 65,
+    "spd": 82,
+    "spe": 56,
+    "dexId": 709,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "カイリキー",
+    "types": [
+      "かくとう"
+    ],
+    "hp": 90,
+    "atk": 130,
+    "def": 80,
+    "spa": 65,
+    "spd": 85,
+    "spe": 55,
+    "dexId": 68,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "デンリュウ",
+    "types": [
+      "でんき"
+    ],
+    "hp": 90,
+    "atk": 75,
+    "def": 85,
+    "spa": 115,
+    "spd": 90,
+    "spe": 55,
+    "dexId": 181,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ゴルーグ",
+    "types": [
+      "じめん",
+      "ゴースト"
+    ],
+    "hp": 89,
+    "atk": 124,
+    "def": 80,
+    "spa": 55,
+    "spd": 80,
+    "spe": 55,
+    "dexId": 623,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガデンリュウ",
+    "types": [
+      "でんき"
+    ],
+    "hp": 90,
+    "atk": 75,
+    "def": 85,
+    "spa": 115,
+    "spd": 90,
+    "spe": 55,
+    "dexId": 181,
+    "varietyId": 10045,
+    "isMega": true
+  },
+  {
+    "name": "メガゴルーグ",
+    "types": [
+      "じめん",
+      "ゴースト"
+    ],
+    "hp": 89,
+    "atk": 159,
+    "def": 105,
+    "spa": 70,
+    "spd": 105,
+    "spe": 55,
+    "dexId": 623,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガマギアナ",
+    "types": [
+      "はがね",
+      "フェアリー"
+    ],
+    "hp": 80,
+    "atk": 115,
+    "def": 145,
+    "spa": 160,
+    "spd": 145,
+    "spe": 55,
+    "dexId": 801,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "パンプジン(特大)",
+    "types": [
+      "くさ",
+      "ゴースト"
+    ],
+    "hp": 85,
+    "atk": 100,
+    "def": 122,
+    "spa": 58,
+    "spd": 75,
+    "spe": 54,
+    "dexId": 711,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "マリルリ",
+    "types": [
+      "みず",
+      "フェアリー"
+    ],
+    "hp": 100,
+    "atk": 50,
+    "def": 80,
+    "spa": 60,
+    "spd": 80,
+    "spe": 50,
+    "dexId": 184,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヤミラミ",
+    "types": [
+      "あく",
+      "ゴースト"
+    ],
+    "hp": 50,
+    "atk": 75,
+    "def": 75,
+    "spa": 65,
+    "spd": 65,
+    "spe": 50,
+    "dexId": 302,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ボスゴドラ",
+    "types": [
+      "はがね",
+      "いわ"
+    ],
+    "hp": 70,
+    "atk": 110,
+    "def": 180,
+    "spa": 60,
+    "spd": 60,
+    "spe": 50,
+    "dexId": 306,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "グレッグル",
+    "types": [
+      "どく",
+      "かくとう"
+    ],
+    "hp": 48,
+    "atk": 61,
+    "def": 40,
+    "spa": 61,
+    "spd": 40,
+    "spe": 50,
+    "dexId": 453,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "タブンネ",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 103,
+    "atk": 60,
+    "def": 86,
+    "spa": 60,
+    "spd": 86,
+    "spe": 50,
+    "dexId": 531,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ツンベアー",
+    "types": [
+      "こおり"
+    ],
+    "hp": 95,
+    "atk": 130,
+    "def": 80,
+    "spa": 70,
+    "spd": 80,
+    "spe": 50,
+    "dexId": 614,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ドドゲザン",
+    "types": [
+      "あく",
+      "はがね"
+    ],
+    "hp": 100,
+    "atk": 135,
+    "def": 120,
+    "spa": 60,
+    "spd": 85,
+    "spe": 50,
+    "dexId": 983,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガボスゴドラ",
+    "types": [
+      "はがね",
+      "いわ"
+    ],
+    "hp": 70,
+    "atk": 110,
+    "def": 180,
+    "spa": 60,
+    "spd": 60,
+    "spe": 50,
+    "dexId": 306,
+    "varietyId": 10053,
+    "isMega": true
+  },
+  {
+    "name": "メガタブンネ",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 103,
+    "atk": 60,
+    "def": 86,
+    "spa": 60,
+    "spd": 86,
+    "spe": 50,
+    "dexId": 531,
+    "varietyId": 10069,
+    "isMega": true
+  },
+  {
+    "name": "メタモン",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 48,
+    "atk": 48,
+    "def": 48,
+    "spa": 48,
+    "spd": 48,
+    "spe": 48,
+    "dexId": 132,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "カバルドン",
+    "types": [
+      "じめん"
+    ],
+    "hp": 108,
+    "atk": 112,
+    "def": 118,
+    "spa": 68,
+    "spd": 72,
+    "spe": 47,
+    "dexId": 450,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ローブシン",
+    "types": [
+      "かくとう"
+    ],
+    "hp": 105,
+    "atk": 140,
+    "def": 95,
+    "spa": 55,
+    "spd": 65,
+    "spe": 45,
+    "dexId": 534,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ハラバリー",
+    "types": [
+      "でんき"
+    ],
+    "hp": 109,
+    "atk": 64,
+    "def": 91,
+    "spa": 103,
+    "spd": 83,
+    "spe": 45,
+    "dexId": 939,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガドラミドロ",
+    "types": [
+      "どく",
+      "ドラゴン"
+    ],
+    "hp": 65,
+    "atk": 85,
+    "def": 105,
+    "spa": 132,
+    "spd": 163,
+    "spe": 44,
+    "dexId": 691,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "メガブリガロン",
+    "types": [
+      "くさ",
+      "かくとう"
+    ],
+    "hp": 88,
+    "atk": 137,
+    "def": 172,
+    "spa": 74,
+    "spd": 115,
+    "spe": 44,
+    "dexId": 652,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ケケンカニ",
+    "types": [
+      "かくとう",
+      "こおり"
+    ],
+    "hp": 97,
+    "atk": 132,
+    "def": 77,
+    "spa": 62,
+    "spd": 67,
+    "spe": 43,
+    "dexId": 740,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "オニシズクモ",
+    "types": [
+      "みず",
+      "むし"
+    ],
+    "hp": 68,
+    "atk": 70,
+    "def": 92,
+    "spa": 50,
+    "spd": 132,
+    "spe": 42,
+    "dexId": 752,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "アリアドス",
+    "types": [
+      "むし",
+      "どく"
+    ],
+    "hp": 70,
+    "atk": 90,
+    "def": 70,
+    "spa": 60,
+    "spd": 70,
+    "spe": 40,
+    "dexId": 168,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "フォレトス",
+    "types": [
+      "むし",
+      "はがね"
+    ],
+    "hp": 75,
+    "atk": 90,
+    "def": 140,
+    "spa": 60,
+    "spd": 60,
+    "spe": 40,
+    "dexId": 205,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "バクーダ",
+    "types": [
+      "ほのお",
+      "じめん"
+    ],
+    "hp": 70,
+    "atk": 100,
+    "def": 70,
+    "spa": 105,
+    "spd": 75,
+    "spe": 40,
+    "dexId": 323,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ドサイドン",
+    "types": [
+      "じめん",
+      "いわ"
+    ],
+    "hp": 115,
+    "atk": 140,
+    "def": 130,
+    "spa": 55,
+    "spd": 55,
+    "spe": 40,
+    "dexId": 464,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "カミッチュ",
+    "types": [
+      "くさ",
+      "ドラゴン"
+    ],
+    "hp": 80,
+    "atk": 80,
+    "def": 110,
+    "spa": 95,
+    "spd": 80,
+    "spe": 40,
+    "dexId": 1011,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガグソクムシャ",
+    "types": [
+      "むし",
+      "はがね"
+    ],
+    "hp": 75,
+    "atk": 150,
+    "def": 175,
+    "spa": 70,
+    "spd": 120,
+    "spe": 40,
+    "dexId": 768,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "クレベース(ヒスイ)",
+    "types": [
+      "こおり",
+      "いわ"
+    ],
+    "hp": 95,
+    "atk": 127,
+    "def": 184,
+    "spa": 34,
+    "spd": 36,
+    "spe": 38,
+    "dexId": 713,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ジジーロン",
+    "types": [
+      "ノーマル",
+      "ドラゴン"
+    ],
+    "hp": 78,
+    "atk": 60,
+    "def": 85,
+    "spa": 135,
+    "spd": 91,
+    "spe": 36,
+    "dexId": 780,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガジジーロン",
+    "types": [
+      "ノーマル",
+      "ドラゴン"
+    ],
+    "hp": 78,
+    "atk": 85,
+    "def": 110,
+    "spa": 160,
+    "spd": 116,
+    "spe": 36,
+    "dexId": 780,
+    "varietyId": 0,
+    "isMega": true
+  },
+  {
+    "name": "ピッピ",
+    "types": [
+      "フェアリー"
+    ],
+    "hp": 70,
+    "atk": 45,
+    "def": 48,
+    "spa": 60,
+    "spd": 65,
+    "spe": 35,
+    "dexId": 35,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ミカルゲ",
+    "types": [
+      "ゴースト",
+      "あく"
+    ],
+    "hp": 50,
+    "atk": 92,
+    "def": 108,
+    "spa": 92,
+    "spd": 108,
+    "spe": 35,
+    "dexId": 442,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "バンバドロ",
+    "types": [
+      "じめん"
+    ],
+    "hp": 100,
+    "atk": 125,
+    "def": 100,
+    "spa": 55,
+    "spd": 85,
+    "spe": 35,
+    "dexId": 750,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "キョジオーン",
+    "types": [
+      "いわ"
+    ],
+    "hp": 100,
+    "atk": 100,
+    "def": 130,
+    "spa": 45,
+    "spd": 90,
+    "spe": 35,
+    "dexId": 934,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヒドイデ",
+    "types": [
+      "どく",
+      "みず"
+    ],
+    "hp": 50,
+    "atk": 53,
+    "def": 62,
+    "spa": 43,
+    "spd": 52,
+    "spe": 33,
+    "dexId": 747,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "マッギョ",
+    "types": [
+      "じめん",
+      "でんき"
+    ],
+    "hp": 109,
+    "atk": 66,
+    "def": 84,
+    "spa": 81,
+    "spd": 99,
+    "spe": 32,
+    "dexId": 618,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "マッギョ(ガラル)",
+    "types": [
+      "じめん",
+      "はがね"
+    ],
+    "hp": 109,
+    "atk": 81,
+    "def": 99,
+    "spa": 66,
+    "spd": 84,
+    "spe": 32,
+    "dexId": 618,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヤドラン",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "hp": 95,
+    "atk": 75,
+    "def": 110,
+    "spa": 100,
+    "spd": 80,
+    "spe": 30,
+    "dexId": 80,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヤドラン(ガラル)",
+    "types": [
+      "どく",
+      "エスパー"
+    ],
+    "hp": 95,
+    "atk": 100,
+    "def": 95,
+    "spa": 100,
+    "spd": 70,
+    "spe": 30,
+    "dexId": 80,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "カビゴン",
+    "types": [
+      "ノーマル"
+    ],
+    "hp": 160,
+    "atk": 110,
+    "def": 65,
+    "spa": 65,
+    "spd": 110,
+    "spe": 30,
+    "dexId": 143,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヤドキング",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "hp": 95,
+    "atk": 75,
+    "def": 80,
+    "spa": 100,
+    "spd": 110,
+    "spe": 30,
+    "dexId": 199,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ヤドキング(ガラル)",
+    "types": [
+      "どく",
+      "エスパー"
+    ],
+    "hp": 95,
+    "atk": 65,
+    "def": 80,
+    "spa": 110,
+    "spd": 110,
+    "spe": 30,
+    "dexId": 199,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ハガネール",
+    "types": [
+      "はがね",
+      "じめん"
+    ],
+    "hp": 75,
+    "atk": 85,
+    "def": 200,
+    "spa": 55,
+    "spd": 65,
+    "spe": 30,
+    "dexId": 208,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "トリデプス",
+    "types": [
+      "いわ",
+      "はがね"
+    ],
+    "hp": 60,
+    "atk": 52,
+    "def": 168,
+    "spa": 47,
+    "spd": 138,
+    "spe": 30,
+    "dexId": 411,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "デスカーン",
+    "types": [
+      "ゴースト"
+    ],
+    "hp": 58,
+    "atk": 50,
+    "def": 145,
+    "spa": 95,
+    "spd": 105,
+    "spe": 30,
+    "dexId": 563,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ランクルス",
+    "types": [
+      "エスパー"
+    ],
+    "hp": 110,
+    "atk": 65,
+    "def": 75,
+    "spa": 125,
+    "spd": 85,
+    "spe": 30,
+    "dexId": 579,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "サニゴーン",
+    "types": [
+      "ゴースト"
+    ],
+    "hp": 60,
+    "atk": 95,
+    "def": 50,
+    "spa": 145,
+    "spd": 130,
+    "spe": 30,
+    "dexId": 864,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガヤドラン",
+    "types": [
+      "みず",
+      "エスパー"
+    ],
+    "hp": 95,
+    "atk": 75,
+    "def": 110,
+    "spa": 100,
+    "spd": 80,
+    "spe": 30,
+    "dexId": 80,
+    "varietyId": 10071,
+    "isMega": true
+  },
+  {
+    "name": "メガハガネール",
+    "types": [
+      "はがね",
+      "じめん"
+    ],
+    "hp": 75,
+    "atk": 85,
+    "def": 200,
+    "spa": 55,
+    "spd": 65,
+    "spe": 30,
+    "dexId": 208,
+    "varietyId": 10072,
+    "isMega": true
+  },
+  {
+    "name": "メガユキノオー",
+    "types": [
+      "くさ",
+      "こおり"
+    ],
+    "hp": 90,
+    "atk": 92,
+    "def": 75,
+    "spa": 92,
+    "spd": 85,
+    "spe": 30,
+    "dexId": 460,
+    "varietyId": 10060,
+    "isMega": true
+  },
+  {
+    "name": "フレフワン",
+    "types": [
+      "フェアリー"
+    ],
+    "hp": 101,
+    "atk": 72,
+    "def": 72,
+    "spa": 99,
+    "spd": 89,
+    "spe": 29,
+    "dexId": 683,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "ブリムオン",
+    "types": [
+      "エスパー",
+      "フェアリー"
+    ],
+    "hp": 57,
+    "atk": 90,
+    "def": 95,
+    "spa": 136,
+    "spd": 103,
+    "spe": 29,
+    "dexId": 858,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "クレベース",
+    "types": [
+      "こおり"
+    ],
+    "hp": 95,
+    "atk": 117,
+    "def": 184,
+    "spa": 44,
+    "spd": 46,
+    "spe": 28,
+    "dexId": 713,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "コータス",
+    "types": [
+      "ほのお"
+    ],
+    "hp": 70,
+    "atk": 85,
+    "def": 140,
+    "spa": 85,
+    "spd": 70,
+    "spe": 20,
+    "dexId": 324,
+    "varietyId": 0,
+    "isMega": false
+  },
+  {
+    "name": "メガヤミラミ",
+    "types": [
+      "あく",
+      "ゴースト"
+    ],
+    "hp": 50,
+    "atk": 75,
+    "def": 75,
+    "spa": 65,
+    "spd": 65,
+    "spe": 20,
+    "dexId": 302,
+    "varietyId": 10066,
+    "isMega": true
+  },
+  {
+    "name": "メガバクーダ",
+    "types": [
+      "ほのお",
+      "じめん"
+    ],
+    "hp": 70,
+    "atk": 100,
+    "def": 70,
+    "spa": 105,
+    "spd": 75,
+    "spe": 20,
+    "dexId": 323,
+    "varietyId": 10087,
+    "isMega": true
+  }
+]

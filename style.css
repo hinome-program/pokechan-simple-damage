@@ -1,0 +1,299 @@
+/* ===================================
+   ポケチャンシンプルダメ計 | Battle Arena
+   シンプル2Dレイアウト版
+   =================================== */
+
+:root {
+    --panel-bg: rgba(255, 255, 255, 0.90); /* 宇宙背景にな֏ませた半透明化 */
+    --text-main: #1a1a1a;
+    --text-sub: #555555;
+    --border: #c8c8c8;
+    --shadow-card: 0 6px 20px rgba(0, 0, 0, 0.28);
+    --fatal:  #e53935;
+    --risk:   #f57c00;
+    --stable: #43a047;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0; padding: 0;
+}
+
+body {
+    background: #1a1a2e;
+    height: 100vh; width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#app {
+    width: 100%; max-width: 480px; height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =============================
+   BATTLE FIELD — BotW背景
+   ============================= */
+.battle-field {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0; /* 隙間をゼロに */
+
+    /* 宇宙背景 */
+    background: url('images/bg_space.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; /* リピート禁止 */
+
+    /* 宇宙山向け: 高彩度filterは不要 */
+    filter: brightness(0.95);
+    border: none;
+    outline: none;
+}
+
+/* フィルターをパネルにかけない */
+.battle-field > * { filter: none; }
+
+.horizon {
+    display: none; /* 宇宙背景では不要なため消去 */
+}
+
+/* =============================
+   BATTLE ROWS — Flexbox
+   ============================= */
+.battle-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 10px;
+    gap: 8px;
+    position: relative;
+    z-index: 10;
+    border: none;
+    outline: none;
+}
+
+/* 上段: 防御側 (パネル左, 画像右) → align-items: flex-start で上揃え */
+.battle-top {
+    align-items: flex-start;
+}
+
+/* 下段: 攻撃側 (画像左・下, パネル右・下) */
+.battle-bottom {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+/* 攻撃側画像を中央寄りにシフト */
+.battle-bottom .artwork-box {
+    margin-left: 30px;
+}
+
+/* =============================
+   STATUS PANELS
+   ============================= */
+.status-panel {
+    width: 200px;
+    flex-shrink: 0;
+    z-index: 20;
+}
+
+/* 防御側画像を右端へ寄せる */
+.battle-top .artwork-box {
+    margin-left: auto;
+}
+
+.white-panel {
+    background: var(--panel-bg);
+    border-radius: 14px;
+    padding: 10px 12px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--border);
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+}
+
+.name-input {
+    border: none; background: transparent;
+    font-size: 1.05rem; font-weight: 900;
+    width: 140px; outline: none;
+    color: var(--text-main);
+}
+
+.lv-badge { font-size: 0.72rem; font-weight: 700; color: var(--text-sub); }
+
+.panel-stats { display: flex; flex-direction: column; gap: 5px; }
+
+.stat-row {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.78rem; color: var(--text-sub);
+}
+
+.stat-row input {
+    width: 68px; border: 1px solid var(--border);
+    border-radius: 7px; padding: 4px;
+    text-align: center; font-weight: 700;
+    color: var(--text-main); background: #fafafa;
+}
+
+/* EV（努力値）行 — 実数値行と同デザイン、ラベルを小さめに */
+.ev-row {
+    opacity: 0.78;
+}
+.ev-row label {
+    font-size: 0.68rem;
+}
+.ev-row input {
+    width: 52px;
+    background: #f0f4ff;
+    border-color: #b8c8ef;
+    font-size: 0.8rem;
+}
+
+/* EV有効合計値の表示 (= 215) */
+.ev-total {
+    font-size: 0.6rem;
+    font-weight: 900;
+    color: #4a7ef5;
+    white-space: nowrap;
+}
+
+/* =============================
+   ARTWORK BOX — 存在感最大化
+   ============================= */
+.artwork-box {
+    width: 190px; height: 190px; /* 150→190px に拡大 */
+    position: relative;
+    display: flex; justify-content: center; align-items: center;
+    flex-shrink: 0;
+    z-index: 15; /* パネルより前、move-panelより後 */
+}
+
+.silhouette-fallback {
+    font-size: 3rem; color: rgba(0,0,0,0.12); font-weight: 900;
+}
+
+.pokemon-img {
+    position: absolute;
+    width: 100%; height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 12px rgba(0,0,0,0.35));
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+.pokemon-img.loaded { opacity: 1; }
+
+/* =============================
+   MOVE PANEL (中央 — absolute・最前面)
+   ============================= */
+.move-panel {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* 常に最前面 */
+}
+
+.white-panel.compact { padding: 6px 10px; }
+
+.mini-title {
+    font-size: 0.65rem; font-weight: 900;
+    color: var(--text-sub); margin-bottom: 4px;
+    text-align: center; letter-spacing: 0.03em;
+}
+
+.move-inputs { display: flex; flex-direction: column; gap: 4px; }
+
+.move-row {
+    display: flex; align-items: center;
+    justify-content: space-between; gap: 8px;
+}
+
+.move-row label {
+    font-size: 0.65rem; font-weight: 700; color: var(--text-sub);
+}
+
+.move-row select {
+    height: 24px; width: 75px;
+    border: 1px solid var(--border); border-radius: 6px;
+    font-weight: 700; font-size: 0.8rem;
+    padding-left: 5px; background: #fff; cursor: pointer;
+}
+
+/* =============================
+   FOOTER
+   ============================= */
+.footer {
+    height: 215px;
+    background: #fff;
+    border-top: 1.5px solid var(--border);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    flex-shrink: 0;
+}
+
+.result-area {
+    flex: 1;
+    background: #f8f8f8;
+    border-radius: 14px;
+    border: 1px solid #eee;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 2px;
+}
+
+.result-label { font-size: 0.65rem; font-weight: 700; color: var(--text-sub); }
+
+.status-badge {
+    padding: 4px 20px;
+    border-radius: 50px;
+    font-size: 1.45rem; font-weight: 900;
+    color: #fff; background: #bdbdbd;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    transition: background 0.3s ease;
+}
+
+.pct-label { font-size: 0.92rem; font-weight: 700; color: var(--text-main); }
+
+.btn-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 7px;
+    height: 85px;
+}
+
+.ctrl-btn {
+    background: #f5f5f5;
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    font-size: 0.85rem; font-weight: 700;
+    color: var(--text-main);
+    box-shadow: 0 3px 0 #d0d0d0;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.ctrl-btn:active { transform: translateY(2px); box-shadow: none; }
+.ctrl-btn.active { background: #fff8f8; border-color: var(--fatal); color: var(--fatal); }
+
+/* FOCUS HIGHLIGHT */
+input:focus, select:focus {
+    outline: none;
+    border-color: #5b8def !important;
+    box-shadow: 0 0 0 2px rgba(91,141,239,0.2);
+}
