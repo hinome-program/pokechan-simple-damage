@@ -4,7 +4,7 @@
    =================================== */
 
 :root {
-    --panel-bg: rgba(255, 255, 255, 0.90); /* 宇宙背景にな֏ませた半透明化 */
+    --panel-bg: rgba(255, 255, 255, 0.90); /* 宇宙背景になじませた半透明化 */
     --text-main: #1a1a1a;
     --text-sub: #555555;
     --border: #c8c8c8;
@@ -12,6 +12,10 @@
     --fatal:  #e53935;
     --risk:   #f57c00;
     --stable: #43a047;
+
+    /* ランク補正カラー */
+    --rank-physical: #e53935;
+    --rank-special:  #1e88e5;
 }
 
 * {
@@ -93,16 +97,23 @@ body {
     align-items: flex-end;
     justify-content: space-between;
 }
-/* 攻撃側画像を中央寄りにシフト */
+/* 攻撃側画像を左寄り */
 .battle-bottom .artwork-box {
-    margin-left: 30px;
+    margin-left: 5px;
+}
+
+/* 攻撃側画像：1.2倍（230px）・パネルより必ず前面 */
+.attacker-artbox {
+    width: 230px !important;
+    height: 230px !important;
+    z-index: 25 !important;  /* status-panel(z:20)より上に常に前面 */
 }
 
 /* =============================
    STATUS PANELS
    ============================= */
 .status-panel {
-    width: 200px;
+    width: 185px;   /* 手前ポケモン画像拡大分を吹っ切るため素遅 */
     flex-shrink: 0;
     z-index: 20;
 }
@@ -166,13 +177,8 @@ body {
     font-size: 0.8rem;
 }
 
-/* EV有効合計値の表示 (= 215) */
-.ev-total {
-    font-size: 0.6rem;
-    font-weight: 900;
-    color: #4a7ef5;
-    white-space: nowrap;
-}
+/* EV有効合計値の表示 (= 215) — UIから削除済み、クラスは残す */
+.ev-total { display: none; }
 
 /* =============================
    ARTWORK BOX — 存在感最大化
@@ -200,13 +206,87 @@ body {
 .pokemon-img.loaded { opacity: 1; }
 
 /* =============================
-   MOVE PANEL (中央 — absolute・最前面)
+   戦略コマンドセンター（中央 — 3カラム absolute）
    ============================= */
-.move-panel {
+.strategy-center {
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999; /* 常に最前面 */
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;   /* 3カラムの高さを揃える */
+    justify-content: center;
+    gap: 8px;
+    pointer-events: auto;
+    /* 画面幅いっぱいに近いが宇宙背景を残す余白 */
+    width: calc(100% - 20px);
+    max-width: 460px;
+}
+
+.strategy-col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+/* =============================
+   左カラム: 巨大モードトグル
+   ============================= */
+.col-toggle {
+    flex: 1;           /* 残り幅を左右で等分 */
+    min-width: 0;
+}
+
+.giant-mode-toggle {
+    width: 100%;
+    height: 86px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 900;
+    font-size: 1.55rem;      /* でかでかと */
+    letter-spacing: 0.04em;
+    color: #fff;
+    transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.08s ease;
+    /* テキスト1行のみ、中央揃え */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* こうげき（物理）：レッド */
+.giant-mode-toggle.mode-physical {
+    background: #e53935;
+    box-shadow: 0 5px 18px rgba(229, 57, 53, 0.60);
+}
+
+/* とくこう（特殊）：ブルー */
+.giant-mode-toggle.mode-special {
+    background: #1e88e5;
+    box-shadow: 0 5px 18px rgba(30, 136, 229, 0.60);
+}
+
+.giant-mode-toggle:active {
+    transform: scale(0.96);
+    opacity: 0.88;
+}
+
+/* =============================
+   中央カラム: わざ設定パネル
+   ============================= */
+.col-move {
+    flex-shrink: 0;
+}
+
+/* 旧 .move-panel の代替（position: static） */
+.move-panel-inner {
+    /* absoluteではなくstrategy-centerの子として配置 */
 }
 
 .white-panel.compact { padding: 6px 10px; }
@@ -236,10 +316,64 @@ body {
 }
 
 /* =============================
+   右カラム: ランクパネル（白）
+   ============================= */
+.col-rank {
+    flex: 1;
+    min-width: 0;
+}
+
+.rank-panel-wrap {
+    position: relative;
+    width: 100%;
+    height: 86px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.rank-panel-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.rank-panel-val {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+/* 透明なselectをパネル全体に重ねる（タップでネイティブpickerを起動） */
+.rank-select-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 16px; /* iOSズーム防止 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* =============================
    FOOTER
    ============================= */
 .footer {
-    height: 215px;
+    height: 235px;
     background: #fff;
     border-top: 1.5px solid var(--border);
     padding: 10px;
@@ -252,26 +386,48 @@ body {
 
 .result-area {
     flex: 1;
-    background: #f8f8f8;
+    background: #000000;   /* 黒背景・警告配色 */
     border-radius: 14px;
-    border: 1px solid #eee;
+    border: 1px solid #333;
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
-    gap: 2px;
+    gap: 4px;
 }
 
-.result-label { font-size: 0.65rem; font-weight: 700; color: var(--text-sub); }
+.result-label { font-size: 0.65rem; font-weight: 700; color: #ffd700; }
 
 .status-badge {
     padding: 4px 20px;
     border-radius: 50px;
-    font-size: 1.45rem; font-weight: 900;
-    color: #fff; background: #bdbdbd;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-    transition: background 0.3s ease;
+    font-size: 1.55rem; font-weight: 900;
+    color: #ffd700;        /* 濃い黄色 */
+    background: transparent;
+    box-shadow: none;
+    text-shadow: 0 0 12px rgba(255, 215, 0, 0.55);
 }
 
-.pct-label { font-size: 0.92rem; font-weight: 700; color: var(--text-main); }
+.pct-label { font-size: 0.92rem; font-weight: 700; color: #ffd700; }
+
+/* 相性メッセージ（5段階） */
+.type-msg {
+    font-size: 0.78rem;
+    font-weight: 900;
+    color: #ffd700;
+    letter-spacing: 0.03em;
+    min-height: 1.1em;
+    text-align: center;
+    opacity: 0.92;
+}
+.type-msg.msg-immune   { color: #aaa; }          /* 効果なし */
+.type-msg.msg-bad2     { color: #b0c4de; }       /* かなりいまひとつ */
+.type-msg.msg-bad      { color: #90c8ff; }       /* いまひとつ */
+.type-msg.msg-good     { color: #ffec40; }       /* ばつぐん */
+.type-msg.msg-great    { color: #ff6060; font-size: 0.88rem; } /* ちょうばつぐん */
+
+/* 技のタイプ select 幅調整 */
+#move-type {
+    width: 82px;
+}
 
 .btn-grid {
     display: grid; grid-template-columns: 1fr 1fr; gap: 7px;

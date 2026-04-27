@@ -31,15 +31,15 @@
                                 <input type="number" id="defender-hp-ev" value="0" min="0" max="32">
                             </div>
                             <div class="stat-row">
-                                <label>HP実数値 <span class="ev-total" id="defender-hp-total"></span></label>
+                                <label>HP実数値</label>
                                 <input type="number" id="defender-hp" value="100">
                             </div>
                             <div class="stat-row ev-row">
-                                <label>防御(特防)努力値</label>
+                                <label id="defender-ev-label">ぼうぎょ努力値</label>
                                 <input type="number" id="defender-stat-ev" value="0" min="0" max="32">
                             </div>
                             <div class="stat-row">
-                                <label>防御/特防実数値 <span class="ev-total" id="defender-stat-total"></span></label>
+                                <label id="defender-stat-label">ぼうぎょ実数値</label>
                                 <input type="number" id="defender-stat" value="100">
                             </div>
                         </div>
@@ -51,58 +51,101 @@
                 </div>
             </div>
 
-            <!-- 中央: わざ設定 (absolute center) -->
-            <div id="move-panel" class="move-panel">
-                <div class="white-panel compact">
-                    <div class="mini-title">わざ設定</div>
-                    <div class="move-inputs">
-                        <div class="move-row">
-                            <label>技の威力</label>
-                            <select id="move-power"></select>
-                        </div>
-                        <div class="move-row">
-                            <label>倍率</label>
-                            <select id="type-ratio">
-                                <option value="0.25">x0.25</option>
-                                <option value="0.5">x0.5</option>
-                                <option value="1.0" selected>x1.0</option>
-                                <option value="1.2">x1.2</option>
-                                <option value="1.5">x1.5</option>
-                                <option value="2.0">x2.0</option>
-                                <option value="2.5">x2.5</option>
-                                <option value="3.0">x3.0</option>
-                                <option value="3.5">x3.5</option>
-                                <option value="4.0">x4.0</option>
-                            </select>
+            <!-- 中央: 戦略コマンドセンター（3カラム） -->
+            <div class="strategy-center">
+
+                <!-- 左カラム: 巨大攻撃モードトグル -->
+                <div class="strategy-col col-toggle">
+                    <button id="mode-toggle" class="giant-mode-toggle mode-physical">こうげき</button>
+                </div>
+
+                <!-- 中央カラム: わざ設定パネル -->
+                <div class="strategy-col col-move">
+                    <div id="move-panel" class="move-panel-inner">
+                        <div class="white-panel compact">
+                            <div class="mini-title">わざ設定</div>
+                            <div class="move-inputs">
+                                <div class="move-row">
+                                    <label>技の威力</label>
+                                    <select id="move-power"></select>
+                                </div>
+                                <div class="move-row">
+                                    <label>技のタイプ</label>
+                                    <select id="move-type">
+                                        <option value="ノーマル">ノーマル</option>
+                                        <option value="ほのお">ほのお</option>
+                                        <option value="みず">みず</option>
+                                        <option value="でんき">でんき</option>
+                                        <option value="くさ">くさ</option>
+                                        <option value="こおり">こおり</option>
+                                        <option value="かくとう">かくとう</option>
+                                        <option value="どく">どく</option>
+                                        <option value="じめん">じめん</option>
+                                        <option value="ひこう">ひこう</option>
+                                        <option value="エスパー">エスパー</option>
+                                        <option value="むし">むし</option>
+                                        <option value="いわ">いわ</option>
+                                        <option value="ゴースト">ゴースト</option>
+                                        <option value="ドラゴン">ドラゴン</option>
+                                        <option value="あく">あく</option>
+                                        <option value="はがね">はがね</option>
+                                        <option value="フェアリー">フェアリー</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- 右カラム: ランク設定（白パネル＋select） -->
+                <div class="strategy-col col-rank">
+                    <div class="rank-panel-wrap">
+                        <div class="rank-panel-label">ランク</div>
+                        <div class="rank-panel-val" id="rank-value-display">0</div>
+                        <select id="rank-select" class="rank-select-overlay">
+                            <option value="6">+6</option>
+                            <option value="5">+5</option>
+                            <option value="4">+4</option>
+                            <option value="3">+3</option>
+                            <option value="2">+2</option>
+                            <option value="1">+1</option>
+                            <option value="0" selected>0</option>
+                            <option value="-1">-1</option>
+                            <option value="-2">-2</option>
+                            <option value="-3">-3</option>
+                            <option value="-4">-4</option>
+                            <option value="-5">-5</option>
+                            <option value="-6">-6</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div><!-- end .strategy-center -->
 
             <!-- 下段: 攻撃側 — 画像(左・中央寄り・下) + パネル(右) -->
             <div class="battle-row battle-bottom">
-                <div class="artwork-box">
+                <div class="artwork-box attacker-artbox">
                     <div class="silhouette-fallback" id="attacker-fallback">?</div>
                     <img id="attacker-artwork" src="" alt="" class="pokemon-img">
                 </div>
                 <div id="attacker-panel" class="status-panel">
-                    <div class="white-panel">
-                        <div class="panel-header">
-                            <input type="text" id="attacker-name" list="pokemon-list"
-                                   placeholder="ポケモンのなまえ" class="name-input" autocomplete="off">
-                            <span class="lv-badge">Lv.50</span>
-                        </div>
-                        <div class="panel-stats">
-                            <div class="stat-row ev-row">
-                                <label>攻撃(特攻)努力値</label>
-                                <input type="number" id="attacker-stat-ev" value="0" min="0" max="32">
+                        <div class="white-panel">
+                            <div class="panel-header">
+                                <input type="text" id="attacker-name" list="pokemon-list"
+                                       placeholder="ポケモンのなまえ" class="name-input" autocomplete="off">
+                                <span class="lv-badge">Lv.50</span>
                             </div>
-                            <div class="stat-row">
-                                <label>攻撃/特攻実数値 <span class="ev-total" id="attacker-stat-total"></span></label>
-                                <input type="number" id="attacker-stat" value="100">
+                            <div class="panel-stats">
+                                <div class="stat-row ev-row">
+                                    <label id="attacker-ev-label">こうげき努力値</label>
+                                    <input type="number" id="attacker-stat-ev" value="32" min="0" max="32">
+                                </div>
+                                <div class="stat-row">
+                                    <label id="attacker-stat-label">こうげき実数値</label>
+                                    <input type="number" id="attacker-stat" value="100">
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
 
@@ -114,6 +157,7 @@
                 <div class="result-label">ダメージ判定</div>
                 <div id="result-status" class="status-badge">スキャン中...</div>
                 <div id="result-detail" class="pct-label">0.0% 〜 0.0%</div>
+                <div id="type-message" class="type-msg"></div>
             </div>
             <div class="btn-grid">
                 <button id="swap-btn" class="ctrl-btn">攻守交代</button>
@@ -128,6 +172,7 @@
     <datalist id="pokemon-list"></datalist>
 
     <script src="pokemon_data.js"></script>
+    <script src="pokemon_types.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
