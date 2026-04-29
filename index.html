@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ポケチャンシンプルダメ計 | Battle Arena</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
@@ -16,13 +16,16 @@
         <div class="battle-field">
             <div class="horizon"></div>
 
-            <!-- 上段: 防御側 — パネル(左) + 画像(右) -->
+            <!-- 上段: 防御側 -->
             <div class="battle-row battle-top">
                 <div id="defender-panel" class="status-panel">
                     <div class="white-panel">
                         <div class="panel-header">
-                            <input type="text" id="defender-name" list="pokemon-list"
-                                   placeholder="ポケモンのなまえ" class="name-input" autocomplete="off">
+                            <div class="suggest-wrap">
+                                <input type="text" id="defender-name"
+                                       placeholder="ポケモンのなまえ" class="name-input" autocomplete="off">
+                                <div id="defender-suggest" class="suggest-box" hidden></div>
+                            </div>
                             <span class="lv-badge">Lv.50</span>
                         </div>
                         <div class="panel-stats">
@@ -51,15 +54,11 @@
                 </div>
             </div>
 
-            <!-- 中央: 戦略コマンドセンター（3カラム） -->
+            <!-- 中央: 戦略コマンドセンター -->
             <div class="strategy-center">
-
-                <!-- 左カラム: 巨大攻撃モードトグル -->
                 <div class="strategy-col col-toggle">
                     <button id="mode-toggle" class="giant-mode-toggle mode-physical">こうげき</button>
                 </div>
-
-                <!-- 中央カラム: わざ設定パネル -->
                 <div class="strategy-col col-move">
                     <div id="move-panel" class="move-panel-inner">
                         <div class="white-panel compact">
@@ -96,8 +95,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- 右カラム: ランク設定（白パネル＋select） -->
                 <div class="strategy-col col-rank">
                     <div class="rank-panel-wrap">
                         <div class="rank-panel-label">ランク</div>
@@ -119,39 +116,41 @@
                         </select>
                     </div>
                 </div>
+            </div>
 
-            </div><!-- end .strategy-center -->
-
-            <!-- 下段: 攻撃側 — 画像(左・中央寄り・下) + パネル(右) -->
+            <!-- 下段: 攻撃側 -->
             <div class="battle-row battle-bottom">
                 <div class="artwork-box attacker-artbox">
                     <div class="silhouette-fallback" id="attacker-fallback">?</div>
                     <img id="attacker-artwork" src="" alt="" class="pokemon-img">
                 </div>
                 <div id="attacker-panel" class="status-panel">
-                        <div class="white-panel">
-                            <div class="panel-header">
-                                <input type="text" id="attacker-name" list="pokemon-list"
+                    <div class="white-panel">
+                        <div class="panel-header">
+                            <div class="suggest-wrap">
+                                <input type="text" id="attacker-name"
                                        placeholder="ポケモンのなまえ" class="name-input" autocomplete="off">
-                                <span class="lv-badge">Lv.50</span>
+                                <div id="attacker-suggest" class="suggest-box" hidden></div>
                             </div>
-                            <div class="panel-stats">
-                                <div class="stat-row ev-row">
-                                    <label id="attacker-ev-label">こうげき努力値</label>
-                                    <input type="number" id="attacker-stat-ev" value="32" min="0" max="32">
-                                </div>
-                                <div class="stat-row">
-                                    <label id="attacker-stat-label">こうげき実数値</label>
-                                    <input type="number" id="attacker-stat" value="100">
-                                </div>
+                            <span class="lv-badge">Lv.50</span>
+                        </div>
+                        <div class="panel-stats">
+                            <div class="stat-row ev-row">
+                                <label id="attacker-ev-label">こうげき努力値</label>
+                                <input type="number" id="attacker-stat-ev" value="32" min="0" max="32">
+                            </div>
+                            <div class="stat-row">
+                                <label id="attacker-stat-label">こうげき実数値</label>
+                                <input type="number" id="attacker-stat" value="100">
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
 
         </div><!-- end .battle-field -->
 
-        <!-- Footer: 判定結果 + ボタン -->
+        <!-- Footer -->
         <footer class="footer">
             <div class="result-area">
                 <div class="result-label">ダメージ判定</div>
@@ -171,8 +170,6 @@
 
     <datalist id="pokemon-list"></datalist>
 
-    <script src="pokemon_data.js"></script>
-    <script src="pokemon_types.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
