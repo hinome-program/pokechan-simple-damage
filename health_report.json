@@ -1,0 +1,2978 @@
+[
+  {
+    "name": "メガガブリアスZ",
+    "dexId": 0,
+    "id": 0,
+    "issues": [
+      "dexId が 0 (検証スキップ)"
+    ],
+    "image_url": null,
+    "image_ok": null,
+    "slug_used": null,
+    "base_name": null
+  },
+  {
+    "name": "メガアブソルZ",
+    "dexId": 0,
+    "id": 0,
+    "issues": [
+      "dexId が 0 (検証スキップ)"
+    ],
+    "image_url": null,
+    "image_ok": null,
+    "slug_used": null,
+    "base_name": null
+  },
+  {
+    "name": "メガルカリオZ",
+    "dexId": 0,
+    "id": 0,
+    "issues": [
+      "dexId が 0 (検証スキップ)"
+    ],
+    "image_url": null,
+    "image_ok": null,
+    "slug_used": null,
+    "base_name": null
+  },
+  {
+    "name": "メガフーディン",
+    "dexId": 65,
+    "id": 10037,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10037.png",
+    "image_ok": true,
+    "slug_used": "alakazam-mega",
+    "base_name": "alakazam"
+  },
+  {
+    "name": "メガプテラ",
+    "dexId": 142,
+    "id": 10042,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10042.png",
+    "image_ok": true,
+    "slug_used": "aerodactyl-mega",
+    "base_name": "aerodactyl"
+  },
+  {
+    "name": "メガゼラオラ",
+    "dexId": 807,
+    "id": 807,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10319.png",
+    "image_ok": true,
+    "slug_used": "zeraora-mega",
+    "base_name": "zeraora"
+  },
+  {
+    "name": "ドラパルト",
+    "dexId": 887,
+    "id": 887,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/887.png",
+    "image_ok": true,
+    "slug_used": "dragapult",
+    "base_name": "dragapult"
+  },
+  {
+    "name": "メガゲッコウガ",
+    "dexId": 658,
+    "id": 658,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10294.png",
+    "image_ok": true,
+    "slug_used": "greninja-mega",
+    "base_name": "greninja"
+  },
+  {
+    "name": "メガライボルト",
+    "dexId": 310,
+    "id": 10055,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10055.png",
+    "image_ok": true,
+    "slug_used": "manectric-mega",
+    "base_name": "manectric"
+  },
+  {
+    "name": "メガミミロップ",
+    "dexId": 428,
+    "id": 10088,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10088.png",
+    "image_ok": true,
+    "slug_used": "lopunny-mega",
+    "base_name": "lopunny"
+  },
+  {
+    "name": "メガマフォクシー",
+    "dexId": 655,
+    "id": 655,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10293.png",
+    "image_ok": true,
+    "slug_used": "delphox-mega",
+    "base_name": "delphox"
+  },
+  {
+    "name": "サンダース",
+    "dexId": 135,
+    "id": 135,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+    "image_ok": true,
+    "slug_used": "jolteon",
+    "base_name": "jolteon"
+  },
+  {
+    "name": "プテラ",
+    "dexId": 142,
+    "id": 142,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png",
+    "image_ok": true,
+    "slug_used": "aerodactyl",
+    "base_name": "aerodactyl"
+  },
+  {
+    "name": "メガゲンガー",
+    "dexId": 94,
+    "id": 10038,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10038.png",
+    "image_ok": true,
+    "slug_used": "gengar-mega",
+    "base_name": "gengar"
+  },
+  {
+    "name": "メガライチュウY",
+    "dexId": 0,
+    "id": 0,
+    "issues": [
+      "dexId が 0 (検証スキップ)"
+    ],
+    "image_url": null,
+    "image_ok": null,
+    "slug_used": null,
+    "base_name": null
+  },
+  {
+    "name": "ファイアロー",
+    "dexId": 663,
+    "id": 663,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/663.png",
+    "image_ok": true,
+    "slug_used": "talonflame",
+    "base_name": "talonflame"
+  },
+  {
+    "name": "メガカエンジシ",
+    "dexId": 668,
+    "id": 668,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10295.png",
+    "image_ok": true,
+    "slug_used": "pyroar-mega",
+    "base_name": "pyroar"
+  },
+  {
+    "name": "マニューラ",
+    "dexId": 461,
+    "id": 461,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png",
+    "image_ok": true,
+    "slug_used": "weavile",
+    "base_name": "weavile"
+  },
+  {
+    "name": "メガダークライ",
+    "dexId": 491,
+    "id": 491,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10312.png",
+    "image_ok": true,
+    "slug_used": "darkrai-mega",
+    "base_name": "darkrai"
+  },
+  {
+    "name": "メガニャオニクス",
+    "dexId": 678,
+    "id": 678,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10314.png",
+    "image_ok": true,
+    "slug_used": "meowstic-mega",
+    "base_name": "meowstic"
+  },
+  {
+    "name": "オンバーン",
+    "dexId": 715,
+    "id": 715,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/715.png",
+    "image_ok": true,
+    "slug_used": "noivern",
+    "base_name": "noivern"
+  },
+  {
+    "name": "マスカーニャ",
+    "dexId": 908,
+    "id": 908,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png",
+    "image_ok": true,
+    "slug_used": "meowscarada",
+    "base_name": "meowscarada"
+  },
+  {
+    "name": "ゲッコウガ",
+    "dexId": 658,
+    "id": 658,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png",
+    "image_ok": true,
+    "slug_used": "greninja",
+    "base_name": "greninja"
+  },
+  {
+    "name": "メガムクホーク",
+    "dexId": 398,
+    "id": 398,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10308.png",
+    "image_ok": true,
+    "slug_used": "staraptor-mega",
+    "base_name": "staraptor"
+  },
+  {
+    "name": "フーディン",
+    "dexId": 65,
+    "id": 65,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
+    "image_ok": true,
+    "slug_used": "alakazam",
+    "base_name": "alakazam"
+  },
+  {
+    "name": "オオニューラ",
+    "dexId": 903,
+    "id": 903,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/903.png",
+    "image_ok": true,
+    "slug_used": "sneasler",
+    "base_name": "sneasler"
+  },
+  {
+    "name": "メガスターミー",
+    "dexId": 121,
+    "id": 121,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10280.png",
+    "image_ok": true,
+    "slug_used": "starmie-mega",
+    "base_name": "starmie"
+  },
+  {
+    "name": "メガユキメノコ",
+    "dexId": 478,
+    "id": 478,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10285.png",
+    "image_ok": true,
+    "slug_used": "froslass-mega",
+    "base_name": "froslass"
+  },
+  {
+    "name": "ルチャブル",
+    "dexId": 701,
+    "id": 701,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/701.png",
+    "image_ok": true,
+    "slug_used": "hawlucha",
+    "base_name": "hawlucha"
+  },
+  {
+    "name": "メガルチャブル",
+    "dexId": 701,
+    "id": 701,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10300.png",
+    "image_ok": true,
+    "slug_used": "hawlucha-mega",
+    "base_name": "hawlucha"
+  },
+  {
+    "name": "エンニュート",
+    "dexId": 758,
+    "id": 758,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/758.png",
+    "image_ok": true,
+    "slug_used": "salazzle",
+    "base_name": "salazzle"
+  },
+  {
+    "name": "エルフーン",
+    "dexId": 547,
+    "id": 547,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png",
+    "image_ok": true,
+    "slug_used": "whimsicott",
+    "base_name": "whimsicott"
+  },
+  {
+    "name": "スターミー",
+    "dexId": 121,
+    "id": 121,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png",
+    "image_ok": true,
+    "slug_used": "starmie",
+    "base_name": "starmie"
+  },
+  {
+    "name": "メガアブソル",
+    "dexId": 359,
+    "id": 10057,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10057.png",
+    "image_ok": true,
+    "slug_used": "absol-mega",
+    "base_name": "absol"
+  },
+  {
+    "name": "ジャローダ",
+    "dexId": 497,
+    "id": 497,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/497.png",
+    "image_ok": true,
+    "slug_used": "serperior",
+    "base_name": "serperior"
+  },
+  {
+    "name": "メガヒードラン",
+    "dexId": 485,
+    "id": 485,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10311.png",
+    "image_ok": true,
+    "slug_used": "heatran-mega",
+    "base_name": "heatran"
+  },
+  {
+    "name": "ルガルガン(まひる)",
+    "dexId": 745,
+    "id": 745,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/745.png",
+    "image_ok": true,
+    "slug_used": "lycanroc-midday",
+    "base_name": "lycanroc"
+  },
+  {
+    "name": "メガルカリオ",
+    "dexId": 448,
+    "id": 10059,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10059.png",
+    "image_ok": true,
+    "slug_used": "lucario-mega",
+    "base_name": "lucario"
+  },
+  {
+    "name": "ライチュウ",
+    "dexId": 26,
+    "id": 26,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+    "image_ok": true,
+    "slug_used": "raichu",
+    "base_name": "raichu"
+  },
+  {
+    "name": "ライチュウ(アローラ)",
+    "dexId": 26,
+    "id": 10100,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10100.png",
+    "image_ok": true,
+    "slug_used": "raichu-alola",
+    "base_name": "raichu"
+  },
+  {
+    "name": "ゲンガー",
+    "dexId": 94,
+    "id": 94,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+    "image_ok": true,
+    "slug_used": "gengar",
+    "base_name": "gengar"
+  },
+  {
+    "name": "ケンタロス",
+    "dexId": 128,
+    "id": 128,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png",
+    "image_ok": true,
+    "slug_used": "tauros",
+    "base_name": "tauros"
+  },
+  {
+    "name": "エーフィ",
+    "dexId": 196,
+    "id": 196,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+    "image_ok": true,
+    "slug_used": "espeon",
+    "base_name": "espeon"
+  },
+  {
+    "name": "ユキメノコ",
+    "dexId": 478,
+    "id": 478,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png",
+    "image_ok": true,
+    "slug_used": "froslass",
+    "base_name": "froslass"
+  },
+  {
+    "name": "ゾロアーク(ヒスイ)",
+    "dexId": 571,
+    "id": 10239,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png",
+    "image_ok": true,
+    "slug_used": "zoroark-hisui",
+    "base_name": "zoroark"
+  },
+  {
+    "name": "ルガルガン(たそがれ)",
+    "dexId": 745,
+    "id": 10152,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10152.png",
+    "image_ok": true,
+    "slug_used": "lycanroc-dusk",
+    "base_name": "lycanroc"
+  },
+  {
+    "name": "メガエルレイド",
+    "dexId": 475,
+    "id": 10068,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10068.png",
+    "image_ok": true,
+    "slug_used": "gallade-mega",
+    "base_name": "gallade"
+  },
+  {
+    "name": "メガライチュウX",
+    "dexId": 0,
+    "id": 0,
+    "issues": [
+      "dexId が 0 (検証スキップ)"
+    ],
+    "image_url": null,
+    "image_ok": null,
+    "slug_used": null,
+    "base_name": null
+  },
+  {
+    "name": "メガエアームド",
+    "dexId": 227,
+    "id": 227,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10284.png",
+    "image_ok": true,
+    "slug_used": "skarmory-mega",
+    "base_name": "skarmory"
+  },
+  {
+    "name": "キュウコン(アローラ)",
+    "dexId": 38,
+    "id": 10104,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png",
+    "image_ok": true,
+    "slug_used": "ninetales-alola",
+    "base_name": "ninetales"
+  },
+  {
+    "name": "ゴウカザル",
+    "dexId": 392,
+    "id": 392,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/392.png",
+    "image_ok": true,
+    "slug_used": "infernape",
+    "base_name": "infernape"
+  },
+  {
+    "name": "レパルダス",
+    "dexId": 510,
+    "id": 510,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/510.png",
+    "image_ok": true,
+    "slug_used": "liepard",
+    "base_name": "liepard"
+  },
+  {
+    "name": "カエンジシ",
+    "dexId": 668,
+    "id": 668,
+    "issues": [
+      "pokemon/pyroar も pokemon/pyroar も 404"
+    ],
+    "image_url": null,
+    "image_ok": null,
+    "slug_used": "pyroar",
+    "base_name": "pyroar"
+  },
+  {
+    "name": "ライボルト",
+    "dexId": 310,
+    "id": 310,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/310.png",
+    "image_ok": true,
+    "slug_used": "manectric",
+    "base_name": "manectric"
+  },
+  {
+    "name": "ミミロップ",
+    "dexId": 428,
+    "id": 428,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/428.png",
+    "image_ok": true,
+    "slug_used": "lopunny",
+    "base_name": "lopunny"
+  },
+  {
+    "name": "ゾロアーク",
+    "dexId": 571,
+    "id": 571,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/571.png",
+    "image_ok": true,
+    "slug_used": "zoroark",
+    "base_name": "zoroark"
+  },
+  {
+    "name": "メガカイロス",
+    "dexId": 127,
+    "id": 10040,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10040.png",
+    "image_ok": true,
+    "slug_used": "pinsir-mega",
+    "base_name": "pinsir"
+  },
+  {
+    "name": "メガサメハダー",
+    "dexId": 319,
+    "id": 10070,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10070.png",
+    "image_ok": true,
+    "slug_used": "sharpedo-mega",
+    "base_name": "sharpedo"
+  },
+  {
+    "name": "マフォクシー",
+    "dexId": 655,
+    "id": 655,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/655.png",
+    "image_ok": true,
+    "slug_used": "delphox",
+    "base_name": "delphox"
+  },
+  {
+    "name": "ニャオニクス(オス)",
+    "dexId": 678,
+    "id": 678,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/678.png",
+    "image_ok": true,
+    "slug_used": "meowstic-male",
+    "base_name": "meowstic"
+  },
+  {
+    "name": "ニャオニクス(メス)",
+    "dexId": 678,
+    "id": 10025,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10025.png",
+    "image_ok": true,
+    "slug_used": "meowstic-female",
+    "base_name": "meowstic"
+  },
+  {
+    "name": "エモンガ",
+    "dexId": 587,
+    "id": 587,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/587.png",
+    "image_ok": true,
+    "slug_used": "emolga",
+    "base_name": "emolga"
+  },
+  {
+    "name": "メガドリュウズ",
+    "dexId": 530,
+    "id": 530,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10287.png",
+    "image_ok": true,
+    "slug_used": "excadrill-mega",
+    "base_name": "excadrill"
+  },
+  {
+    "name": "ガブリアス",
+    "dexId": 445,
+    "id": 445,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png",
+    "image_ok": true,
+    "slug_used": "garchomp",
+    "base_name": "garchomp"
+  },
+  {
+    "name": "トリミアン",
+    "dexId": 676,
+    "id": 676,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/676.png",
+    "image_ok": true,
+    "slug_used": "furfrou",
+    "base_name": "furfrou"
+  },
+  {
+    "name": "メガフラエッテ",
+    "dexId": 670,
+    "id": 670,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10296.png",
+    "image_ok": true,
+    "slug_used": "floette-mega",
+    "base_name": "floette"
+  },
+  {
+    "name": "ピジョット",
+    "dexId": 18,
+    "id": 18,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png",
+    "image_ok": true,
+    "slug_used": "pidgeot",
+    "base_name": "pidgeot"
+  },
+  {
+    "name": "デデンネ",
+    "dexId": 702,
+    "id": 702,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/702.png",
+    "image_ok": true,
+    "slug_used": "dedenne",
+    "base_name": "dedenne"
+  },
+  {
+    "name": "メガピジョット",
+    "dexId": 18,
+    "id": 10073,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10073.png",
+    "image_ok": true,
+    "slug_used": "pidgeot-mega",
+    "base_name": "pidgeot"
+  },
+  {
+    "name": "メガキラフロル",
+    "dexId": 970,
+    "id": 970,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10321.png",
+    "image_ok": true,
+    "slug_used": "glimmora-mega",
+    "base_name": "glimmora"
+  },
+  {
+    "name": "リザードン",
+    "dexId": 6,
+    "id": 6,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+    "image_ok": true,
+    "slug_used": "charizard",
+    "base_name": "charizard"
+  },
+  {
+    "name": "キュウコン",
+    "dexId": 38,
+    "id": 38,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+    "image_ok": true,
+    "slug_used": "ninetales",
+    "base_name": "ninetales"
+  },
+  {
+    "name": "ケンタロス(パルデア単)",
+    "dexId": 128,
+    "id": 10250,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10250.png",
+    "image_ok": true,
+    "slug_used": "tauros-paldea-combat-breed",
+    "base_name": "tauros"
+  },
+  {
+    "name": "ケンタロス(パルデア炎)",
+    "dexId": 128,
+    "id": 10251,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10251.png",
+    "image_ok": true,
+    "slug_used": "tauros-paldea-blaze-breed",
+    "base_name": "tauros"
+  },
+  {
+    "name": "ケンタロス(パルデア水)",
+    "dexId": 128,
+    "id": 10252,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10252.png",
+    "image_ok": true,
+    "slug_used": "tauros-paldea-aqua-breed",
+    "base_name": "tauros"
+  },
+  {
+    "name": "バクフーン",
+    "dexId": 157,
+    "id": 157,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/157.png",
+    "image_ok": true,
+    "slug_used": "typhlosion",
+    "base_name": "typhlosion"
+  },
+  {
+    "name": "ウルガモス",
+    "dexId": 637,
+    "id": 637,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png",
+    "image_ok": true,
+    "slug_used": "volcarona",
+    "base_name": "volcarona"
+  },
+  {
+    "name": "イルカマン(ナイーブ)",
+    "dexId": 964,
+    "id": 964,
+    "issues": [
+      "pokemon/palafin も pokemon/palafin も 404"
+    ],
+    "image_url": null,
+    "image_ok": null,
+    "slug_used": "palafin",
+    "base_name": "palafin"
+  },
+  {
+    "name": "イルカマン(マイティ)",
+    "dexId": 964,
+    "id": 10256,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10256.png",
+    "image_ok": true,
+    "slug_used": "palafin-hero",
+    "base_name": "palafin"
+  },
+  {
+    "name": "メガガルーラ",
+    "dexId": 115,
+    "id": 10039,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10039.png",
+    "image_ok": true,
+    "slug_used": "kangaskhan-mega",
+    "base_name": "kangaskhan"
+  },
+  {
+    "name": "メガサーナイト",
+    "dexId": 282,
+    "id": 10051,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10051.png",
+    "image_ok": true,
+    "slug_used": "gardevoir-mega",
+    "base_name": "gardevoir"
+  },
+  {
+    "name": "メガチャーレム",
+    "dexId": 308,
+    "id": 10054,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10054.png",
+    "image_ok": true,
+    "slug_used": "medicham-mega",
+    "base_name": "medicham"
+  },
+  {
+    "name": "メガオニゴーリ",
+    "dexId": 362,
+    "id": 10074,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10074.png",
+    "image_ok": true,
+    "slug_used": "glalie-mega",
+    "base_name": "glalie"
+  },
+  {
+    "name": "メガカイリュー",
+    "dexId": 149,
+    "id": 149,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10281.png",
+    "image_ok": true,
+    "slug_used": "dragonite-mega",
+    "base_name": "dragonite"
+  },
+  {
+    "name": "メガタイレーツ",
+    "dexId": 870,
+    "id": 870,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10303.png",
+    "image_ok": true,
+    "slug_used": "falinks-mega",
+    "base_name": "falinks"
+  },
+  {
+    "name": "メガジガルデ",
+    "dexId": 718,
+    "id": 718,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10301.png",
+    "image_ok": true,
+    "slug_used": "zygarde-mega",
+    "base_name": "zygarde"
+  },
+  {
+    "name": "パンプジン(小さい)",
+    "dexId": 711,
+    "id": 711,
+    "issues": [
+      "ID ズレ: json.id=711, PokeAPI.id=10030"
+    ],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10030.png",
+    "image_ok": true,
+    "slug_used": "gourgeist-small",
+    "base_name": "gourgeist"
+  },
+  {
+    "name": "サザンドラ",
+    "dexId": 635,
+    "id": 635,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png",
+    "image_ok": true,
+    "slug_used": "hydreigon",
+    "base_name": "hydreigon"
+  },
+  {
+    "name": "モルペコ",
+    "dexId": 877,
+    "id": 877,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/877.png",
+    "image_ok": true,
+    "slug_used": "morpeko-full-belly",
+    "base_name": "morpeko"
+  },
+  {
+    "name": "ミミッキュ",
+    "dexId": 778,
+    "id": 778,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png",
+    "image_ok": true,
+    "slug_used": "mimikyu-disguised",
+    "base_name": "mimikyu"
+  },
+  {
+    "name": "ウインディ",
+    "dexId": 59,
+    "id": 59,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png",
+    "image_ok": true,
+    "slug_used": "arcanine",
+    "base_name": "arcanine"
+  },
+  {
+    "name": "バクフーン(ヒスイ)",
+    "dexId": 157,
+    "id": 10233,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10233.png",
+    "image_ok": true,
+    "slug_used": "typhlosion-hisui",
+    "base_name": "typhlosion"
+  },
+  {
+    "name": "ヘルガー",
+    "dexId": 229,
+    "id": 229,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/229.png",
+    "image_ok": true,
+    "slug_used": "houndoom",
+    "base_name": "houndoom"
+  },
+  {
+    "name": "サメハダー",
+    "dexId": 319,
+    "id": 319,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/319.png",
+    "image_ok": true,
+    "slug_used": "sharpedo",
+    "base_name": "sharpedo"
+  },
+  {
+    "name": "リーフィア",
+    "dexId": 470,
+    "id": 470,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+    "image_ok": true,
+    "slug_used": "leafeon",
+    "base_name": "leafeon"
+  },
+  {
+    "name": "グライオン",
+    "dexId": 472,
+    "id": 472,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/472.png",
+    "image_ok": true,
+    "slug_used": "gliscor",
+    "base_name": "gliscor"
+  },
+  {
+    "name": "メガヘルガー",
+    "dexId": 229,
+    "id": 10048,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10048.png",
+    "image_ok": true,
+    "slug_used": "houndoom-mega",
+    "base_name": "houndoom"
+  },
+  {
+    "name": "デカヌチャン",
+    "dexId": 959,
+    "id": 959,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
+    "image_ok": true,
+    "slug_used": "tinkaton",
+    "base_name": "tinkaton"
+  },
+  {
+    "name": "ワルビアル",
+    "dexId": 553,
+    "id": 553,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/553.png",
+    "image_ok": true,
+    "slug_used": "krookodile",
+    "base_name": "krookodile"
+  },
+  {
+    "name": "メガガブリアス",
+    "dexId": 445,
+    "id": 10058,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10058.png",
+    "image_ok": true,
+    "slug_used": "garchomp-mega",
+    "base_name": "garchomp"
+  },
+  {
+    "name": "メガシャリタツ",
+    "dexId": 978,
+    "id": 978,
+    "issues": [
+      "pokemon/tatsugiri-mega も pokemon/tatsugiri も 404"
+    ],
+    "image_url": null,
+    "image_ok": null,
+    "slug_used": "tatsugiri-mega",
+    "base_name": "tatsugiri"
+  },
+  {
+    "name": "ロトム",
+    "dexId": 479,
+    "id": 479,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
+    "image_ok": true,
+    "slug_used": "rotom",
+    "base_name": "rotom"
+  },
+  {
+    "name": "ピカチュウ",
+    "dexId": 25,
+    "id": 25,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+    "image_ok": true,
+    "slug_used": "pikachu",
+    "base_name": "pikachu"
+  },
+  {
+    "name": "ウインディ(ヒスイ)",
+    "dexId": 59,
+    "id": 10230,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10230.png",
+    "image_ok": true,
+    "slug_used": "arcanine-hisui",
+    "base_name": "arcanine"
+  },
+  {
+    "name": "ガルーラ",
+    "dexId": 115,
+    "id": 115,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
+    "image_ok": true,
+    "slug_used": "kangaskhan",
+    "base_name": "kangaskhan"
+  },
+  {
+    "name": "ロズレイド",
+    "dexId": 407,
+    "id": 407,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/407.png",
+    "image_ok": true,
+    "slug_used": "roserade",
+    "base_name": "roserade"
+  },
+  {
+    "name": "ルカリオ",
+    "dexId": 448,
+    "id": 448,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+    "image_ok": true,
+    "slug_used": "lucario",
+    "base_name": "lucario"
+  },
+  {
+    "name": "メガシャンデラ",
+    "dexId": 609,
+    "id": 609,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10291.png",
+    "image_ok": true,
+    "slug_used": "chandelure-mega",
+    "base_name": "chandelure"
+  },
+  {
+    "name": "ビビヨン",
+    "dexId": 666,
+    "id": 666,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/666.png",
+    "image_ok": true,
+    "slug_used": "vivillon",
+    "base_name": "vivillon"
+  },
+  {
+    "name": "メガガメノデス",
+    "dexId": 689,
+    "id": 689,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10298.png",
+    "image_ok": true,
+    "slug_used": "barbaracle-mega",
+    "base_name": "barbaracle"
+  },
+  {
+    "name": "メガカラマネロ",
+    "dexId": 687,
+    "id": 687,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10297.png",
+    "image_ok": true,
+    "slug_used": "malamar-mega",
+    "base_name": "malamar"
+  },
+  {
+    "name": "メガセグレイブ",
+    "dexId": 998,
+    "id": 998,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10325.png",
+    "image_ok": true,
+    "slug_used": "baxcalibur-mega",
+    "base_name": "baxcalibur"
+  },
+  {
+    "name": "ロトム(ヒート)",
+    "dexId": 479,
+    "id": 10008,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
+    "image_ok": true,
+    "slug_used": "rotom",
+    "base_name": "rotom"
+  },
+  {
+    "name": "ロトム(ウォッシュ)",
+    "dexId": 479,
+    "id": 10009,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
+    "image_ok": true,
+    "slug_used": "rotom",
+    "base_name": "rotom"
+  },
+  {
+    "name": "ロトム(カット)",
+    "dexId": 479,
+    "id": 10012,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
+    "image_ok": true,
+    "slug_used": "rotom",
+    "base_name": "rotom"
+  },
+  {
+    "name": "ロトム(スピン)",
+    "dexId": 479,
+    "id": 10011,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
+    "image_ok": true,
+    "slug_used": "rotom",
+    "base_name": "rotom"
+  },
+  {
+    "name": "ロトム(フロスト)",
+    "dexId": 479,
+    "id": 10010,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
+    "image_ok": true,
+    "slug_used": "rotom",
+    "base_name": "rotom"
+  },
+  {
+    "name": "カイロス",
+    "dexId": 127,
+    "id": 127,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
+    "image_ok": true,
+    "slug_used": "pinsir",
+    "base_name": "pinsir"
+  },
+  {
+    "name": "ヘラクロス",
+    "dexId": 214,
+    "id": 214,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/214.png",
+    "image_ok": true,
+    "slug_used": "heracross",
+    "base_name": "heracross"
+  },
+  {
+    "name": "ダイケンキ(ヒスイ)",
+    "dexId": 503,
+    "id": 10236,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10236.png",
+    "image_ok": true,
+    "slug_used": "samurott-hisui",
+    "base_name": "samurott"
+  },
+  {
+    "name": "ダゲキ",
+    "dexId": 539,
+    "id": 539,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/539.png",
+    "image_ok": true,
+    "slug_used": "sawk",
+    "base_name": "sawk"
+  },
+  {
+    "name": "ジャラランガ",
+    "dexId": 784,
+    "id": 784,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png",
+    "image_ok": true,
+    "slug_used": "kommo-o",
+    "base_name": "kommo-o"
+  },
+  {
+    "name": "バサギリ",
+    "dexId": 900,
+    "id": 900,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png",
+    "image_ok": true,
+    "slug_used": "kleavor",
+    "base_name": "kleavor"
+  },
+  {
+    "name": "ウェーニバル",
+    "dexId": 914,
+    "id": 914,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/914.png",
+    "image_ok": true,
+    "slug_used": "quaquaval",
+    "base_name": "quaquaval"
+  },
+  {
+    "name": "ソウブレイズ",
+    "dexId": 937,
+    "id": 937,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png",
+    "image_ok": true,
+    "slug_used": "ceruledge",
+    "base_name": "ceruledge"
+  },
+  {
+    "name": "ブリジュラス",
+    "dexId": 1018,
+    "id": 1018,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1018.png",
+    "image_ok": true,
+    "slug_used": "archaludon",
+    "base_name": "archaludon"
+  },
+  {
+    "name": "メガヘラクロス",
+    "dexId": 214,
+    "id": 10047,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10047.png",
+    "image_ok": true,
+    "slug_used": "heracross-mega",
+    "base_name": "heracross"
+  },
+  {
+    "name": "パンプジン(普通)",
+    "dexId": 711,
+    "id": 711,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/711.png",
+    "image_ok": true,
+    "slug_used": "gourgeist-average",
+    "base_name": "gourgeist"
+  },
+  {
+    "name": "ルガルガン(まよなか)",
+    "dexId": 745,
+    "id": 10126,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10126.png",
+    "image_ok": true,
+    "slug_used": "lycanroc-midnight",
+    "base_name": "lycanroc"
+  },
+  {
+    "name": "オトシドリ",
+    "dexId": 962,
+    "id": 962,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/962.png",
+    "image_ok": true,
+    "slug_used": "bombirdier",
+    "base_name": "bombirdier"
+  },
+  {
+    "name": "ギャラドス",
+    "dexId": 130,
+    "id": 130,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+    "image_ok": true,
+    "slug_used": "gyarados",
+    "base_name": "gyarados"
+  },
+  {
+    "name": "ミロカロス",
+    "dexId": 350,
+    "id": 350,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png",
+    "image_ok": true,
+    "slug_used": "milotic",
+    "base_name": "milotic"
+  },
+  {
+    "name": "メガギャラドス",
+    "dexId": 130,
+    "id": 10041,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10041.png",
+    "image_ok": true,
+    "slug_used": "gyarados-mega",
+    "base_name": "gyarados"
+  },
+  {
+    "name": "フシギバナ",
+    "dexId": 3,
+    "id": 3,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+    "image_ok": true,
+    "slug_used": "venusaur",
+    "base_name": "venusaur"
+  },
+  {
+    "name": "アーボック",
+    "dexId": 24,
+    "id": 24,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png",
+    "image_ok": true,
+    "slug_used": "arbok",
+    "base_name": "arbok"
+  },
+  {
+    "name": "カイリュー",
+    "dexId": 149,
+    "id": 149,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
+    "image_ok": true,
+    "slug_used": "dragonite",
+    "base_name": "dragonite"
+  },
+  {
+    "name": "メガニウム",
+    "dexId": 154,
+    "id": 154,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png",
+    "image_ok": true,
+    "slug_used": "meganium",
+    "base_name": "meganium"
+  },
+  {
+    "name": "サーナイト",
+    "dexId": 282,
+    "id": 282,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
+    "image_ok": true,
+    "slug_used": "gardevoir",
+    "base_name": "gardevoir"
+  },
+  {
+    "name": "チャーレム",
+    "dexId": 308,
+    "id": 308,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png",
+    "image_ok": true,
+    "slug_used": "medicham",
+    "base_name": "medicham"
+  },
+  {
+    "name": "チルタリス",
+    "dexId": 334,
+    "id": 334,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png",
+    "image_ok": true,
+    "slug_used": "altaria",
+    "base_name": "altaria"
+  },
+  {
+    "name": "オニゴーリ",
+    "dexId": 362,
+    "id": 362,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png",
+    "image_ok": true,
+    "slug_used": "glalie",
+    "base_name": "glalie"
+  },
+  {
+    "name": "マンムー",
+    "dexId": 473,
+    "id": 473,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png",
+    "image_ok": true,
+    "slug_used": "mamoswine",
+    "base_name": "mamoswine"
+  },
+  {
+    "name": "エルレイド",
+    "dexId": 475,
+    "id": 475,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png",
+    "image_ok": true,
+    "slug_used": "gallade",
+    "base_name": "gallade"
+  },
+  {
+    "name": "シャンデラ",
+    "dexId": 609,
+    "id": 609,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png",
+    "image_ok": true,
+    "slug_used": "chandelure",
+    "base_name": "chandelure"
+  },
+  {
+    "name": "ヌメルゴン",
+    "dexId": 706,
+    "id": 706,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/706.png",
+    "image_ok": true,
+    "slug_used": "goodra",
+    "base_name": "goodra"
+  },
+  {
+    "name": "ナゲツケサル",
+    "dexId": 766,
+    "id": 766,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/766.png",
+    "image_ok": true,
+    "slug_used": "passimian",
+    "base_name": "passimian"
+  },
+  {
+    "name": "メガフシギバナ",
+    "dexId": 3,
+    "id": 10033,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10033.png",
+    "image_ok": true,
+    "slug_used": "venusaur-mega",
+    "base_name": "venusaur"
+  },
+  {
+    "name": "メガチルタリス",
+    "dexId": 334,
+    "id": 10067,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10067.png",
+    "image_ok": true,
+    "slug_used": "altaria-mega",
+    "base_name": "altaria"
+  },
+  {
+    "name": "メガメガニウム",
+    "dexId": 154,
+    "id": 154,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10282.png",
+    "image_ok": true,
+    "slug_used": "meganium-mega",
+    "base_name": "meganium"
+  },
+  {
+    "name": "メガシビルドン",
+    "dexId": 604,
+    "id": 604,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10290.png",
+    "image_ok": true,
+    "slug_used": "eelektross-mega",
+    "base_name": "eelektross"
+  },
+  {
+    "name": "バイバニラ",
+    "dexId": 584,
+    "id": 584,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/584.png",
+    "image_ok": true,
+    "slug_used": "vanilluxe",
+    "base_name": "vanilluxe"
+  },
+  {
+    "name": "カメックス",
+    "dexId": 9,
+    "id": 9,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+    "image_ok": true,
+    "slug_used": "blastoise",
+    "base_name": "blastoise"
+  },
+  {
+    "name": "オーダイル",
+    "dexId": 160,
+    "id": 160,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/160.png",
+    "image_ok": true,
+    "slug_used": "feraligatr",
+    "base_name": "feraligatr"
+  },
+  {
+    "name": "ホルード",
+    "dexId": 660,
+    "id": 660,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/660.png",
+    "image_ok": true,
+    "slug_used": "diggersby",
+    "base_name": "diggersby"
+  },
+  {
+    "name": "イダイトウ(オス)",
+    "dexId": 902,
+    "id": 902,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/902.png",
+    "image_ok": true,
+    "slug_used": "basculegion-male",
+    "base_name": "basculegion"
+  },
+  {
+    "name": "イダイトウ(メス)",
+    "dexId": 902,
+    "id": 10248,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10248.png",
+    "image_ok": true,
+    "slug_used": "basculegion-female",
+    "base_name": "basculegion"
+  },
+  {
+    "name": "メガカメックス",
+    "dexId": 9,
+    "id": 10036,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10036.png",
+    "image_ok": true,
+    "slug_used": "blastoise-mega",
+    "base_name": "blastoise"
+  },
+  {
+    "name": "メガオーダイル",
+    "dexId": 160,
+    "id": 160,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10283.png",
+    "image_ok": true,
+    "slug_used": "feraligatr-mega",
+    "base_name": "feraligatr"
+  },
+  {
+    "name": "ミルホッグ",
+    "dexId": 505,
+    "id": 505,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/505.png",
+    "image_ok": true,
+    "slug_used": "watchog",
+    "base_name": "watchog"
+  },
+  {
+    "name": "スピアー",
+    "dexId": 15,
+    "id": 15,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png",
+    "image_ok": true,
+    "slug_used": "beedrill",
+    "base_name": "beedrill"
+  },
+  {
+    "name": "アブソル",
+    "dexId": 359,
+    "id": 359,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png",
+    "image_ok": true,
+    "slug_used": "absol",
+    "base_name": "absol"
+  },
+  {
+    "name": "ダストダス",
+    "dexId": 569,
+    "id": 569,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/569.png",
+    "image_ok": true,
+    "slug_used": "garbodor",
+    "base_name": "garbodor"
+  },
+  {
+    "name": "フラージェス",
+    "dexId": 671,
+    "id": 671,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/671.png",
+    "image_ok": true,
+    "slug_used": "florges",
+    "base_name": "florges"
+  },
+  {
+    "name": "クレッフィ",
+    "dexId": 707,
+    "id": 707,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/707.png",
+    "image_ok": true,
+    "slug_used": "klefki",
+    "base_name": "klefki"
+  },
+  {
+    "name": "ワッカネズミ",
+    "dexId": 924,
+    "id": 924,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/924.png",
+    "image_ok": true,
+    "slug_used": "tandemaus",
+    "base_name": "tandemaus"
+  },
+  {
+    "name": "グレンアルマ",
+    "dexId": 936,
+    "id": 936,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png",
+    "image_ok": true,
+    "slug_used": "armarouge",
+    "base_name": "armarouge"
+  },
+  {
+    "name": "スコヴィラン",
+    "dexId": 952,
+    "id": 952,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png",
+    "image_ok": true,
+    "slug_used": "scovillain",
+    "base_name": "scovillain"
+  },
+  {
+    "name": "メガスピアー",
+    "dexId": 15,
+    "id": 10090,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10090.png",
+    "image_ok": true,
+    "slug_used": "beedrill-mega",
+    "base_name": "beedrill"
+  },
+  {
+    "name": "メガハッサム",
+    "dexId": 212,
+    "id": 10046,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10046.png",
+    "image_ok": true,
+    "slug_used": "scizor-mega",
+    "base_name": "scizor"
+  },
+  {
+    "name": "メガジュペッタ",
+    "dexId": 354,
+    "id": 10056,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10056.png",
+    "image_ok": true,
+    "slug_used": "banette-mega",
+    "base_name": "banette"
+  },
+  {
+    "name": "メガエンブオー",
+    "dexId": 500,
+    "id": 500,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10286.png",
+    "image_ok": true,
+    "slug_used": "emboar-mega",
+    "base_name": "emboar"
+  },
+  {
+    "name": "メガスコヴィラン",
+    "dexId": 952,
+    "id": 952,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10320.png",
+    "image_ok": true,
+    "slug_used": "scovillain-mega",
+    "base_name": "scovillain"
+  },
+  {
+    "name": "ペロリーム",
+    "dexId": 685,
+    "id": 685,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/685.png",
+    "image_ok": true,
+    "slug_used": "slurpuff",
+    "base_name": "slurpuff"
+  },
+  {
+    "name": "アマージョ",
+    "dexId": 763,
+    "id": 763,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png",
+    "image_ok": true,
+    "slug_used": "tsareena",
+    "base_name": "tsareena"
+  },
+  {
+    "name": "ガチゴラス",
+    "dexId": 697,
+    "id": 697,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/697.png",
+    "image_ok": true,
+    "slug_used": "tyrantrum",
+    "base_name": "tyrantrum"
+  },
+  {
+    "name": "サダイジャ",
+    "dexId": 844,
+    "id": 844,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/844.png",
+    "image_ok": true,
+    "slug_used": "sandaconda",
+    "base_name": "sandaconda"
+  },
+  {
+    "name": "メガバンギラス",
+    "dexId": 248,
+    "id": 10049,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10049.png",
+    "image_ok": true,
+    "slug_used": "tyranitar-mega",
+    "base_name": "tyranitar"
+  },
+  {
+    "name": "ウツボット",
+    "dexId": 71,
+    "id": 71,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png",
+    "image_ok": true,
+    "slug_used": "victreebel",
+    "base_name": "victreebel"
+  },
+  {
+    "name": "ニョロトノ",
+    "dexId": 186,
+    "id": 186,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/186.png",
+    "image_ok": true,
+    "slug_used": "politoed",
+    "base_name": "politoed"
+  },
+  {
+    "name": "エアームド",
+    "dexId": 227,
+    "id": 227,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/227.png",
+    "image_ok": true,
+    "slug_used": "skarmory",
+    "base_name": "skarmory"
+  },
+  {
+    "name": "ポワルン",
+    "dexId": 351,
+    "id": 351,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/351.png",
+    "image_ok": true,
+    "slug_used": "castform",
+    "base_name": "castform"
+  },
+  {
+    "name": "レントラー",
+    "dexId": 405,
+    "id": 405,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/405.png",
+    "image_ok": true,
+    "slug_used": "luxray",
+    "base_name": "luxray"
+  },
+  {
+    "name": "ダイケンキ",
+    "dexId": 503,
+    "id": 503,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png",
+    "image_ok": true,
+    "slug_used": "samurott",
+    "base_name": "samurott"
+  },
+  {
+    "name": "エリキテル",
+    "dexId": 694,
+    "id": 694,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/694.png",
+    "image_ok": true,
+    "slug_used": "helioptile",
+    "base_name": "helioptile"
+  },
+  {
+    "name": "ジュナイパー",
+    "dexId": 724,
+    "id": 724,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/724.png",
+    "image_ok": true,
+    "slug_used": "decidueye",
+    "base_name": "decidueye"
+  },
+  {
+    "name": "アップリュ",
+    "dexId": 0,
+    "id": 0,
+    "issues": [
+      "dexId が 0 (検証スキップ)"
+    ],
+    "image_url": null,
+    "image_ok": null,
+    "slug_used": null,
+    "base_name": null
+  },
+  {
+    "name": "ポットデス",
+    "dexId": 855,
+    "id": 855,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/855.png",
+    "image_ok": true,
+    "slug_used": "polteageist",
+    "base_name": "polteageist"
+  },
+  {
+    "name": "バリコオル",
+    "dexId": 866,
+    "id": 866,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/866.png",
+    "image_ok": true,
+    "slug_used": "mr-rime",
+    "base_name": "mr-rime"
+  },
+  {
+    "name": "メガピクシー",
+    "dexId": 36,
+    "id": 36,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10278.png",
+    "image_ok": true,
+    "slug_used": "clefable-mega",
+    "base_name": "clefable"
+  },
+  {
+    "name": "メガウツボット",
+    "dexId": 71,
+    "id": 71,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10279.png",
+    "image_ok": true,
+    "slug_used": "victreebel-mega",
+    "base_name": "victreebel"
+  },
+  {
+    "name": "パンプジン(大きい)",
+    "dexId": 711,
+    "id": 711,
+    "issues": [
+      "ID ズレ: json.id=711, PokeAPI.id=10031"
+    ],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10031.png",
+    "image_ok": true,
+    "slug_used": "gourgeist-large",
+    "base_name": "gourgeist"
+  },
+  {
+    "name": "ガメノデス",
+    "dexId": 689,
+    "id": 689,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/689.png",
+    "image_ok": true,
+    "slug_used": "barbaracle",
+    "base_name": "barbaracle"
+  },
+  {
+    "name": "メガズルズキン",
+    "dexId": 560,
+    "id": 560,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10289.png",
+    "image_ok": true,
+    "slug_used": "scrafty-mega",
+    "base_name": "scrafty"
+  },
+  {
+    "name": "アーマーガア",
+    "dexId": 823,
+    "id": 823,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png",
+    "image_ok": true,
+    "slug_used": "corviknight",
+    "base_name": "corviknight"
+  },
+  {
+    "name": "ラウドボーン",
+    "dexId": 911,
+    "id": 911,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/911.png",
+    "image_ok": true,
+    "slug_used": "skeledirge",
+    "base_name": "skeledirge"
+  },
+  {
+    "name": "シャワーズ",
+    "dexId": 134,
+    "id": 134,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+    "image_ok": true,
+    "slug_used": "vaporeon",
+    "base_name": "vaporeon"
+  },
+  {
+    "name": "ブースター",
+    "dexId": 136,
+    "id": 136,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+    "image_ok": true,
+    "slug_used": "flareon",
+    "base_name": "flareon"
+  },
+  {
+    "name": "ブラッキー",
+    "dexId": 197,
+    "id": 197,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png",
+    "image_ok": true,
+    "slug_used": "umbreon",
+    "base_name": "umbreon"
+  },
+  {
+    "name": "ハッサム",
+    "dexId": 212,
+    "id": 212,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png",
+    "image_ok": true,
+    "slug_used": "scizor",
+    "base_name": "scizor"
+  },
+  {
+    "name": "ペリッパー",
+    "dexId": 279,
+    "id": 279,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png",
+    "image_ok": true,
+    "slug_used": "pelipper",
+    "base_name": "pelipper"
+  },
+  {
+    "name": "ジュペッタ",
+    "dexId": 354,
+    "id": 354,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png",
+    "image_ok": true,
+    "slug_used": "banette",
+    "base_name": "banette"
+  },
+  {
+    "name": "チリーン",
+    "dexId": 358,
+    "id": 358,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/358.png",
+    "image_ok": true,
+    "slug_used": "chimecho",
+    "base_name": "chimecho"
+  },
+  {
+    "name": "グレイシア",
+    "dexId": 471,
+    "id": 471,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+    "image_ok": true,
+    "slug_used": "glaceon",
+    "base_name": "glaceon"
+  },
+  {
+    "name": "エンブオー",
+    "dexId": 500,
+    "id": 500,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/500.png",
+    "image_ok": true,
+    "slug_used": "emboar",
+    "base_name": "emboar"
+  },
+  {
+    "name": "アヤシシ",
+    "dexId": 899,
+    "id": 899,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/899.png",
+    "image_ok": true,
+    "slug_used": "wyrdeer",
+    "base_name": "wyrdeer"
+  },
+  {
+    "name": "ミミズズ",
+    "dexId": 968,
+    "id": 968,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/968.png",
+    "image_ok": true,
+    "slug_used": "orthworm",
+    "base_name": "orthworm"
+  },
+  {
+    "name": "メガチリーン",
+    "dexId": 358,
+    "id": 358,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10306.png",
+    "image_ok": true,
+    "slug_used": "chimecho-mega",
+    "base_name": "chimecho"
+  },
+  {
+    "name": "ヤナップ",
+    "dexId": 511,
+    "id": 511,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/511.png",
+    "image_ok": true,
+    "slug_used": "pansage",
+    "base_name": "pansage"
+  },
+  {
+    "name": "バオップ",
+    "dexId": 513,
+    "id": 513,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/513.png",
+    "image_ok": true,
+    "slug_used": "pansear",
+    "base_name": "pansear"
+  },
+  {
+    "name": "ヒヤップ",
+    "dexId": 515,
+    "id": 515,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/515.png",
+    "image_ok": true,
+    "slug_used": "panpour",
+    "base_name": "panpour"
+  },
+  {
+    "name": "ブリガロン",
+    "dexId": 652,
+    "id": 652,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/652.png",
+    "image_ok": true,
+    "slug_used": "chesnaught",
+    "base_name": "chesnaught"
+  },
+  {
+    "name": "マホイップ",
+    "dexId": 869,
+    "id": 869,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/869.png",
+    "image_ok": true,
+    "slug_used": "alcremie",
+    "base_name": "alcremie"
+  },
+  {
+    "name": "メガペンドラー",
+    "dexId": 545,
+    "id": 545,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10288.png",
+    "image_ok": true,
+    "slug_used": "scolipede-mega",
+    "base_name": "scolipede"
+  },
+  {
+    "name": "バンギラス",
+    "dexId": 248,
+    "id": 248,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png",
+    "image_ok": true,
+    "slug_used": "tyranitar",
+    "base_name": "tyranitar"
+  },
+  {
+    "name": "エンペルト",
+    "dexId": 395,
+    "id": 395,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png",
+    "image_ok": true,
+    "slug_used": "empoleon",
+    "base_name": "empoleon"
+  },
+  {
+    "name": "ユキノオー",
+    "dexId": 460,
+    "id": 460,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/460.png",
+    "image_ok": true,
+    "slug_used": "abomasnow",
+    "base_name": "abomasnow"
+  },
+  {
+    "name": "ギルガルド(シールド)",
+    "dexId": 681,
+    "id": 681,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/681.png",
+    "image_ok": true,
+    "slug_used": "aegislash-shield",
+    "base_name": "aegislash"
+  },
+  {
+    "name": "ギルガルド(ブレード)",
+    "dexId": 681,
+    "id": 681,
+    "issues": [
+      "ID ズレ: json.id=681, PokeAPI.id=10026"
+    ],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10026.png",
+    "image_ok": true,
+    "slug_used": "aegislash-blade",
+    "base_name": "aegislash"
+  },
+  {
+    "name": "ニンフィア",
+    "dexId": 700,
+    "id": 700,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+    "image_ok": true,
+    "slug_used": "sylveon",
+    "base_name": "sylveon"
+  },
+  {
+    "name": "ヌメルゴン(ヒスイ)",
+    "dexId": 706,
+    "id": 10242,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10242.png",
+    "image_ok": true,
+    "slug_used": "goodra-hisui",
+    "base_name": "goodra"
+  },
+  {
+    "name": "ジュナイパー(ヒスイ)",
+    "dexId": 724,
+    "id": 10244,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10244.png",
+    "image_ok": true,
+    "slug_used": "decidueye-hisui",
+    "base_name": "decidueye"
+  },
+  {
+    "name": "ガオガエン",
+    "dexId": 727,
+    "id": 727,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/727.png",
+    "image_ok": true,
+    "slug_used": "incineroar",
+    "base_name": "incineroar"
+  },
+  {
+    "name": "アシレーヌ",
+    "dexId": 730,
+    "id": 730,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png",
+    "image_ok": true,
+    "slug_used": "primarina",
+    "base_name": "primarina"
+  },
+  {
+    "name": "ドデカバシ",
+    "dexId": 733,
+    "id": 733,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/733.png",
+    "image_ok": true,
+    "slug_used": "toucannon",
+    "base_name": "toucannon"
+  },
+  {
+    "name": "ヤレユータン",
+    "dexId": 765,
+    "id": 765,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/765.png",
+    "image_ok": true,
+    "slug_used": "oranguru",
+    "base_name": "oranguru"
+  },
+  {
+    "name": "リキキリン",
+    "dexId": 981,
+    "id": 981,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/981.png",
+    "image_ok": true,
+    "slug_used": "farigiraf",
+    "base_name": "farigiraf"
+  },
+  {
+    "name": "ラムパルド",
+    "dexId": 409,
+    "id": 409,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/409.png",
+    "image_ok": true,
+    "slug_used": "rampardos",
+    "base_name": "rampardos"
+  },
+  {
+    "name": "ゴロンダ",
+    "dexId": 675,
+    "id": 675,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/675.png",
+    "image_ok": true,
+    "slug_used": "pangoro",
+    "base_name": "pangoro"
+  },
+  {
+    "name": "アマルルガ",
+    "dexId": 699,
+    "id": 699,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/699.png",
+    "image_ok": true,
+    "slug_used": "aurorus",
+    "base_name": "aurorus"
+  },
+  {
+    "name": "ドダイトス",
+    "dexId": 389,
+    "id": 389,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/389.png",
+    "image_ok": true,
+    "slug_used": "torterra",
+    "base_name": "torterra"
+  },
+  {
+    "name": "オーロット",
+    "dexId": 709,
+    "id": 709,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/709.png",
+    "image_ok": true,
+    "slug_used": "trevenant",
+    "base_name": "trevenant"
+  },
+  {
+    "name": "カイリキー",
+    "dexId": 68,
+    "id": 68,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png",
+    "image_ok": true,
+    "slug_used": "machamp",
+    "base_name": "machamp"
+  },
+  {
+    "name": "デンリュウ",
+    "dexId": 181,
+    "id": 181,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/181.png",
+    "image_ok": true,
+    "slug_used": "ampharos",
+    "base_name": "ampharos"
+  },
+  {
+    "name": "ゴルーグ",
+    "dexId": 623,
+    "id": 623,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/623.png",
+    "image_ok": true,
+    "slug_used": "golurk",
+    "base_name": "golurk"
+  },
+  {
+    "name": "メガデンリュウ",
+    "dexId": 181,
+    "id": 10045,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10045.png",
+    "image_ok": true,
+    "slug_used": "ampharos-mega",
+    "base_name": "ampharos"
+  },
+  {
+    "name": "メガゴルーグ",
+    "dexId": 623,
+    "id": 623,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10313.png",
+    "image_ok": true,
+    "slug_used": "golurk-mega",
+    "base_name": "golurk"
+  },
+  {
+    "name": "メガマギアナ",
+    "dexId": 801,
+    "id": 801,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10317.png",
+    "image_ok": true,
+    "slug_used": "magearna-mega",
+    "base_name": "magearna"
+  },
+  {
+    "name": "パンプジン(特大)",
+    "dexId": 711,
+    "id": 711,
+    "issues": [
+      "ID ズレ: json.id=711, PokeAPI.id=10032"
+    ],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10032.png",
+    "image_ok": true,
+    "slug_used": "gourgeist-super",
+    "base_name": "gourgeist"
+  },
+  {
+    "name": "マリルリ",
+    "dexId": 184,
+    "id": 184,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/184.png",
+    "image_ok": true,
+    "slug_used": "azumarill",
+    "base_name": "azumarill"
+  },
+  {
+    "name": "ヤミラミ",
+    "dexId": 302,
+    "id": 302,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png",
+    "image_ok": true,
+    "slug_used": "sableye",
+    "base_name": "sableye"
+  },
+  {
+    "name": "ボスゴドラ",
+    "dexId": 306,
+    "id": 306,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/306.png",
+    "image_ok": true,
+    "slug_used": "aggron",
+    "base_name": "aggron"
+  },
+  {
+    "name": "グレッグル",
+    "dexId": 453,
+    "id": 453,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/453.png",
+    "image_ok": true,
+    "slug_used": "croagunk",
+    "base_name": "croagunk"
+  },
+  {
+    "name": "タブンネ",
+    "dexId": 531,
+    "id": 531,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/531.png",
+    "image_ok": true,
+    "slug_used": "audino",
+    "base_name": "audino"
+  },
+  {
+    "name": "ツンベアー",
+    "dexId": 614,
+    "id": 614,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/614.png",
+    "image_ok": true,
+    "slug_used": "beartic",
+    "base_name": "beartic"
+  },
+  {
+    "name": "ドドゲザン",
+    "dexId": 983,
+    "id": 983,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png",
+    "image_ok": true,
+    "slug_used": "kingambit",
+    "base_name": "kingambit"
+  },
+  {
+    "name": "メガボスゴドラ",
+    "dexId": 306,
+    "id": 10053,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10053.png",
+    "image_ok": true,
+    "slug_used": "aggron-mega",
+    "base_name": "aggron"
+  },
+  {
+    "name": "メガタブンネ",
+    "dexId": 531,
+    "id": 10069,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10069.png",
+    "image_ok": true,
+    "slug_used": "audino-mega",
+    "base_name": "audino"
+  },
+  {
+    "name": "メタモン",
+    "dexId": 132,
+    "id": 132,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
+    "image_ok": true,
+    "slug_used": "ditto",
+    "base_name": "ditto"
+  },
+  {
+    "name": "カバルドン",
+    "dexId": 450,
+    "id": 450,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/450.png",
+    "image_ok": true,
+    "slug_used": "hippowdon",
+    "base_name": "hippowdon"
+  },
+  {
+    "name": "ローブシン",
+    "dexId": 534,
+    "id": 534,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/534.png",
+    "image_ok": true,
+    "slug_used": "conkeldurr",
+    "base_name": "conkeldurr"
+  },
+  {
+    "name": "ハラバリー",
+    "dexId": 939,
+    "id": 939,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/939.png",
+    "image_ok": true,
+    "slug_used": "bellibolt",
+    "base_name": "bellibolt"
+  },
+  {
+    "name": "メガドラミドロ",
+    "dexId": 691,
+    "id": 691,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10299.png",
+    "image_ok": true,
+    "slug_used": "dragalge-mega",
+    "base_name": "dragalge"
+  },
+  {
+    "name": "メガブリガロン",
+    "dexId": 652,
+    "id": 652,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10292.png",
+    "image_ok": true,
+    "slug_used": "chesnaught-mega",
+    "base_name": "chesnaught"
+  },
+  {
+    "name": "ケケンカニ",
+    "dexId": 740,
+    "id": 740,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/740.png",
+    "image_ok": true,
+    "slug_used": "crabominable",
+    "base_name": "crabominable"
+  },
+  {
+    "name": "オニシズクモ",
+    "dexId": 752,
+    "id": 752,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/752.png",
+    "image_ok": true,
+    "slug_used": "araquanid",
+    "base_name": "araquanid"
+  },
+  {
+    "name": "アリアドス",
+    "dexId": 168,
+    "id": 168,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/168.png",
+    "image_ok": true,
+    "slug_used": "ariados",
+    "base_name": "ariados"
+  },
+  {
+    "name": "フォレトス",
+    "dexId": 205,
+    "id": 205,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/205.png",
+    "image_ok": true,
+    "slug_used": "forretress",
+    "base_name": "forretress"
+  },
+  {
+    "name": "バクーダ",
+    "dexId": 323,
+    "id": 323,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/323.png",
+    "image_ok": true,
+    "slug_used": "camerupt",
+    "base_name": "camerupt"
+  },
+  {
+    "name": "ドサイドン",
+    "dexId": 464,
+    "id": 464,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/464.png",
+    "image_ok": true,
+    "slug_used": "rhyperior",
+    "base_name": "rhyperior"
+  },
+  {
+    "name": "カミッチュ",
+    "dexId": 1011,
+    "id": 1011,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1011.png",
+    "image_ok": true,
+    "slug_used": "dipplin",
+    "base_name": "dipplin"
+  },
+  {
+    "name": "メガグソクムシャ",
+    "dexId": 768,
+    "id": 768,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10316.png",
+    "image_ok": true,
+    "slug_used": "golisopod-mega",
+    "base_name": "golisopod"
+  },
+  {
+    "name": "クレベース(ヒスイ)",
+    "dexId": 713,
+    "id": 10243,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10243.png",
+    "image_ok": true,
+    "slug_used": "avalugg-hisui",
+    "base_name": "avalugg"
+  },
+  {
+    "name": "ジジーロン",
+    "dexId": 780,
+    "id": 780,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/780.png",
+    "image_ok": true,
+    "slug_used": "drampa",
+    "base_name": "drampa"
+  },
+  {
+    "name": "メガジジーロン",
+    "dexId": 780,
+    "id": 780,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10302.png",
+    "image_ok": true,
+    "slug_used": "drampa-mega",
+    "base_name": "drampa"
+  },
+  {
+    "name": "ピッピ",
+    "dexId": 35,
+    "id": 35,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png",
+    "image_ok": true,
+    "slug_used": "clefairy",
+    "base_name": "clefairy"
+  },
+  {
+    "name": "ミカルゲ",
+    "dexId": 442,
+    "id": 442,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/442.png",
+    "image_ok": true,
+    "slug_used": "spiritomb",
+    "base_name": "spiritomb"
+  },
+  {
+    "name": "バンバドロ",
+    "dexId": 750,
+    "id": 750,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/750.png",
+    "image_ok": true,
+    "slug_used": "mudsdale",
+    "base_name": "mudsdale"
+  },
+  {
+    "name": "キョジオーン",
+    "dexId": 934,
+    "id": 934,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/934.png",
+    "image_ok": true,
+    "slug_used": "garganacl",
+    "base_name": "garganacl"
+  },
+  {
+    "name": "ヒドイデ",
+    "dexId": 747,
+    "id": 747,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/747.png",
+    "image_ok": true,
+    "slug_used": "mareanie",
+    "base_name": "mareanie"
+  },
+  {
+    "name": "マッギョ",
+    "dexId": 618,
+    "id": 618,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/618.png",
+    "image_ok": true,
+    "slug_used": "stunfisk",
+    "base_name": "stunfisk"
+  },
+  {
+    "name": "マッギョ(ガラル)",
+    "dexId": 618,
+    "id": 10195,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10180.png",
+    "image_ok": true,
+    "slug_used": "stunfisk-galar",
+    "base_name": "stunfisk"
+  },
+  {
+    "name": "ヤドラン",
+    "dexId": 80,
+    "id": 80,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png",
+    "image_ok": true,
+    "slug_used": "slowbro",
+    "base_name": "slowbro"
+  },
+  {
+    "name": "ヤドラン(ガラル)",
+    "dexId": 80,
+    "id": 10165,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10165.png",
+    "image_ok": true,
+    "slug_used": "slowbro-galar",
+    "base_name": "slowbro"
+  },
+  {
+    "name": "カビゴン",
+    "dexId": 143,
+    "id": 143,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+    "image_ok": true,
+    "slug_used": "snorlax",
+    "base_name": "snorlax"
+  },
+  {
+    "name": "ヤドキング",
+    "dexId": 199,
+    "id": 199,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/199.png",
+    "image_ok": true,
+    "slug_used": "slowking",
+    "base_name": "slowking"
+  },
+  {
+    "name": "ヤドキング(ガラル)",
+    "dexId": 199,
+    "id": 10172,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10172.png",
+    "image_ok": true,
+    "slug_used": "slowking-galar",
+    "base_name": "slowking"
+  },
+  {
+    "name": "ハガネール",
+    "dexId": 208,
+    "id": 208,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/208.png",
+    "image_ok": true,
+    "slug_used": "steelix",
+    "base_name": "steelix"
+  },
+  {
+    "name": "トリデプス",
+    "dexId": 411,
+    "id": 411,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/411.png",
+    "image_ok": true,
+    "slug_used": "bastiodon",
+    "base_name": "bastiodon"
+  },
+  {
+    "name": "デスカーン",
+    "dexId": 563,
+    "id": 563,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/563.png",
+    "image_ok": true,
+    "slug_used": "cofagrigus",
+    "base_name": "cofagrigus"
+  },
+  {
+    "name": "ランクルス",
+    "dexId": 579,
+    "id": 579,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/579.png",
+    "image_ok": true,
+    "slug_used": "reuniclus",
+    "base_name": "reuniclus"
+  },
+  {
+    "name": "サニゴーン",
+    "dexId": 864,
+    "id": 864,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/864.png",
+    "image_ok": true,
+    "slug_used": "cursola",
+    "base_name": "cursola"
+  },
+  {
+    "name": "メガヤドラン",
+    "dexId": 80,
+    "id": 10071,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10071.png",
+    "image_ok": true,
+    "slug_used": "slowbro-mega",
+    "base_name": "slowbro"
+  },
+  {
+    "name": "メガハガネール",
+    "dexId": 208,
+    "id": 10072,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10072.png",
+    "image_ok": true,
+    "slug_used": "steelix-mega",
+    "base_name": "steelix"
+  },
+  {
+    "name": "メガユキノオー",
+    "dexId": 460,
+    "id": 10060,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10060.png",
+    "image_ok": true,
+    "slug_used": "abomasnow-mega",
+    "base_name": "abomasnow"
+  },
+  {
+    "name": "フレフワン",
+    "dexId": 683,
+    "id": 683,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/683.png",
+    "image_ok": true,
+    "slug_used": "aromatisse",
+    "base_name": "aromatisse"
+  },
+  {
+    "name": "ブリムオン",
+    "dexId": 858,
+    "id": 858,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png",
+    "image_ok": true,
+    "slug_used": "hatterene",
+    "base_name": "hatterene"
+  },
+  {
+    "name": "クレベース",
+    "dexId": 713,
+    "id": 713,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/713.png",
+    "image_ok": true,
+    "slug_used": "avalugg",
+    "base_name": "avalugg"
+  },
+  {
+    "name": "コータス",
+    "dexId": 324,
+    "id": 324,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/324.png",
+    "image_ok": true,
+    "slug_used": "torkoal",
+    "base_name": "torkoal"
+  },
+  {
+    "name": "メガヤミラミ",
+    "dexId": 302,
+    "id": 10066,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10066.png",
+    "image_ok": true,
+    "slug_used": "sableye-mega",
+    "base_name": "sableye"
+  },
+  {
+    "name": "メガバクーダ",
+    "dexId": 323,
+    "id": 10087,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10087.png",
+    "image_ok": true,
+    "slug_used": "camerupt-mega",
+    "base_name": "camerupt"
+  },
+  {
+    "name": "クエスパトラ",
+    "dexId": 955,
+    "id": 955,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/955.png",
+    "image_ok": true,
+    "slug_used": "flittle",
+    "base_name": "flittle"
+  },
+  {
+    "name": "フラエッテ(えいえんのはな)",
+    "dexId": 670,
+    "id": 10001,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10061.png",
+    "image_ok": true,
+    "slug_used": "floette-eternal",
+    "base_name": "floette"
+  },
+  {
+    "name": "メガリザードンX",
+    "dexId": 6,
+    "id": 10034,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10034.png",
+    "image_ok": true,
+    "slug_used": "charizard-mega-x",
+    "base_name": "charizard"
+  },
+  {
+    "name": "メガリザードンY",
+    "dexId": 6,
+    "id": 10035,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10035.png",
+    "image_ok": true,
+    "slug_used": "charizard-mega-y",
+    "base_name": "charizard"
+  },
+  {
+    "name": "ヒラヒナ",
+    "dexId": 954,
+    "id": 954,
+    "issues": [],
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/954.png",
+    "image_ok": true,
+    "slug_used": "rabsca",
+    "base_name": "rabsca"
+  }
+]

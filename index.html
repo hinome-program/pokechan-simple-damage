@@ -48,9 +48,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="artwork-box">
+                <div class="artwork-box" id="defender-artbox">
                     <div class="silhouette-fallback" id="defender-fallback">?</div>
                     <img id="defender-artwork" src="" alt="" class="pokemon-img">
+                    <div class="mega-indicator" id="defender-mega-indicator"></div>
                 </div>
             </div>
 
@@ -120,9 +121,10 @@
 
             <!-- 下段: 攻撃側 -->
             <div class="battle-row battle-bottom">
-                <div class="artwork-box attacker-artbox">
+                <div class="artwork-box attacker-artbox" id="attacker-artbox">
                     <div class="silhouette-fallback" id="attacker-fallback">?</div>
                     <img id="attacker-artwork" src="" alt="" class="pokemon-img">
+                    <div class="mega-indicator" id="attacker-mega-indicator"></div>
                 </div>
                 <div id="attacker-panel" class="status-panel">
                     <div class="white-panel">
@@ -158,11 +160,22 @@
                 <div id="result-detail" class="pct-label">0.0% 〜 0.0%</div>
                 <div id="type-message" class="type-msg"></div>
             </div>
-            <div class="btn-grid">
-                <button id="swap-btn" class="ctrl-btn">攻守交代</button>
-                <button id="attacker-mega-btn" class="ctrl-btn">メガシンカ(攻)</button>
-                <button id="defender-mega-btn" class="ctrl-btn">メガシンカ(防)</button>
-                <button id="stab-btn" class="ctrl-btn">タイプ一致</button>
+            <div class="footer-controls">
+                <button id="swap-btn" class="ctrl-btn swap-btn">⇅ 攻守交代</button>
+                <div class="party-panel">
+                    <span class="party-label">マイパーティ</span>
+                    <select id="party-select" class="party-select">
+                        <option value="">── 選択 ──</option>
+                        <option value="ガブリアス">ガブリアス</option>
+                        <option value="ブリジュラス">ブリジュラス</option>
+                        <option value="バンギラス">バンギラス</option>
+                        <option value="カバルドン">カバルドン</option>
+                        <option value="ギルガルド">ギルガルド</option>
+                        <option value="スターミー">スターミー</option>
+                    </select>
+                    <button id="party-atk-btn" class="party-btn">攻</button>
+                    <button id="party-def-btn" class="party-btn">防</button>
+                </div>
             </div>
         </footer>
 
@@ -170,6 +183,7 @@
 
     <datalist id="pokemon-list"></datalist>
 
+    <script src="pokemon_types.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

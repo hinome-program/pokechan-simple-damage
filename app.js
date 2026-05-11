@@ -22,6 +22,7 @@ function norm(str) {
 function findPokemon(nameInput) {
     var key = norm(nameInput);
     if (!key) return null;
+    // まず完全一致を探す
     for (var i = 0; i < POKEMON_DATA.length; i++) {
         if (norm(POKEMON_DATA[i].name) === key) return POKEMON_DATA[i];
     }
@@ -33,9 +34,20 @@ function getBaseStats(nameInput) {
     return p ? p.baseStats : null;
 }
 
+// 文字列 "['ほのお', 'ひこう']" を配列 ['ほのお','ひこう'] に正規化
+function normalizeTypes(types) {
+    if (Array.isArray(types)) return types;
+    // 文字列の場合：[ ] ' " をすべて除去して split
+    return String(types)
+        .replace(/[\[\]'\"]/g, '')
+        .split(',')
+        .map(function(t) { return t.trim(); })
+        .filter(function(t) { return t.length > 0; });
+}
+
 function getPokemonTypes(nameInput) {
     var p = findPokemon(nameInput);
-    return p ? p.types : [];
+    return p ? normalizeTypes(p.types) : [];
 }
 
 // ============================================================
@@ -63,6 +75,40 @@ var DEFAULT_EV = { attacker: 32, defender: 0 };
 // ============================================================
 var attackMode = 'physical';
 var attackRank = 0;
+
+// メガシンカ状態: { attacker: [通常名, メガ名, メガY名...], index: 0 }
+var megaState = {
+    attacker: { baseName: '', forms: [], index: 0 },
+    defender: { baseName: '', forms: [], index: 0 },
+};
+
+// ポケモン名からメガシンカフォームを収集
+function getMegaForms(baseName) {
+    var key = norm(baseName);
+    var forms = [baseName]; 
+    
+    // 「メガ + 名前」「メガ + 名前 + X/Y」の順で検索
+    var variants = [
+        'メガ' + baseName,
+        'メガ' + baseName + 'X',
+        'メガ' + baseName + 'Y',
+        baseName + '(メガ)',
+    ];
+    variants.forEach(function(v) {
+        var p = findPokemon(v);
+        if (p && forms.indexOf(p.name) === -1) forms.push(p.name);
+    });
+
+    // 特殊：リザードンのように複数ある場合や、CSVの「メガ○○」形式も補完
+    POKEMON_DATA.forEach(function(p) {
+        var n = norm(p.name);
+        if (p.isMega && n.indexOf(key) !== -1 && forms.indexOf(p.name) === -1) {
+            forms.push(p.name);
+        }
+    });
+
+    return forms;
+}
 
 // ============================================================
 // ⑧ DOM 参照
@@ -93,14 +139,20 @@ var el = {
     rankValueDisplay:  document.getElementById('rank-value-display'),
     movePower:         document.getElementById('move-power'),
     moveType:          document.getElementById('move-type'),
-    stabBtn:           document.getElementById('stab-btn'),
     swapBtn:           document.getElementById('swap-btn'),
+    partySelect:       document.getElementById('party-select'),
+    partyAtkBtn:       document.getElementById('party-atk-btn'),
+    partyDefBtn:       document.getElementById('party-def-btn'),
     resultStatus:      document.getElementById('result-status'),
     resultDetail:      document.getElementById('result-detail'),
     typeMessage:       document.getElementById('type-message'),
     datalist:          document.getElementById('pokemon-list'),
     attackerSuggest:   document.getElementById('attacker-suggest'),
     defenderSuggest:   document.getElementById('defender-suggest'),
+    attackerArtbox:    document.getElementById('attacker-artbox'),
+    defenderArtbox:    document.getElementById('defender-artbox'),
+    attackerMegaInd:   document.getElementById('attacker-mega-indicator'),
+    defenderMegaInd:   document.getElementById('defender-mega-indicator'),
 };
 
 // ============================================================
@@ -293,32 +345,144 @@ function selectActiveSuggest(side) {
 }
 
 // ============================================================
-// ⑭ 画像セット（失敗してもクラッシュしない）
+// ⑭ 画像セット（PokeAPI 動的同期）
 // ============================================================
-function setArtwork(side, pokemonId) {
+var speciesCache = {};
+var artworkRequests = { attacker: 0, defender: 0 };
+
+async function setArtwork(side, pokemon) {
     var img = el[side + 'Artwork'];
     var fb  = el[side + 'Fallback'];
-    try {
-        fb.style.display = 'none';
+    var rid = ++artworkRequests[side];
+    
+    if (!pokemon) {
         img.classList.remove('loaded');
-        img.onerror = function() {
-            img.classList.remove('loaded');
-            fb.style.display = 'flex';
-        };
-        img.onload = function() {
-            img.classList.add('loaded');
-            fb.style.display = 'none';
-        };
-        
-        var nameInput = el[side + 'Name'].value;
-        if (nameInput === 'フラエッテ(えいえんのはな)') {
-            img.src = 'images/eternal_floette.png';
-        } else {
-            img.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/' + pokemonId + '.png';
-        }
-    } catch(e) {
-        console.warn('[ポケチャン] 画像セットエラー:', e);
         fb.style.display = 'flex';
+        return;
+    }
+
+    fb.style.display = 'none';
+    img.classList.remove('loaded');
+
+    // 画像セット用プロミス（最新リクエストのみ有効）
+    const trySet = (url) => {
+        return new Promise((resolve) => {
+            if (rid !== artworkRequests[side]) return resolve(false);
+            img.onload = () => {
+                if (rid === artworkRequests[side]) {
+                    img.classList.add('loaded');
+                    fb.style.display = 'none';
+                    resolve(true);
+                } else resolve(false);
+            };
+            img.onerror = () => resolve(false);
+            img.src = url;
+        });
+    };
+
+    try {
+        // 1. Local Check: images/[名前].png
+        try {
+            const localUrl = 'images/' + pokemon.name + '.png';
+            const localRes = await fetch(localUrl, { method: 'HEAD' });
+            if (localRes.ok && await trySet(localUrl)) return;
+        } catch(e) {}
+
+        // 2. 英語名の取得（キャッシュ利用）
+        var dexId = pokemon.dexId;
+        var baseName = speciesCache[dexId];
+        if (!baseName) {
+            const sRes = await fetch('https://pokeapi.co/api/v2/pokemon-species/' + dexId);
+            if (sRes.ok) {
+                const sData = await sRes.json();
+                baseName = sData.name;
+                speciesCache[dexId] = baseName;
+            }
+        }
+
+        if (rid !== artworkRequests[side]) return;
+
+        // 3. スラッグの構築
+        var jName = pokemon.name;
+
+        // ── 名前 → 確定スラッグ マッピング（PokeAPI命名ルール差異を吸収）──
+        var SLUG_OVERRIDES = {
+            // ギルガルド
+            'ギルガルド':          'aegislash-shield',
+            'ギルガルド(シールド)': 'aegislash-shield',
+            'ギルガルド(ブレード)': 'aegislash-blade',
+            // パンプジン
+            'パンプジン(小さい)':  'gourgeist-small',
+            'パンプジン(普通)':    'gourgeist-average',
+            'パンプジン(大きい)':  'gourgeist-large',
+            'パンプジン(特大)':    'gourgeist-super',
+            // ミミッキュ
+            'ミミッキュ':          'mimikyu-disguised',
+            // モルペコ
+            'モルペコ':            'morpeko-full-belly',
+            // ケンタロス(パルデア)
+            'ケンタロス(パルデア単)': 'tauros-paldea-combat-breed',
+            'ケンタロス(パルデア炎)': 'tauros-paldea-blaze-breed',
+            'ケンタロス(パルデア水)': 'tauros-paldea-aqua-breed',
+            // イルカマン
+            'イルカマン(ナイーブ)': 'palafin-zero',
+            'イルカマン(マイティ)': 'palafin-hero',
+            // カエンジシ
+            'カエンジシ':          'pyroar-male',
+            // フラエッテ
+            'フラエッテ(えいえんのはな)': 'floette-eternal',
+        };
+
+        var slug = (SLUG_OVERRIDES[jName] !== undefined)
+            ? SLUG_OVERRIDES[jName]
+            : (function() {
+                var s = baseName || '';
+                if (pokemon.isMega) {
+                    s += '-mega';
+                    if (jName.indexOf('X') !== -1) s += '-x';
+                    else if (jName.indexOf('Y') !== -1) s += '-y';
+                } else if (jName.indexOf('アローラ') !== -1) s += '-alola';
+                else if (jName.indexOf('ガラル') !== -1) s += '-galar';
+                else if (jName.indexOf('パルデア') !== -1) s += '-paldea';
+                else if (jName.indexOf('ヒスイ') !== -1) s += '-hisui';
+                else if (jName.indexOf('まひる') !== -1) s += '-midday';
+                else if (jName.indexOf('まよなか') !== -1) s += '-midnight';
+                else if (jName.indexOf('たそがれ') !== -1) s += '-dusk';
+                else if (jName.indexOf('オス') !== -1) s += '-male';
+                else if (jName.indexOf('メス') !== -1 && !jName.indexOf('メスのすがた')) s += '-female';
+                return s;
+              })();
+
+        // 4. Try API Slug: Official -> Normal
+        if (slug) {
+            const pRes = await fetch('https://pokeapi.co/api/v2/pokemon/' + slug);
+            if (pRes.ok) {
+                const pData = await pRes.json();
+                const art = pData.sprites.other['official-artwork'].front_default;
+                const nrm = pData.sprites.front_default;
+                if (art && await trySet(art)) return;
+                if (nrm && await trySet(nrm)) return;
+            }
+        }
+
+        // 5. Try API Base: Official -> Normal
+        if (baseName && baseName !== slug) {
+            const bRes = await fetch('https://pokeapi.co/api/v2/pokemon/' + baseName);
+            if (bRes.ok) {
+                const bData = await bRes.json();
+                const bart = bData.sprites.other['official-artwork'].front_default;
+                const bnrm = bData.sprites.front_default;
+                if (bart && await trySet(bart)) return;
+                if (bnrm && await trySet(bnrm)) return;
+            }
+        }
+
+        // 全て失敗
+        if (rid === artworkRequests[side]) fb.style.display = 'flex';
+
+    } catch (e) {
+        console.warn('[ポケチャン] 画像取得エラー:', e);
+        if (rid === artworkRequests[side]) fb.style.display = 'flex';
     }
 }
 
@@ -330,14 +494,19 @@ function clearArtwork(side) {
 // ============================================================
 // ⑮ ポケモン更新（名前入力 → 実数値即反映）
 // ============================================================
-function updatePokemon(side) {
-    var nameInput = el[side + 'Name'].value;
+function updatePokemon(side, nameOverride) {
+    var nameInput = nameOverride !== undefined ? nameOverride : el[side + 'Name'].value;
     var pokemon   = findPokemon(nameInput);
 
     if (!pokemon) {
         clearArtwork(side);
         calculate();
         return;
+    }
+
+    // 名前欄を更新（nameOverride経由の場合）
+    if (nameOverride !== undefined) {
+        el[side + 'Name'].value = nameOverride;
     }
 
     var bs = pokemon.baseStats;
@@ -356,13 +525,69 @@ function updatePokemon(side) {
         setBase(el.defenderStat, baseDef, ev2);
     }
 
-    el[side + 'MegaBtn'].disabled = true;
+    // メガ状態リセット（手入力・パーティ選択時）
+    if (nameOverride !== undefined || arguments.length === 1) {
+        var forms = getMegaForms(pokemon.name);
+        megaState[side].baseName = pokemon.name;
+        megaState[side].forms    = forms;
+        megaState[side].index    = 0;
+        updateMegaIndicator(side);
+    }
+
     calculate();
-    setArtwork(side, pokemon.id);
+    setArtwork(side, pokemon);
 }
 
 // ============================================================
-// ⑯ 攻守交代
+// ⑯ メガシンカインジケーター
+// ============================================================
+function updateMegaIndicator(side) {
+    var st  = megaState[side];
+    var ind = el[side + 'MegaInd'];
+    var box = el[side + 'Artbox'];
+    if (st.forms.length <= 1) {
+        ind.textContent = '';
+        ind.className   = 'mega-indicator';
+        box.classList.remove('has-mega');
+    } else {
+        var isMega = st.index > 0;
+        ind.textContent = isMega ? ('▲ ' + st.forms[st.index]) : '▲ MEGA 可';
+        ind.className   = 'mega-indicator' + (isMega ? ' active' : '');
+        box.classList.toggle('has-mega', true);
+    }
+}
+
+// ============================================================
+// ⑰ 画像クリック → メガシンカトグル
+// ============================================================
+function cycleForm(side) {
+    var st = megaState[side];
+    if (st.forms.length <= 1) return; // メガなし
+    st.index = (st.index + 1) % st.forms.length;
+    var newName = st.forms[st.index];
+    var pokemon = findPokemon(newName);
+    if (!pokemon) return;
+
+    el[side + 'Name'].value = newName;
+    var bs = pokemon.baseStats;
+    if (side === 'attacker') {
+        var base = attackMode === 'physical' ? calcStat(bs.atk) : calcStat(bs.spa);
+        var ev   = getEv(el.attackerStatEv);
+        setBase(el.attackerStat, base, ev);
+    } else {
+        var baseHp  = calcHp(bs.hp);
+        var baseDef = attackMode === 'physical' ? calcStat(bs.def) : calcStat(bs.spd);
+        var ev2     = getEv(el.defenderStatEv);
+        setBase(el.defenderHp,   baseHp,  ev2);
+        setBase(el.defenderStat, baseDef, ev2);
+    }
+    updateMegaIndicator(side);
+    calculate();
+    setArtwork(side, pokemon);
+}
+
+// ============================================================
+// ⑱ 攻守交代
 // ============================================================
 function swapSides() {
     var tmp = el.attackerName.value;
@@ -559,13 +784,29 @@ function setupEventListeners() {
         });
     });
 
-    el.stabBtn.addEventListener('click', function() {
+    el.stabBtn && el.stabBtn.addEventListener && el.stabBtn.addEventListener('click', function() {
         el.stabBtn.classList.toggle('active');
         calculate();
     });
     el.swapBtn.addEventListener('click', swapSides);
-    el.attackerMegaBtn.addEventListener('click', function() {});
-    el.defenderMegaBtn.addEventListener('click', function() {});
+
+    // 画像クリック → メガシンカループ
+    el.attackerArtbox.addEventListener('click', function() { cycleForm('attacker'); });
+    el.defenderArtbox.addEventListener('click', function() { cycleForm('defender'); });
+
+    // マイパーティ
+    el.partyAtkBtn.addEventListener('click', function() {
+        var name = el.partySelect.value;
+        if (!name) return;
+        updatePokemon('attacker', name);
+        el.partySelect.value = '';
+    });
+    el.partyDefBtn.addEventListener('click', function() {
+        var name = el.partySelect.value;
+        if (!name) return;
+        updatePokemon('defender', name);
+        el.partySelect.value = '';
+    });
 }
 
 // ============================================================
@@ -574,6 +815,20 @@ function setupEventListeners() {
 function init(data) {
     POKEMON_DATA = data;
     console.info('[ポケチャン] JSONデータ起動 — ' + POKEMON_DATA.length + '匹');
+
+    // ── 起動時データ検証ログ ──
+    var checks = { 'クエスパトラ': 956, 'ヒラヒナ': 955, 'キラフロル': 970 };
+    Object.keys(checks).forEach(function(name) {
+        var p = findPokemon(name);
+        var expected = checks[name];
+        if (!p) {
+            console.warn('[ポケチャン] ⚠ ' + name + ' がデータに見つかりません');
+        } else if (p.dexId !== expected) {
+            console.error('[ポケチャン] ❌ ' + name + ' dexId=' + p.dexId + ' (期待値=' + expected + ')');
+        } else {
+            console.info('[ポケチャン] ✅ ' + name + ' dexId=' + p.dexId + ' OK');
+        }
+    });
 
     buildDatalist();
     buildPowerList();

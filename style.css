@@ -521,3 +521,123 @@ input:focus, select:focus {
     color: #7dd3fc;
     font-weight: 700;
 }
+
+/* ============================================================
+   フッター新レイアウト
+   ============================================================ */
+.footer-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px;
+    flex-wrap: wrap;
+}
+
+.swap-btn {
+    white-space: nowrap;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1e3a5f, #2563aa);
+    color: #fff;
+    border: 1px solid rgba(100,180,255,0.4);
+    cursor: pointer;
+    transition: all 0.15s;
+    flex-shrink: 0;
+}
+.swap-btn:active { transform: scale(0.96); }
+
+/* マイパーティパネル */
+.party-panel {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.party-label {
+    font-size: 11px;
+    color: rgba(200,220,255,0.7);
+    white-space: nowrap;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.party-select {
+    flex: 1;
+    min-width: 100px;
+    background: rgba(10,20,50,0.9);
+    color: #e0eeff;
+    border: 1px solid rgba(100,180,255,0.35);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 13px;
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.party-btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    border: 1px solid rgba(100,180,255,0.4);
+    transition: all 0.15s;
+    white-space: nowrap;
+}
+.party-btn:nth-of-type(1) {
+    background: linear-gradient(135deg, #7c2d12, #c2410c);
+    color: #fff;
+}
+.party-btn:nth-of-type(2) {
+    background: linear-gradient(135deg, #1e3a5f, #1d4ed8);
+    color: #fff;
+}
+.party-btn:active { transform: scale(0.94); }
+
+/* メガシンカインジケーター */
+.mega-indicator {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    font-weight: 800;
+    color: rgba(180,220,255,0.5);
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: color 0.2s;
+}
+.mega-indicator.active {
+    color: #f59e0b;
+    text-shadow: 0 0 6px rgba(245,158,11,0.7);
+}
+
+/* メガあり：画像ボックスをクリッカブルに */
+.artwork-box {
+    position: relative;
+}
+.artwork-box.has-mega {
+    cursor: pointer;
+}
+.artwork-box.has-mega:hover .pokemon-img {
+    filter: brightness(1.12) drop-shadow(0 0 8px rgba(245,158,11,0.5));
+    transition: filter 0.2s;
+}
+.artwork-box.has-mega::after {
+    content: '▲ TAP';
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 8px;
+    color: rgba(245,158,11,0.7);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    pointer-events: none;
+}
