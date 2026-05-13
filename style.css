@@ -641,3 +641,183 @@ input:focus, select:focus {
     letter-spacing: 0.05em;
     pointer-events: none;
 }
+
+/* ── パーティ編成ボタン ── */
+.party-edit-btn {
+    background: linear-gradient(135deg, #2d1b69, #7c3aed) !important;
+    border-color: rgba(167,139,250,0.5) !important;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+.party-edit-btn:active { transform: scale(0.94); }
+
+/* ── モーダル オーバーレイ ── */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,12,0.82);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 9000;
+    padding: 0;
+}
+.modal-overlay[hidden] { display: none !important; }
+
+/* ── モーダル ボックス ── */
+.modal-box {
+    background: linear-gradient(180deg, #0d1b3e 0%, #091228 100%);
+    border: 1px solid rgba(100,180,255,0.25);
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    max-width: 540px;
+    max-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 -8px 40px rgba(0,80,255,0.25);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px 10px;
+    border-bottom: 1px solid rgba(100,180,255,0.15);
+    flex-shrink: 0;
+}
+.modal-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #a5c8ff;
+    letter-spacing: 0.05em;
+}
+.modal-close {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(200,220,255,0.7);
+    font-size: 16px;
+    border-radius: 50%;
+    width: 30px; height: 30px;
+    cursor: pointer;
+    line-height: 1;
+    transition: all 0.15s;
+}
+.modal-close:active { background: rgba(255,255,255,0.1); }
+
+.modal-body {
+    overflow-y: auto;
+    flex: 1;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ── スロットカード ── */
+.slot-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(100,180,255,0.18);
+    border-radius: 12px;
+    padding: 10px 12px;
+}
+.slot-num {
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(160,200,255,0.5);
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+}
+.slot-name-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.slot-name-input {
+    flex: 1;
+    background: rgba(0,10,40,0.8);
+    color: #e0eeff;
+    border: 1px solid rgba(100,180,255,0.3);
+    border-radius: 8px;
+    padding: 7px 10px;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.slot-nature-select {
+    background: rgba(0,10,40,0.8);
+    color: #e0eeff;
+    border: 1px solid rgba(100,180,255,0.3);
+    border-radius: 8px;
+    padding: 7px 8px;
+    font-size: 12px;
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    min-width: 78px;
+}
+.slot-ev-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+}
+.slot-ev-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.slot-ev-cell label {
+    font-size: 9px;
+    color: rgba(160,200,255,0.6);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.slot-ev-input {
+    width: 100%;
+    text-align: center;
+    background: rgba(0,10,40,0.8);
+    color: #b0d4ff;
+    border: 1px solid rgba(100,180,255,0.25);
+    border-radius: 6px;
+    padding: 4px 2px;
+    font-size: 13px;
+    font-family: 'Noto Sans JP', sans-serif;
+    -moz-appearance: textfield;
+}
+.slot-ev-input::-webkit-inner-spin-button,
+.slot-ev-input::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+/* ── モーダル フッター ── */
+.modal-footer {
+    padding: 10px 14px 16px;
+    flex-shrink: 0;
+    border-top: 1px solid rgba(100,180,255,0.12);
+}
+.modal-save-btn {
+    width: 100%;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: linear-gradient(135deg, #1a4fa0, #2563eb);
+    color: #fff;
+    border: 1px solid rgba(100,180,255,0.4);
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: all 0.15s;
+}
+.modal-save-btn:active { transform: scale(0.98); opacity: 0.9; }
+
+/* ── フォルムチェンジ インジケーター（ギルガルド等） */
+.mega-indicator.form-change {
+    background: linear-gradient(135deg, rgba(100,50,180,0.9), rgba(60,20,120,0.95));
+    color: #d4b8ff;
+    border: 1px solid rgba(180,120,255,0.5);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    animation: none;
+}

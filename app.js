@@ -17,14 +17,33 @@ function norm(str) {
 }
 
 // ============================================================
+// ②名前エイリアス（簡称入力 → 正式名に変換）
+// ============================================================
+var NAME_ALIASES = {
+    'ギルガルド':           'ギルガルド(シールド)',
+    'ギルガルドシールド':   'ギルガルド(シールド)',
+    'ギルガルドブレード':   'ギルガルド(ブレード)',
+    'ギルガルドアタック': 'ギルガルド(ブレード)',
+};
+
+// ============================================================
 // ③ データ検索ヘルパー
 // ============================================================
 function findPokemon(nameInput) {
     var key = norm(nameInput);
     if (!key) return null;
+    // エイリアス経由の検索
+    var aliasKey = NAME_ALIASES[key];
+    if (!aliasKey) {
+        // NFKC正規化後のエイリアスコチュック（半角や全角の表記摇れ対応）
+        for (var alias in NAME_ALIASES) {
+            if (norm(alias) === key) { aliasKey = NAME_ALIASES[alias]; break; }
+        }
+    }
+    var searchKey = aliasKey ? norm(aliasKey) : key;
     // まず完全一致を探す
     for (var i = 0; i < POKEMON_DATA.length; i++) {
-        if (norm(POKEMON_DATA[i].name) === key) return POKEMON_DATA[i];
+        if (norm(POKEMON_DATA[i].name) === searchKey) return POKEMON_DATA[i];
     }
     return null;
 }
@@ -82,8 +101,17 @@ var megaState = {
     defender: { baseName: '', forms: [], index: 0 },
 };
 
-// ポケモン名からメガシンカフォームを収集
+// フォルムチェンジ専用のループ定義（メガシンカとは別系統）
+var FORM_CYCLES = {
+    'ギルガルド(シールド)': ['ギルガルド(シールド)', 'ギルガルド(ブレード)'],
+    'ギルガルド(ブレード)': ['ギルガルド(シールド)', 'ギルガルド(ブレード)'],
+};
+
+// ポケモン名からメガシンカ・フォルムチェンジ一覧を収集
 function getMegaForms(baseName) {
+    // フォルムチェンジ専用定義を優先チェック
+    if (FORM_CYCLES[baseName]) return FORM_CYCLES[baseName].slice();
+
     var key = norm(baseName);
     var forms = [baseName]; 
     
@@ -550,9 +578,19 @@ function updateMegaIndicator(side) {
         ind.className   = 'mega-indicator';
         box.classList.remove('has-mega');
     } else {
-        var isMega = st.index > 0;
-        ind.textContent = isMega ? ('▲ ' + st.forms[st.index]) : '▲ MEGA 可';
-        ind.className   = 'mega-indicator' + (isMega ? ' active' : '');
+        // フォルムチェンジ系か メガシンカ系かで表示を分ける
+        var isFormChange = !!FORM_CYCLES[st.forms[0]];
+        var curName = st.forms[st.index];
+        if (isFormChange) {
+            // ギルガルド等: 盾/剣 アイコン
+            var isShield = curName.indexOf('シールド') !== -1;
+            ind.textContent = isShield ? '🛡 タップで⚔' : '⚔ タップで🛡';
+            ind.className   = 'mega-indicator active form-change';
+        } else {
+            var isMega = st.index > 0;
+            ind.textContent = isMega ? ('▲ ' + curName) : '▲ MEGA 可';
+            ind.className   = 'mega-indicator' + (isMega ? ' active' : '');
+        }
         box.classList.toggle('has-mega', true);
     }
 }
@@ -793,20 +831,7 @@ function setupEventListeners() {
     // 画像クリック → メガシンカループ
     el.attackerArtbox.addEventListener('click', function() { cycleForm('attacker'); });
     el.defenderArtbox.addEventListener('click', function() { cycleForm('defender'); });
-
-    // マイパーティ
-    el.partyAtkBtn.addEventListener('click', function() {
-        var name = el.partySelect.value;
-        if (!name) return;
-        updatePokemon('attacker', name);
-        el.partySelect.value = '';
-    });
-    el.partyDefBtn.addEventListener('click', function() {
-        var name = el.partySelect.value;
-        if (!name) return;
-        updatePokemon('defender', name);
-        el.partySelect.value = '';
-    });
+    // マイパーティの攻/防ボタンは℡のパーティモジュールで登録（二重登録防止）
 }
 
 // ============================================================
@@ -864,5 +889,282 @@ if (document.readyState === 'loading') {
 } else {
     loadAndStart();
 }
+
+// ============================================================
+// ㉑ マイパーティ機能
+// ============================================================
+
+// ── 定数 ──
+var PARTY_KEY  = 'my_party';
+var PARTY_SIZE = 6;
+var EV_KEYS    = ['H','A','B','C','D','S'];
+
+var NATURE_TABLE = {
+    'ひかえめ':   {up:'C', down:'A'},
+    'おくびょう': {up:'S', down:'A'},
+    'おだやか':   {up:'D', down:'A'},
+    'なまいき':   {up:'D', down:'S'},
+    'しんちょう': {up:'D', down:'C'},
+    'ずぶとい':   {up:'B', down:'A'},
+    'わんぱく':   {up:'B', down:'C'},
+    'のんき':     {up:'B', down:'S'},
+    'いじっぱり': {up:'A', down:'C'},
+    'ゆうかん':   {up:'A', down:'S'},
+    'うっかりや': {up:'A', down:'D'},
+    'ようき':     {up:'S', down:'C'},
+    'むじゃき':   {up:'S', down:'D'},
+    'さみしがり': {up:'A', down:'B'},
+    'やんちゃ':   {up:'A', down:'D'},
+    'おっとり':   {up:'C', down:'B'},
+    'うかつ':     {up:'C', down:'D'},
+    'れいせい':   {up:'C', down:'S'},
+};
+var NATURE_NAMES = [
+    'なし（補正なし）',
+    'ひかえめ','おくびょう','おだやか','なまいき','しんちょう',
+    'ずぶとい','わんぱく','のんき',
+    'いじっぱり','ゆうかん',
+    'ようき','むじゃき',
+    'さみしがり','やんちゃ',
+    'おっとり','うかつ','れいせい',
+    'うっかりや',
+];
+
+function getNatureMult(nature, statKey) {
+    var n = NATURE_TABLE[nature];
+    if (!n) return 1.0;
+    if (n.up === statKey) return 1.1;
+    if (n.down === statKey) return 0.9;
+    return 1.0;
+}
+
+function calcRealStat(base, ev, nature, statKey) {
+    ev = Math.max(0, Math.min(32, ev || 0));
+    if (statKey === 'H') {
+        return Math.floor((base * 2 + 31 + ev) * 50 / 100) + 60;
+    }
+    var raw = Math.floor((base * 2 + 31 + ev) * 50 / 100) + 5;
+    return Math.floor(raw * getNatureMult(nature, statKey));
+}
+
+function defaultParty() {
+    return ['ガブリアス','ブリジュラス','バンギラス','カバルドン','ギルガルド','スターミー'].map(function(name) {
+        return { name: name, evs: {H:0,A:0,B:0,C:0,D:0,S:0}, nature: 'なし（補正なし）' };
+    });
+}
+
+function loadParty() {
+    try {
+        var raw = localStorage.getItem(PARTY_KEY);
+        if (!raw) return defaultParty();
+        var arr = JSON.parse(raw);
+        while (arr.length < PARTY_SIZE) arr.push({ name: '', evs: {H:0,A:0,B:0,C:0,D:0,S:0}, nature: 'なし（補正なし）' });
+        return arr.slice(0, PARTY_SIZE).map(function(p) {
+            return {
+                name:   String(p.name || ''),
+                evs:    { H: p.evs.H||0, A: p.evs.A||0, B: p.evs.B||0, C: p.evs.C||0, D: p.evs.D||0, S: p.evs.S||0 },
+                nature: String(p.nature || 'なし（補正なし）'),
+            };
+        });
+    } catch(e) { return defaultParty(); }
+}
+
+function saveParty(arr) {
+    localStorage.setItem(PARTY_KEY, JSON.stringify(arr));
+}
+
+function syncPartySelect(arr) {
+    var sel = document.getElementById('party-select');
+    sel.innerHTML = '<option value="">── 選択 ──</option>';
+    arr.forEach(function(p, i) {
+        if (!p.name) return;
+        var opt = document.createElement('option');
+        opt.value = String(i);
+        opt.textContent = (i + 1) + '. ' + p.name;
+        sel.appendChild(opt);
+    });
+}
+
+var partyModal    = document.getElementById('party-modal');
+var partySlots    = document.getElementById('party-slots');
+var modalSaveBtn  = document.getElementById('modal-save-btn');
+var modalCloseBtn = document.getElementById('modal-close-btn');
+var partyEditBtn  = document.getElementById('party-edit-btn');
+
+function openPartyModal() {
+    var party = loadParty();
+    partySlots.innerHTML = '';
+    party.forEach(function(p, idx) {
+        var card = document.createElement('div');
+        card.className = 'slot-card';
+        card.dataset.idx = idx;
+
+        var numEl = document.createElement('div');
+        numEl.className = 'slot-num';
+        numEl.textContent = 'SLOT ' + (idx + 1);
+        card.appendChild(numEl);
+
+        var nameRow = document.createElement('div');
+        nameRow.className = 'slot-name-row';
+
+        var nameInp = document.createElement('input');
+        nameInp.type = 'text';
+        nameInp.className = 'slot-name-input';
+        nameInp.placeholder = 'ポケモン名';
+        nameInp.value = p.name;
+        nameInp.autocomplete = 'off';
+        nameInp.setAttribute('list', 'pokemon-list');
+        nameRow.appendChild(nameInp);
+
+        var natureSel = document.createElement('select');
+        natureSel.className = 'slot-nature-select';
+        NATURE_NAMES.forEach(function(n) {
+            var opt = document.createElement('option');
+            opt.value = n;
+            opt.textContent = n;
+            if (n === p.nature) opt.selected = true;
+            natureSel.appendChild(opt);
+        });
+        nameRow.appendChild(natureSel);
+        card.appendChild(nameRow);
+
+        var evGrid = document.createElement('div');
+        evGrid.className = 'slot-ev-grid';
+        EV_KEYS.forEach(function(k) {
+            var cell = document.createElement('div');
+            cell.className = 'slot-ev-cell';
+            var lbl = document.createElement('label');
+            lbl.textContent = k;
+            var inp = document.createElement('input');
+            inp.type = 'number';
+            inp.className = 'slot-ev-input';
+            inp.min = '0'; inp.max = '32';
+            inp.value = Math.max(0, Math.min(32, p.evs[k] || 0));
+            inp.dataset.evKey = k;
+            cell.appendChild(lbl);
+            cell.appendChild(inp);
+            evGrid.appendChild(cell);
+        });
+        card.appendChild(evGrid);
+        partySlots.appendChild(card);
+    });
+    partyModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+}
+
+function closePartyModal() {
+    partyModal.hidden = true;
+    document.body.style.overflow = '';
+}
+
+function savePartyFromModal() {
+    var cards = partySlots.querySelectorAll('.slot-card');
+    var arr = [];
+    cards.forEach(function(card) {
+        var nameInp   = card.querySelector('.slot-name-input');
+        var natureSel = card.querySelector('.slot-nature-select');
+        var evInputs  = card.querySelectorAll('.slot-ev-input');
+        var evs = {};
+        evInputs.forEach(function(inp) {
+            evs[inp.dataset.evKey] = Math.max(0, Math.min(32, parseInt(inp.value) || 0));
+        });
+        arr.push({ name: nameInp.value.trim(), evs: evs, nature: natureSel.value });
+    });
+    saveParty(arr);
+    syncPartySelect(arr);
+    closePartyModal();
+}
+
+function applyPartyMember(side, member) {
+    var pokemon = findPokemon(member.name);
+    if (!pokemon) {
+        console.warn('[Party] ポケモンが見つかりません:', member.name);
+        return;
+    }
+    var evs    = member.evs || {};
+    var nature = member.nature || 'なし（補正なし）';
+    var bs     = pokemon.baseStats;
+
+    // ① 名前欄を書き換え → サジェストを非表示
+    el[side + 'Name'].value = pokemon.name;
+
+    // ② メガシンカ状態をリセット（通常形態）
+    megaState[side].baseName = pokemon.name;
+    megaState[side].forms    = getMegaForms(pokemon.name);
+    megaState[side].index    = 0;
+    updateMegaIndicator(side);
+
+    if (side === 'attacker') {
+        var atkKey  = attackMode === 'physical' ? 'A' : 'C';
+        var atkBase = attackMode === 'physical' ? bs.atk : bs.spa;
+        var atkEv   = Math.max(0, Math.min(32, evs[atkKey] || 0));
+        // baseStatにはEV=0時の実数値を記録（setBase方式に従う）
+        var atkBase0Real = calcRealStat(atkBase, 0, nature, atkKey);
+        var atkReal      = calcRealStat(atkBase, atkEv, nature, atkKey);
+        el.attackerStatEv.value               = atkEv;
+        el.attackerStat.dataset.baseStat      = String(atkBase0Real);
+        el.attackerStat.value                 = atkReal;
+    } else {
+        // HP
+        var hpEv    = Math.max(0, Math.min(32, evs['H'] || 0));
+        var hp0Real = calcRealStat(bs.hp, 0, nature, 'H');
+        var hpReal  = calcRealStat(bs.hp, hpEv, nature, 'H');
+        el.defenderHpEv.value               = hpEv;
+        el.defenderHp.dataset.baseStat      = String(hp0Real);
+        el.defenderHp.value                 = hpReal;
+
+        // ぼうぎょ / とくぼう
+        var defKey  = attackMode === 'physical' ? 'B' : 'D';
+        var defBase = attackMode === 'physical' ? bs.def : bs.spd;
+        var defEv   = Math.max(0, Math.min(32, evs[defKey] || 0));
+        var defBase0Real = calcRealStat(defBase, 0, nature, defKey);
+        var defReal      = calcRealStat(defBase, defEv, nature, defKey);
+        el.defenderStatEv.value               = defEv;
+        el.defenderStat.dataset.baseStat      = String(defBase0Real);
+        el.defenderStat.value                 = defReal;
+    }
+
+    // ③ ダメージ再計算 → 画像更新
+    calculate();
+    setArtwork(side, pokemon);
+}
+
+partyEditBtn.addEventListener('click', openPartyModal);
+modalCloseBtn.addEventListener('click', closePartyModal);
+modalSaveBtn.addEventListener('click', savePartyFromModal);
+partyModal.addEventListener('click', function(e) {
+    if (e.target === partyModal) closePartyModal();
+});
+
+el.partyAtkBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var idx = el.partySelect.value;
+    console.log('[Party攻] 選択インデックス:', idx);
+    if (idx === '') { console.warn('[Party攻] 未選択'); return; }
+    try {
+        var member = loadParty()[parseInt(idx, 10)];
+        console.log('[Party攻] メンバー:', member);
+        if (!member) { console.warn('[Party攻] idx が見つからない:', idx); return; }
+        applyPartyMember('attacker', member);
+    } catch(err) {
+        console.error('[Party攻] エラー:', err);
+    }
+});
+el.partyDefBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var idx = el.partySelect.value;
+    console.log('[Party防] 選択インデックス:', idx);
+    if (idx === '') { console.warn('[Party防] 未選択'); return; }
+    try {
+        var member = loadParty()[parseInt(idx, 10)];
+        console.log('[Party防] メンバー:', member);
+        if (!member) { console.warn('[Party防] idx が見つからない:', idx); return; }
+        applyPartyMember('defender', member);
+    } catch(err) {
+        console.error('[Party防] エラー:', err);
+    }
+});
+
+syncPartySelect(loadParty());
 
 }()); // IIFE 終わり
