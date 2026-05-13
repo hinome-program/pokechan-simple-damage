@@ -559,10 +559,12 @@ input:focus, select:focus {
 
 .party-label {
     font-size: 11px;
-    color: rgba(200,220,255,0.7);
+    color: #ed8936; /* 鮮やかなオレンジ */
     white-space: nowrap;
-    font-weight: 600;
-    letter-spacing: 0.03em;
+    font-weight: 800; /* より力強く */
+    letter-spacing: 0.05em;
+    margin-right: 2px;
+    text-shadow: 0 0 10px rgba(237, 137, 54, 0.2);
 }
 
 .party-select {
@@ -820,4 +822,36 @@ input:focus, select:focus {
     font-size: 10px;
     letter-spacing: 0.04em;
     animation: none;
+}
+
+/* ── 性格補正トグルボタン ── */
+.nature-row {
+    justify-content: flex-start;
+    padding-top: 2px;
+}
+.nature-btn {
+    font-size: 11px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 800;
+    padding: 5px 12px;
+    border-radius: 20px; /* 丸い形状に戻しました */
+    /* 性格補正 なし：フラットなグレー */
+    border: 2px solid #718096;
+    background: #e2e8f0;
+    color: #2d3748;
+    cursor: pointer;
+    transition: background 0.1s;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.nature-btn:active { transform: translateY(1px); }
+.nature-btn.nature-on {
+    /* 性格補正 1.1倍：フラットなオレンジ */
+    background: #f97316;
+    color: #fff;
+    border-color: #c2410c;
+    box-shadow: none; /* 発光削除 */
 }

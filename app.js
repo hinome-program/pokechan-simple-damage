@@ -95,6 +95,9 @@ var DEFAULT_EV = { attacker: 32, defender: 0 };
 var attackMode = 'physical';
 var attackRank = 0;
 
+// 性格補正トグル状態
+var natureBoost = { attacker: false, defender: false };
+
 // メガシンカ状態: { attacker: [通常名, メガ名, メガY名...], index: 0 }
 var megaState = {
     attacker: { baseName: '', forms: [], index: 0 },
@@ -171,6 +174,8 @@ var el = {
     partySelect:       document.getElementById('party-select'),
     partyAtkBtn:       document.getElementById('party-atk-btn'),
     partyDefBtn:       document.getElementById('party-def-btn'),
+    attackerNatureBtn: document.getElementById('attacker-nature-btn'),
+    defenderNatureBtn: document.getElementById('defender-nature-btn'),
     resultStatus:      document.getElementById('result-status'),
     resultDetail:      document.getElementById('result-detail'),
     typeMessage:       document.getElementById('type-message'),
@@ -188,8 +193,10 @@ var el = {
 // ============================================================
 function setBase(inputElem, baseValue, ev) {
     ev = ev || 0;
-    inputElem.dataset.baseStat = String(baseValue);
-    inputElem.value = baseValue + ev;
+    inputElem.dataset.baseStat  = String(baseValue);
+    var raw = baseValue + ev;
+    inputElem.dataset.preNature = String(raw); // 性格補正前値を保存
+    inputElem.value = raw;                     // 性格はapplyNatureSide()で別途適用
 }
 
 function getBase(inputElem) {
@@ -203,7 +210,42 @@ function getEv(inputElem) {
 }
 
 function applyEv(statInput, evInput) {
-    statInput.value = getBase(statInput) + getEv(evInput);
+    var raw = getBase(statInput) + getEv(evInput);
+    statInput.dataset.preNature = String(raw);
+    // 性格補正の適用判定
+    var side = (statInput === el.attackerStat) ? 'attacker' : 'defender';
+    statInput.value = natureBoost[side] ? Math.floor(raw * 1.1) : raw;
+}
+
+// ============================================================
+// ⑨-N 性格補正 ユーティリティ
+// ============================================================
+function updateNatureBtn(side) {
+    var btn = el[side + 'NatureBtn'];
+    if (!btn) return;
+    var on = natureBoost[side];
+    btn.textContent = on ? '性格補正 1.1倍' : '性格補正 なし';
+    btn.className   = 'nature-btn' + (on ? ' nature-on' : '');
+}
+
+function applyNatureSide(side) {
+    var inp = (side === 'attacker') ? el.attackerStat : el.defenderStat;
+    var raw = parseFloat(inp.dataset.preNature);
+    if (isNaN(raw)) raw = parseFloat(inp.value) || 0;
+    inp.value = natureBoost[side] ? Math.floor(raw * 1.1) : Math.round(raw);
+    updateNatureBtn(side);
+    calculate();
+}
+
+function toggleNature(side) {
+    natureBoost[side] = !natureBoost[side];
+    applyNatureSide(side);
+}
+
+function setNatureBoost(side, on) {
+    natureBoost[side] = !!on;
+    // ボタンUIだけ更新し、calculate は呼び出し元に委ねる（二重計算防止）
+    updateNatureBtn(side);
 }
 
 // ============================================================
@@ -553,13 +595,16 @@ function updatePokemon(side, nameOverride) {
         setBase(el.defenderStat, baseDef, ev2);
     }
 
-    // メガ状態リセット（手入力・パーティ選択時）
+    // メガ状態・性格補正をリセット（手入力・ポケモン変更時）
     if (nameOverride !== undefined || arguments.length === 1) {
         var forms = getMegaForms(pokemon.name);
         megaState[side].baseName = pokemon.name;
         megaState[side].forms    = forms;
         megaState[side].index    = 0;
         updateMegaIndicator(side);
+        // 性格補正をOFFにリセット
+        natureBoost[side] = false;
+        updateNatureBtn(side);
     }
 
     calculate();
@@ -831,7 +876,12 @@ function setupEventListeners() {
     // 画像クリック → メガシンカループ
     el.attackerArtbox.addEventListener('click', function() { cycleForm('attacker'); });
     el.defenderArtbox.addEventListener('click', function() { cycleForm('defender'); });
-    // マイパーティの攻/防ボタンは℡のパーティモジュールで登録（二重登録防止）
+
+    // 性格補正トグルボタン
+    el.attackerNatureBtn.addEventListener('click', function() { toggleNature('attacker'); });
+    el.defenderNatureBtn.addEventListener('click', function() { toggleNature('defender'); });
+
+    // マイパーティの攻/防ボタンは㉑のパーティモジュールで登録（二重登録防止）
 }
 
 // ============================================================
@@ -1098,30 +1148,40 @@ function applyPartyMember(side, member) {
         var atkKey  = attackMode === 'physical' ? 'A' : 'C';
         var atkBase = attackMode === 'physical' ? bs.atk : bs.spa;
         var atkEv   = Math.max(0, Math.min(32, evs[atkKey] || 0));
-        // baseStatにはEV=0時の実数値を記録（setBase方式に従う）
-        var atkBase0Real = calcRealStat(atkBase, 0, nature, atkKey);
-        var atkReal      = calcRealStat(atkBase, atkEv, nature, atkKey);
+        // 性格補正なしの実数値を preNature に保存
+        var atkNoNature = calcRealStat(atkBase, atkEv, 'なし（補正なし）', atkKey);
+        var atkReal     = calcRealStat(atkBase, atkEv, nature, atkKey);
+        var atkNatureOn = (getNatureMult(nature, atkKey) > 1.0);
         el.attackerStatEv.value               = atkEv;
-        el.attackerStat.dataset.baseStat      = String(atkBase0Real);
+        el.attackerStat.dataset.baseStat      = String(calcRealStat(atkBase, 0, 'なし（補正なし）', atkKey));
+        el.attackerStat.dataset.preNature     = String(atkNoNature);
         el.attackerStat.value                 = atkReal;
+        // 性格ボタンを自動同期
+        natureBoost['attacker'] = atkNatureOn;
+        updateNatureBtn('attacker');
     } else {
-        // HP
+        // HP（性格補正なし）
         var hpEv    = Math.max(0, Math.min(32, evs['H'] || 0));
-        var hp0Real = calcRealStat(bs.hp, 0, nature, 'H');
         var hpReal  = calcRealStat(bs.hp, hpEv, nature, 'H');
         el.defenderHpEv.value               = hpEv;
-        el.defenderHp.dataset.baseStat      = String(hp0Real);
+        el.defenderHp.dataset.baseStat      = String(calcRealStat(bs.hp, 0, 'なし（補正なし）', 'H'));
+        el.defenderHp.dataset.preNature     = String(calcRealStat(bs.hp, hpEv, 'なし（補正なし）', 'H'));
         el.defenderHp.value                 = hpReal;
 
         // ぼうぎょ / とくぼう
         var defKey  = attackMode === 'physical' ? 'B' : 'D';
         var defBase = attackMode === 'physical' ? bs.def : bs.spd;
         var defEv   = Math.max(0, Math.min(32, evs[defKey] || 0));
-        var defBase0Real = calcRealStat(defBase, 0, nature, defKey);
-        var defReal      = calcRealStat(defBase, defEv, nature, defKey);
+        var defNoNature = calcRealStat(defBase, defEv, 'なし（補正なし）', defKey);
+        var defReal     = calcRealStat(defBase, defEv, nature, defKey);
+        var defNatureOn = (getNatureMult(nature, defKey) > 1.0);
         el.defenderStatEv.value               = defEv;
-        el.defenderStat.dataset.baseStat      = String(defBase0Real);
+        el.defenderStat.dataset.baseStat      = String(calcRealStat(defBase, 0, 'なし（補正なし）', defKey));
+        el.defenderStat.dataset.preNature     = String(defNoNature);
         el.defenderStat.value                 = defReal;
+        // 性格ボタンを自動同期
+        natureBoost['defender'] = defNatureOn;
+        updateNatureBtn('defender');
     }
 
     // ③ ダメージ再計算 → 画像更新
