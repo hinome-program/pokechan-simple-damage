@@ -855,3 +855,226 @@ input:focus, select:focus {
     border-color: #c2410c;
     box-shadow: none; /* 発光削除 */
 }
+
+/* ============================================================
+   スマートフォン向けレスポンシブデザイン：完全縦並び（スクロール）対応
+   ============================================================ */
+@media (max-width: 768px) {
+    /* ── 0. 全体ベース：高さ制限を解除しスクロール可能に ── */
+    html, body {
+        height: auto !important;
+        overflow-y: visible !important;
+        overflow-x: hidden !important;
+        background: #1a1a2e; /* 宇宙背景色を固定 */
+    }
+
+    body {
+        display: block !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #app {
+        height: auto !important;
+        min-height: 100vh !important;
+        max-width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 10px 0 60px 0 !important; /* 下部に余裕を持たせる */
+    }
+
+    /* ── 1. バトルフィールド：要素を上から順に並べる ── */
+    .battle-field {
+        position: static !important;
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 0 !important;
+        overflow: visible !important;
+        justify-content: flex-start !important;
+        gap: 15px !important; /* ブロック間の余白 */
+        padding: 0 8px !important;
+    }
+
+    .horizon {
+        display: none !important; /* スマホでは水平線背景を隠す */
+    }
+
+    /* 各ブロックの幅を調整 */
+    .battle-row, .strategy-center, .footer {
+        width: 100% !important;
+        max-width: 100% !important;
+        position: static !important;
+        transform: none !important;
+        margin: 0 !important;
+        flex: none !important;
+    }
+
+    /* ── 2. ポケモンパネル（防御側・攻撃側）：高密度かつ横並び維持 ── */
+    .battle-row {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        gap: 8px !important;
+        padding: 5px 2px !important;
+        border: none !important;
+    }
+
+    /* 画像サイズの適正化（PCより一回り小さく） */
+    .artwork-box {
+        width: 120px !important;
+        height: 120px !important;
+        flex: 0 0 120px !important;
+        margin: 0 !important;
+    }
+
+    /* ステータスパネル */
+    .status-panel {
+        flex: 1 !important;
+        min-width: 0 !important;
+    }
+
+    .white-panel {
+        padding: 10px !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4) !important;
+    }
+
+    .panel-header {
+        margin-bottom: 8px !important;
+        gap: 8px !important;
+    }
+
+    .name-input {
+        font-size: 1.1rem !important;
+        height: 36px !important;
+        padding: 0 8px !important;
+    }
+
+    .lv-badge { font-size: 13px !important; }
+
+    /* 実数値入力欄のサイズ調整 */
+    .stat-row {
+        font-size: 0.95rem !important;
+        margin-bottom: 6px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+
+    .stat-row label {
+        font-size: 0.9rem !important;
+        font-weight: 700 !important;
+        white-space: nowrap !important;
+    }
+
+    .stat-row input {
+        width: 75px !important;
+        height: 38px !important;
+        font-size: 1.1rem !important;
+        border-radius: 8px !important;
+        text-align: center !important;
+    }
+
+    .ev-row input { width: 65px !important; height: 34px !important; }
+
+    .nature-btn {
+        font-size: 0.8rem !important;
+        padding: 6px 14px !important;
+        border-radius: 15px !important;
+    }
+
+    /* ── 3. 戦略コマンドセンター：中央エリアの最適化 ── */
+    .strategy-center {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 6px !important; /* 隙間を半分に圧縮 */
+        padding: 5px 4px !important;
+    }
+
+    /* こうげきボタンを横いっぱいに */
+    .col-toggle { width: 100% !important; }
+    .giant-mode-toggle {
+        width: 100% !important;
+        height: 46px !important; /* 高さを大幅に縮小 */
+        font-size: 1.3rem !important; /* 文字も少し小さく */
+        border-radius: 12px !important;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.15) !important;
+    }
+
+    /* わざ設定パネル */
+    .col-move { width: 100% !important; }
+    .white-panel.compact {
+        padding: 6px 10px !important; /* 上下余白を半分に */
+    }
+    .move-row select {
+        width: 100% !important;
+        height: 36px !important; /* 高さを圧縮 */
+        font-size: 1rem !important;
+        border-radius: 8px !important;
+    }
+    .mini-title { font-size: 11px !important; margin-bottom: 4px !important; }
+
+    /* ランクパネルを横に配置 */
+    .col-rank { width: 100% !important; }
+    .rank-panel-wrap {
+        height: 46px !important; /* 高さを圧縮 */
+        border-radius: 12px !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 15px !important;
+    }
+    .rank-panel-label { font-size: 1rem !important; margin-bottom: 0 !important; }
+    .rank-panel-val { font-size: 1.8rem !important; }
+
+    /* ── 4. ダメージ判定エリア ── */
+    .footer {
+        padding: 10px 8px 30px 8px !important;
+    }
+
+    .result-area {
+        position: static !important;
+        width: 100% !important;
+        padding: 20px 15px !important;
+        margin-bottom: 15px !important;
+        border-radius: 16px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+    }
+
+    .status-badge {
+        font-size: 1.8rem !important;
+        padding: 8px 25px !important;
+        margin: 8px 0 !important;
+    }
+
+    .pct-label { font-size: 1.3rem !important; }
+
+    /* ── 5. フッター操作ボタン ── */
+    .footer-controls {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .swap-btn {
+        width: 100% !important;
+        height: 52px !important;
+        font-size: 1.2rem !important;
+        border-radius: 12px !important;
+    }
+
+    .party-panel {
+        width: 100% !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px !important;
+    }
+    .party-label { width: 100% !important; text-align: center !important; margin-bottom: 4px !important; }
+    .party-select { flex: 1 !important; height: 48px !important; font-size: 1rem !important; }
+    .party-btn { width: 44px !important; height: 44px !important; }
+}
